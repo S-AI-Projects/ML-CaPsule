@@ -1,0 +1,73 @@
+{
+  "metadata": {
+    "task_id": "R41-T012",
+    "project_section": "Rain in Australia \u2013 logistic regression",
+    "data_origin": "SYNTHETIC_DETERMINISTIC_FORMULA_FIXTURE",
+    "disclaimer": "Deterministic formula fixture (target = 2*x1 + 1) for offline CPU-only pipeline verification only; NOT real observations from the Rain in Australia dataset and NOT evidence of real-world or clinical performance.",
+    "seed": 42,
+    "expected_split": {
+      "train": [
+        "r1",
+        "r2",
+        "r3",
+        "r4"
+      ],
+      "validation": [
+        "r5"
+      ],
+      "test": [
+        "r6"
+      ]
+    }
+  },
+  "records": [
+    {
+      "record_id": "r1",
+      "group_id": "grp_1",
+      "timestamp": "2026-01-01",
+      "x1": 0,
+      "x2": 1,
+      "target": 1
+    },
+    {
+      "record_id": "r2",
+      "group_id": "grp_2",
+      "timestamp": "2026-01-02",
+      "x1": 1,
+      "x2": 1,
+      "target": 3
+    },
+    {
+      "record_id": "r3",
+      "group_id": "grp_3",
+      "timestamp": "2026-01-03",
+      "x1": 2,
+      "x2": 1,
+      "target": 5
+    },
+    {
+      "record_id": "r4",
+      "group_id": "grp_4",
+      "timestamp": "2026-01-04",
+      "x1": 3,
+      "x2": 1,
+      "target": 7
+    },
+    {
+      "record_id": "r5",
+      "group_id": "grp_5",
+      "timestamp": "2026-01-05",
+      "x1": 4,
+      "x2": 1,
+      "target": 9
+    },
+    {
+      "record_id": "r6",
+      "group_id": "grp_6",
+      "timestamp": "2026-01-06",
+      "x1": 5,
+      "x2": 1,
+      "target": 11
+    }
+  ]
+}
