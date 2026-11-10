@@ -1,0 +1,17 @@
+{
+  "validation": {
+    "valid": true,
+    "total_records_checked": 8,
+    "failure_count": 0,
+    "failures": []
+  },
+  "split": {
+    "disjoint": true,
+    "complete_coverage": true,
+    "counts": {
+      "train": 4,
+      "validation": 2,
+      "test": 2
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "metadata": {
+    "task_id": "R41-T011",
+    "project_section": "Netflix titles – EDA",
+    "data_origin": "SYNTHETIC_PIPELINE_VERIFICATION_ONLY",
+    "disclaimer": "Simulated offline CPU-only fixture for pipeline verification only; NOT real observations from the named Netflix titles dataset and NOT evidence of real-world or clinical performance.",
+    "seed": 42,
+    "stratified_split": {
+      "train": ["rec_00", "rec_01", "rec_04", "rec_05"],
+      "validation": ["rec_02", "rec_06"],
+      "test": ["rec_03", "rec_07"]
+    }
+  },
+  "records": [
+    {"record_id": "rec_00", "group_id": "grp_a", "x1": 0, "x2": 1, "label": 0},
+    {"record_id": "rec_01", "group_id": "grp_b", "x1": 1, "x2": 1, "label": 0},
+    {"record_id": "rec_02", "group_id": "grp_a", "x1": 2, "x2": 1, "label": 0},
+    {"record_id": "rec_03", "group_id": "grp_b", "x1": 3, "x2": 1, "label": 0},
+    {"record_id": "rec_04", "group_id": "grp_a", "x1": 4, "x2": 1, "label": 1},
+    {"record_id": "rec_05", "group_id": "grp_b", "x1": 5, "x2": 1, "label": 1},
+    {"record_id": "rec_06", "group_id": "grp_a", "x1": 6, "x2": 1, "label": 1},
+    {"record_id": "rec_07", "group_id": "grp_b", "x1": 7, "x2": 1, "label": 1}
+  ]
+}

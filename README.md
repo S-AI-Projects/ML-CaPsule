@@ -964,3 +964,7 @@ Start with beginner-friendly projects, then move to intermediate and advanced on
 | [Zomato Restaurant & Price EDA](Zomato%20Restaurant%20&%20Price%20EDA) | 🟢 Beginner | 1-3 hours |
 </details>
 <!-- Projects end -->
+
+## Course Labs
+
+- [R41-T011: Validate the data contract — Netflix titles – EDA](course-labs/r41-t011/README.md)
