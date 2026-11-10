@@ -1,0 +1,24 @@
+{
+  "task_id": "R41-T012",
+  "seed": 42,
+  "leakage_free": true,
+  "splits": {
+    "train": [
+      "r1",
+      "r2",
+      "r3",
+      "r4"
+    ],
+    "validation": [
+      "r5"
+    ],
+    "test": [
+      "r6"
+    ]
+  },
+  "counts": {
+    "train": 4,
+    "validation": 1,
+    "test": 1
+  }
+}

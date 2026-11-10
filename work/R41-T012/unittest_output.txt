@@ -1,0 +1,9 @@
+test_deterministic_formula_fixture_and_manifest (test_pipeline.TestRainInAustraliaSplitManifest) ... ok
+test_rejects_non_chronological_time_split (test_pipeline.TestRainInAustraliaSplitManifest) ... ok
+test_rejects_overlapping_groups_and_users (test_pipeline.TestRainInAustraliaSplitManifest) ... ok
+test_rejects_overlapping_record_ids (test_pipeline.TestRainInAustraliaSplitManifest) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.001s
+
+OK
