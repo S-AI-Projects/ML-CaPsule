@@ -1,0 +1,9 @@
+test_clean_predictions_produce_empty_error_report (test_pipeline.TestTitanicErrorAnalysis) ... ok
+test_correct_prediction_does_not_appear_in_report (test_pipeline.TestTitanicErrorAnalysis) ... ok
+test_deliberate_mismatch_fails_assertion (test_pipeline.TestTitanicErrorAnalysis) ... ok
+test_injected_wrong_prediction_appears_in_report (test_pipeline.TestTitanicErrorAnalysis) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.000s
+
+OK

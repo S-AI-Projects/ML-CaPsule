@@ -1,0 +1,24 @@
+{
+  "task_id": "R41-T018",
+  "tested_records": [
+    "r4",
+    "r8"
+  ],
+  "error_analysis_report": {
+    "total_samples": 2,
+    "error_count": 1,
+    "accuracy": 0.5,
+    "detailed_errors": [
+      {
+        "record_id": "r4",
+        "expected": 0,
+        "predicted": 1,
+        "reason_category": "BOUNDARY_AMBIGUITY",
+        "feature_values": {
+          "x1": 3.0,
+          "x2": 1.0
+        }
+      }
+    ]
+  }
+}
