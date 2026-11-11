@@ -1,0 +1,9 @@
+test_deliberate_contamination_rejected (test_pipeline.TestGlassPreprocessing) ... ok
+test_held_out_cannot_alter_fitted_parameters (test_pipeline.TestGlassPreprocessing) ... ok
+test_output_values_dtype_and_shape (test_pipeline.TestGlassPreprocessing) ... ok
+test_unfitted_transform_raises_runtime_error (test_pipeline.TestGlassPreprocessing) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.000s
+
+OK
