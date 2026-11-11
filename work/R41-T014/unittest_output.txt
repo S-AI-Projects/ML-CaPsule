@@ -1,0 +1,9 @@
+test_benchmark_metric_example (test_pipeline.TestAdultIncomeEvaluationMetric) ... ok
+test_failure_cases (test_pipeline.TestAdultIncomeEvaluationMetric) ... ok
+test_stratified_split_preserves_class_ratios (test_pipeline.TestAdultIncomeEvaluationMetric) ... ok
+test_zero_denominator_handling (test_pipeline.TestAdultIncomeEvaluationMetric) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.000s
+
+OK
