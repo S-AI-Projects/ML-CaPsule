@@ -1,0 +1,9 @@
+test_deliberate_prediction_mismatch_fails_assertion (test_pipeline.TestSavedPipelineInterface) ... ok
+test_inference_input_schema_validation (test_pipeline.TestSavedPipelineInterface) ... ok
+test_save_and_reload_prediction_parity (test_pipeline.TestSavedPipelineInterface) ... ok
+test_schema_version_and_ordering_mismatch_fails (test_pipeline.TestSavedPipelineInterface) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.001s
+
+OK

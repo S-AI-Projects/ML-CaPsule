@@ -1,0 +1,36 @@
+{
+  "model_type": "SafeNaiveBayesModel",
+  "schema_version": "1.0.0",
+  "feature_order": [
+    "x1",
+    "x2"
+  ],
+  "classes": [
+    0,
+    1
+  ],
+  "class_priors": {
+    "0": 0.5,
+    "1": 0.5
+  },
+  "feature_means": {
+    "0": {
+      "x1": 0.5,
+      "x2": 1.0
+    },
+    "1": {
+      "x1": 4.5,
+      "x2": 1.0
+    }
+  },
+  "feature_vars": {
+    "0": {
+      "x1": 0.25,
+      "x2": 0.0001
+    },
+    "1": {
+      "x1": 0.25,
+      "x2": 0.0001
+    }
+  }
+}
