@@ -964,3 +964,5 @@ Start with beginner-friendly projects, then move to intermediate and advanced on
 | [Zomato Restaurant & Price EDA](Zomato%20Restaurant%20&%20Price%20EDA) | 🟢 Beginner | 1-3 hours |
 </details>
 <!-- Projects end -->
+
+- [R41-T016: Add a bounded CPU smoke run: Bank marketing (UCI) – logistic regression](course-labs/r41-t016/README.md)

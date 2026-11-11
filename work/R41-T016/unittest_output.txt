@@ -1,0 +1,9 @@
+test_fixture_deterministic_formula_and_bounds (test_pipeline.TestBoundedCPUSmokeRun) ... ok
+test_mismatched_inputs_raise_value_error (test_pipeline.TestBoundedCPUSmokeRun) ... ok
+test_smoke_run_outputs_shapes_and_step_count (test_pipeline.TestBoundedCPUSmokeRun) ... ok
+test_unfitted_model_raises_runtime_error (test_pipeline.TestBoundedCPUSmokeRun) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.000s
+
+OK

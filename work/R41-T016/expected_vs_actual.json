@@ -1,0 +1,37 @@
+{
+  "task_id": "R41-T016",
+  "sample_count": 6,
+  "step_count": 4,
+  "weights": {
+    "w1": 1.3398,
+    "w2": 0.7208
+  },
+  "loss_history": [
+    0.405,
+    3.795,
+    8.9962,
+    10.2124
+  ],
+  "train_shape": [
+    4,
+    1
+  ],
+  "validation_shape": [
+    1,
+    1
+  ],
+  "test_shape": [
+    1,
+    1
+  ],
+  "metrics": {
+    "train_mse": 2.1563,
+    "val_mse": 8.5258,
+    "test_mse": 12.8164
+  },
+  "predictions": {
+    "test_id": "r6",
+    "actual": 11.0,
+    "predicted": 7.42
+  }
+}
