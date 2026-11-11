@@ -1,0 +1,35 @@
+{
+  "benchmark_check": {
+    "tp": 1,
+    "fp": 1,
+    "fn": 1,
+    "tn": 1,
+    "accuracy": 0.5,
+    "precision": 0.5,
+    "recall": 0.5,
+    "f1": 0.5
+  },
+  "split_check": {
+    "task_id": "R41-T014",
+    "is_stratified": true,
+    "distributions": {
+      "train": {
+        "0": 2,
+        "1": 2
+      },
+      "validation": {
+        "0": 1,
+        "1": 1
+      },
+      "test": {
+        "0": 1,
+        "1": 1
+      }
+    },
+    "counts": {
+      "train": 4,
+      "validation": 2,
+      "test": 2
+    }
+  }
+}

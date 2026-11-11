@@ -1,0 +1,82 @@
+{
+  "metadata": {
+    "task_id": "R41-T014",
+    "project_section": "Adult income (UCI) \u2013 gradient boosting",
+    "data_origin": "SYNTHETIC_CLASSIFICATION_FIXTURE",
+    "disclaimer": "Synthetic classification fixture for offline CPU-only evaluation metric verification; NOT real observations from Adult income (UCI) and NOT evidence of real-world or clinical performance.",
+    "stratified_split": {
+      "train": [
+        "r1",
+        "r2",
+        "r5",
+        "r6"
+      ],
+      "validation": [
+        "r3",
+        "r7"
+      ],
+      "test": [
+        "r4",
+        "r8"
+      ]
+    }
+  },
+  "records": [
+    {
+      "record_id": "r1",
+      "group_id": "grp_0",
+      "x1": 0,
+      "x2": 1,
+      "label": 0
+    },
+    {
+      "record_id": "r2",
+      "group_id": "grp_0",
+      "x1": 1,
+      "x2": 1,
+      "label": 0
+    },
+    {
+      "record_id": "r3",
+      "group_id": "grp_0",
+      "x1": 2,
+      "x2": 1,
+      "label": 0
+    },
+    {
+      "record_id": "r4",
+      "group_id": "grp_0",
+      "x1": 3,
+      "x2": 1,
+      "label": 0
+    },
+    {
+      "record_id": "r5",
+      "group_id": "grp_1",
+      "x1": 4,
+      "x2": 1,
+      "label": 1
+    },
+    {
+      "record_id": "r6",
+      "group_id": "grp_1",
+      "x1": 5,
+      "x2": 1,
+      "label": 1
+    },
+    {
+      "record_id": "r7",
+      "group_id": "grp_1",
+      "x1": 6,
+      "x2": 1,
+      "label": 1
+    },
+    {
+      "record_id": "r8",
+      "group_id": "grp_1",
+      "x1": 7,
+      "x2": 1,
+      "label": 1
+    }
+  ]
+}

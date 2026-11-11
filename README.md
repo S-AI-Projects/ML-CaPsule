@@ -964,3 +964,5 @@ Start with beginner-friendly projects, then move to intermediate and advanced on
 | [Zomato Restaurant & Price EDA](Zomato%20Restaurant%20&%20Price%20EDA) | 🟢 Beginner | 1-3 hours |
 </details>
 <!-- Projects end -->
+
+- [R41-T014: Verify the evaluation metric — Adult income (UCI) – gradient boosting](course-labs/r41-t014/README.md)
