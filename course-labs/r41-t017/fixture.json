@@ -1,0 +1,54 @@
+{
+  "metadata": {
+    "task_id": "R41-T017",
+    "project_section": "Olivetti faces \u2013 PCA eigenfaces",
+    "data_origin": "COLLINEAR_EIGENFACES_FIXTURE",
+    "disclaimer": "Synthetic fixture for offline CPU-only reproducible PCA projection and reconstruction verification; NOT observations from real Olivetti faces dataset and NOT evidence of real-world or clinical performance.",
+    "config": {
+      "schema_version": "1.0.0",
+      "seed": 42,
+      "feature_ordering": [
+        "x1",
+        "x2"
+      ],
+      "split_ids": {
+        "train": [
+          "p1",
+          "p2",
+          "p3",
+          "p4"
+        ]
+      },
+      "algorithm_settings": {
+        "n_components": 1,
+        "tolerance": 1e-05,
+        "unit_vector": [
+          0.7071067811865475,
+          0.7071067811865475
+        ]
+      }
+    }
+  },
+  "records": [
+    {
+      "record_id": "p1",
+      "x1": -2.0,
+      "x2": -2.0
+    },
+    {
+      "record_id": "p2",
+      "x1": -1.0,
+      "x2": -1.0
+    },
+    {
+      "record_id": "p3",
+      "x1": 1.0,
+      "x2": 1.0
+    },
+    {
+      "record_id": "p4",
+      "x1": 2.0,
+      "x2": 2.0
+    }
+  ]
+}

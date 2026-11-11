@@ -1,0 +1,9 @@
+test_collinear_projection_and_reconstruction (test_pipeline.TestPCAEigenfacesReproducibility) ... ok
+test_reject_unknown_and_contradictory_settings (test_pipeline.TestPCAEigenfacesReproducibility) ... ok
+test_reproducible_config_reloads_identically (test_pipeline.TestPCAEigenfacesReproducibility) ... ok
+test_sign_indeterminacy_invariance (test_pipeline.TestPCAEigenfacesReproducibility) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.001s
+
+OK

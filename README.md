@@ -964,3 +964,5 @@ Start with beginner-friendly projects, then move to intermediate and advanced on
 | [Zomato Restaurant & Price EDA](Zomato%20Restaurant%20&%20Price%20EDA) | 🟢 Beginner | 1-3 hours |
 </details>
 <!-- Projects end -->
+
+- [R41-T017: Record reproducible configuration: Olivetti faces – PCA eigenfaces](course-labs/r41-t017/README.md)
