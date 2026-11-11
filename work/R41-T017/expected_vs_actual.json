@@ -1,0 +1,32 @@
+{
+  "task_id": "R41-T017",
+  "schema_version": "1.0.0",
+  "seed": 42,
+  "n_points": 4,
+  "projections": [
+    -2.8284,
+    -1.4142,
+    1.4142,
+    2.8284
+  ],
+  "reconstructed": [
+    [
+      -2.0,
+      -2.0
+    ],
+    [
+      -1.0,
+      -1.0
+    ],
+    [
+      1.0,
+      1.0
+    ],
+    [
+      2.0,
+      2.0
+    ]
+  ],
+  "reconstruction_recovered": true,
+  "max_reconstruction_error": 0.0
+}
