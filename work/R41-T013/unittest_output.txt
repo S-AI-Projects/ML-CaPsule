@@ -1,0 +1,8 @@
+test_baseline_train_only_parameters_and_evaluation (test_pipeline.TestMovieLensBaseline) ... ok
+test_failure_cases (test_pipeline.TestMovieLensBaseline) ... ok
+test_fixture_contents_and_exact_split (test_pipeline.TestMovieLensBaseline) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.000s
+
+OK

@@ -1,0 +1,47 @@
+{
+  "metadata": {
+    "task_id": "R41-T013",
+    "project_section": "MovieLens 100k \u2013 collaborative filtering",
+    "data_origin": "SYNTHETIC_INTERACTIONS_FIXTURE",
+    "disclaimer": "Synthetic interaction fixture for offline CPU-only minimal baseline pipeline verification; NOT real observations from MovieLens 100k and NOT evidence of real-world or clinical performance.",
+    "split_policy": "reserve final interaction per user for held-out fixture"
+  },
+  "interactions": [
+    {
+      "user_id": "u1",
+      "item_id": "a",
+      "rating": 5.0,
+      "order": 1
+    },
+    {
+      "user_id": "u1",
+      "item_id": "b",
+      "rating": 3.0,
+      "order": 2
+    },
+    {
+      "user_id": "u2",
+      "item_id": "a",
+      "rating": 4.0,
+      "order": 1
+    },
+    {
+      "user_id": "u2",
+      "item_id": "c",
+      "rating": 2.0,
+      "order": 2
+    },
+    {
+      "user_id": "u3",
+      "item_id": "b",
+      "rating": 4.0,
+      "order": 1
+    },
+    {
+      "user_id": "u3",
+      "item_id": "c",
+      "rating": 5.0,
+      "order": 2
+    }
+  ]
+}
