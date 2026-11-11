@@ -1,0 +1,17 @@
+{
+  "task_id": "R41-T020",
+  "predictions_agree": true,
+  "test_ids": [
+    "r4",
+    "r8"
+  ],
+  "preds_before": {
+    "r4": 1,
+    "r8": 1
+  },
+  "preds_after": {
+    "r4": 1,
+    "r8": 1
+  },
+  "model_file": "saved_pipeline.json"
+}
