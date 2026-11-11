@@ -1,0 +1,65 @@
+{
+  "metadata": {
+    "task_id": "R41-T019",
+    "project_section": "Combined-cycle power plant \u2013 linear regression",
+    "data_origin": "DETERMINISTIC_FORMULA_PERTURBATION_FIXTURE",
+    "disclaimer": "Synthetic fixture for offline CPU-only input perturbation and robustness verification; NOT observations from the real Combined-cycle power plant dataset and NOT evidence of real-world or clinical performance.",
+    "split": {
+      "train": [
+        "r1",
+        "r2",
+        "r3",
+        "r4"
+      ],
+      "validation": [
+        "r5"
+      ],
+      "test": [
+        "r6"
+      ]
+    },
+    "formula": "target = 2*x1 + 1",
+    "feature_order": [
+      "x1",
+      "x2"
+    ]
+  },
+  "records": [
+    {
+      "record_id": "r1",
+      "x1": 0.0,
+      "x2": 1.0,
+      "target": 1.0
+    },
+    {
+      "record_id": "r2",
+      "x1": 1.0,
+      "x2": 1.0,
+      "target": 3.0
+    },
+    {
+      "record_id": "r3",
+      "x1": 2.0,
+      "x2": 1.0,
+      "target": 5.0
+    },
+    {
+      "record_id": "r4",
+      "x1": 3.0,
+      "x2": 1.0,
+      "target": 7.0
+    },
+    {
+      "record_id": "r5",
+      "x1": 4.0,
+      "x2": 1.0,
+      "target": 9.0
+    },
+    {
+      "record_id": "r6",
+      "x1": 5.0,
+      "x2": 1.0,
+      "target": 11.0
+    }
+  ]
+}

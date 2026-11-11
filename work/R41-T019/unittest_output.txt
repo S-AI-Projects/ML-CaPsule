@@ -1,0 +1,9 @@
+test_deliberate_perturbation_mismatch_fails_assertion (test_pipeline.TestInputPerturbationRobustness) ... ok
+test_formula_correctness_across_fixture (test_pipeline.TestInputPerturbationRobustness) ... ok
+test_record_order_perturbation_preserves_id_aligned_predictions (test_pipeline.TestInputPerturbationRobustness) ... ok
+test_unsupported_inputs_raise_explicit_errors (test_pipeline.TestInputPerturbationRobustness) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.001s
+
+OK
