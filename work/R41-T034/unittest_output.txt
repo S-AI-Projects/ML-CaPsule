@@ -1,0 +1,15 @@
+test_canonical_regression_mae_specification (test_pipeline.TestWHOLifeExpectancyMetric.test_canonical_regression_mae_specification)
+Verify the exact canonical case: truth=[1,2,3], prediction=[1,3,2] -> MAE=2/3. ... ok
+test_deterministic_fixture_formula_and_splits (test_pipeline.TestWHOLifeExpectancyMetric.test_deterministic_fixture_formula_and_splits)
+Verify fixture conforms to target = 2 * x1 + 1 with stable IDs. ... ok
+test_independent_cross_check_consistency (test_pipeline.TestWHOLifeExpectancyMetric.test_independent_cross_check_consistency)
+Verify independent implementation matches custom MAE within numerical tolerance. ... ok
+test_invalid_shapes_raise_value_error (test_pipeline.TestWHOLifeExpectancyMetric.test_invalid_shapes_raise_value_error)
+Verify mismatched array lengths or empty inputs raise clear ValueError. ... ok
+test_zero_denominator_behavior_in_mape (test_pipeline.TestWHOLifeExpectancyMetric.test_zero_denominator_behavior_in_mape)
+Verify explicit handling of zero denominator does not divide by zero or raise NaN. ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+OK

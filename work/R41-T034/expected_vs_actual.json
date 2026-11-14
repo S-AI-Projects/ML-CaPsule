@@ -1,0 +1,12 @@
+{
+  "task_id": "R41-T034",
+  "canonical_metric": {
+    "truth": [1.0, 2.0, 3.0],
+    "prediction": [1.0, 3.0, 2.0],
+    "expected_mae": 0.6666666666666666,
+    "actual_mae": 0.6666666666666666,
+    "matches_exact": true
+  },
+  "zero_denominator_handled": true,
+  "independent_cross_check_passed": true
+}
