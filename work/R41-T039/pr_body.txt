@@ -1,0 +1,39 @@
+Description
+Tests input perturbation robustness for the Wine origin (UCI) LDA unsupervised teaching fixture. Verifies that valid transformations (record-order shuffling) preserve cluster assignments after ID alignment, while unsupported inputs (missing required fields or dimension mismatches) are strictly rejected with clear errors.
+
+Related Issue
+Fixes: #39
+
+Type of Change
+- [x] New Feature
+- [x] Tests
+- [x] Documentation
+
+Changes Made
+- Added synthetic 6-point clustering fixture in `course-labs/r41-t039/fixture.json`.
+- Implemented `RobustUnsupervisedAssigner` and `test_perturbation_properties()` in `course-labs/r41-t039/pipeline.py`.
+- Formally verified order-invariance after record ID alignment on nearest-centroid assignment fixture.
+- Implemented strict rejection of missing fields and multi-dimensional shape mismatches.
+- Added comprehensive unit tests in `course-labs/r41-t039/test_pipeline.py`.
+- Documented perturbation properties, error boundaries, and non-adversarial limits in `course-labs/r41-t039/README.md`.
+- Saved test logs and execution artifacts in `work/R41-T039/`.
+
+Screenshots / Recordings
+N/A (Offline CPU-only CLI test verification)
+
+Testing
+Ran unit tests locally:
+`python3 -m unittest discover -s course-labs/r41-t039 -p "test_*.py" -v`
+Result: Ran 4 tests in 0.000s ... OK
+
+Checklist
+- [x] I have tested my changes locally.
+- [x] I have added or updated tests, if needed.
+- [x] I have updated documentation, if needed.
+- [x] I have followed the project's coding guidelines.
+- [x] I have run the relevant tests and checks.
+- [x] I have addressed previous review feedback, if applicable.
+
+Additional Notes
+All evaluations use offline synthetic fixtures for pipeline verification only, not observations from the named real dataset and not evidence of real-world or clinical performance.
+URN: e26b070609 | Student: Veer Pratap Singh
