@@ -1,0 +1,38 @@
+Description
+Implements the simplest honest baseline (training-mean predictor) for the Palmer penguins – logistic regression teaching fixture. The baseline calculates the target mean exclusively from training records (r1..r4) and evaluates predictions and MAE on held-out validation and test rows without using any test data for parameter estimation.
+
+Related Issue
+Fixes: #33
+
+Type of Change
+- [x] New Feature
+- [x] Tests
+- [x] Documentation
+
+Changes Made
+- Added synthetic 6-row deterministic formula fixture (target = 2*x1 + 1) in `course-labs/r41-t033/fixture.json`.
+- Implemented `TrainingMeanBaseline` in `course-labs/r41-t033/pipeline.py`.
+- Enforced strict training-only parameter fitting (mean = 4.0 from targets 1, 3, 5, 7) and held-out prediction evaluation.
+- Added comprehensive unit tests in `course-labs/r41-t033/test_pipeline.py`.
+- Documented baseline design and evaluation metrics in `course-labs/r41-t033/README.md`.
+- Saved test artifacts and reproducibility logs in `work/R41-T033/`.
+
+Screenshots / Recordings
+N/A (Offline CPU-only CLI test verification)
+
+Testing
+Ran unit tests locally:
+`python3 -m unittest discover -s course-labs/r41-t033 -p "test_*.py" -v`
+Result: Ran 5 tests in 0.000s ... OK
+
+Checklist
+- [x] I have tested my changes locally.
+- [x] I have added or updated tests, if needed.
+- [x] I have updated documentation, if needed.
+- [x] I have followed the project's coding guidelines.
+- [x] I have run the relevant tests and checks.
+- [x] I have addressed previous review feedback, if applicable.
+
+Additional Notes
+All evaluations use offline synthetic fixtures for pipeline verification only, not observations from the named real dataset and not evidence of real-world or clinical performance.
+URN: e26b070609 | Student: Veer Pratap Singh

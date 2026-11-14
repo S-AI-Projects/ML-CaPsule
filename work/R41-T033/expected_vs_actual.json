@@ -1,0 +1,20 @@
+{
+  "task_id": "R41-T033",
+  "training_mean": {
+    "expected": 4.0,
+    "actual": 4.0,
+    "match": true
+  },
+  "validation_metrics": {
+    "record_id": "r5",
+    "target": 9.0,
+    "prediction": 4.0,
+    "mae": 5.0
+  },
+  "test_metrics": {
+    "record_id": "r6",
+    "target": 11.0,
+    "prediction": 4.0,
+    "mae": 7.0
+  }
+}
