@@ -1,0 +1,38 @@
+Description
+Defines and tests a safe, JSON-serialized saved-pipeline interface for the Wine quality regression teaching fixture. Model parameters are serialized strictly via JSON to avoid untrusted pickle security risks. Exposes an inference function with schema validation, verifies reload prediction parity within 1e-10, and requires zero credentials or training data at inference time.
+
+Related Issue
+Fixes: #40
+
+Type of Change
+- [x] New Feature
+- [x] Tests
+- [x] Documentation
+
+Changes Made
+- Added synthetic 6-row deterministic regression fixture in `course-labs/r41-t040/fixture.json`.
+- Implemented `SafeSavedPipeline` with JSON export/import in `course-labs/r41-t040/pipeline.py`.
+- Enforced inference schema validation and version compatibility checks without pickle dependencies.
+- Added comprehensive unit tests in `course-labs/r41-t040/test_pipeline.py`.
+- Documented saved interface contract, security guarantees, and reproducibility in `course-labs/r41-t040/README.md`.
+- Stored verification outputs and tool versions in `work/R41-T040/`.
+
+Screenshots / Recordings
+N/A (Offline CPU-only CLI test verification)
+
+Testing
+Ran unit tests locally:
+`python3 -m unittest discover -s course-labs/r41-t040 -p "test_*.py" -v`
+Result: Ran 5 tests in 0.001s ... OK
+
+Checklist
+- [x] I have tested my changes locally.
+- [x] I have added or updated tests, if needed.
+- [x] I have updated documentation, if needed.
+- [x] I have followed the project's coding guidelines.
+- [x] I have run the relevant tests and checks.
+- [x] I have addressed previous review feedback, if applicable.
+
+Additional Notes
+All evaluations use offline synthetic fixtures for pipeline verification only, not observations from the named real dataset and not evidence of real-world or clinical performance.
+URN: e26b070609 | Student: Veer Pratap Singh
