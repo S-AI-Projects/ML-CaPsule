@@ -1,0 +1,20 @@
+{
+  "schema_version": "1.0.0",
+  "task_id": "R41-T037",
+  "seed": 42,
+  "feature_order": ["x1", "x2"],
+  "split_ids": {
+    "train": ["r1", "r2", "r3", "r4"],
+    "validation": ["r5"],
+    "test": ["r6"]
+  },
+  "algorithm_settings": {
+    "algorithm": "linear_regression",
+    "fit_intercept": true,
+    "normalize": false
+  },
+  "environment": {
+    "python": "3.9.6",
+    "os": "darwin"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "task_id": "R41-T037",
+  "reproducibility": {
+    "reloaded_predictions_match": true,
+    "max_discrepancy": 0.0,
+    "unknown_field_rejected": true,
+    "incompatible_shape_rejected": true,
+    "environment_recorded": true
+  }
+}
