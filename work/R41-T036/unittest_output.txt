@@ -1,0 +1,15 @@
+test_deterministic_formula_fixture_consistency (test_pipeline.TestFIFACpuSmokeRun.test_deterministic_formula_fixture_consistency)
+Verify fixture conforms to target = 2 * x1 + 1 with stable IDs. ... ok
+test_inference_shape_and_finite_predictions (test_pipeline.TestFIFACpuSmokeRun.test_inference_shape_and_finite_predictions)
+Verify inference outputs finite float predictions matching input record count. ... ok
+test_predict_before_fit_raises_error (test_pipeline.TestFIFACpuSmokeRun.test_predict_before_fit_raises_error)
+Verify calling predict prior to fit raises RuntimeError. ... ok
+test_sample_bound_enforced (test_pipeline.TestFIFACpuSmokeRun.test_sample_bound_enforced)
+Verify exceeding 32 samples raises a ValueError. ... ok
+test_smoke_run_is_bounded_cpu_only (test_pipeline.TestFIFACpuSmokeRun.test_smoke_run_is_bounded_cpu_only)
+Verify training completes within 20 steps, loss is finite, hardware is CPU. ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.000s
+
+OK
