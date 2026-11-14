@@ -1,0 +1,11 @@
+test_collinear_points_projection_and_reconstruction_within_tolerance (test_pipeline.TestDigitsPCADataContract.test_collinear_points_projection_and_reconstruction_within_tolerance) ... ok
+test_duplicate_record_id_fails_with_specific_reason (test_pipeline.TestDigitsPCADataContract.test_duplicate_record_id_fails_with_specific_reason) ... ok
+test_malformed_numeric_text_and_tensor_data_fail_specifically (test_pipeline.TestDigitsPCADataContract.test_malformed_numeric_text_and_tensor_data_fail_specifically) ... ok
+test_missing_record_id_fails_without_dropping_records (test_pipeline.TestDigitsPCADataContract.test_missing_record_id_fails_without_dropping_records) ... ok
+test_sign_reversal_of_learned_component_preserves_reconstruction (test_pipeline.TestDigitsPCADataContract.test_sign_reversal_of_learned_component_preserves_reconstruction) ... ok
+test_valid_synthetic_fixture_passes (test_pipeline.TestDigitsPCADataContract.test_valid_synthetic_fixture_passes) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.000s
+
+OK
