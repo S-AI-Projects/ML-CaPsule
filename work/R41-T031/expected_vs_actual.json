@@ -1,0 +1,16 @@
+{
+  "task_id": "R41-T031",
+  "validation": {
+    "expected_valid": true,
+    "actual_valid": true,
+    "total_records_checked": 4,
+    "failure_count": 0,
+    "failures": []
+  },
+  "projection_reconstruction": {
+    "points_checked": 4,
+    "all_recovered_within_tolerance": true,
+    "max_reconstruction_error": 0.0,
+    "tolerance": 1e-06
+  }
+}
