@@ -1,0 +1,13 @@
+test_nearest_centroid_assignments_fixture (test_pipeline.TestWineOriginInputPerturbation.test_nearest_centroid_assignments_fixture)
+Verify six points (0,0),(0,1),(1,0),(5,5),(5,6),(6,5) yield 0,0,0,1,1,1. ... ok
+test_record_order_perturbation_invariance_after_id_alignment (test_pipeline.TestWineOriginInputPerturbation.test_record_order_perturbation_invariance_after_id_alignment)
+Verify shuffling row order preserves assignments once aligned by stable record_id. ... ok
+test_unsupported_missing_field_is_rejected (test_pipeline.TestWineOriginInputPerturbation.test_unsupported_missing_field_is_rejected)
+Verify missing feature column raises clear ValueError. ... ok
+test_unsupported_shape_mismatch_is_rejected (test_pipeline.TestWineOriginInputPerturbation.test_unsupported_shape_mismatch_is_rejected)
+Verify passing 3D centroids to 2D records raises ValueError. ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.000s
+
+OK

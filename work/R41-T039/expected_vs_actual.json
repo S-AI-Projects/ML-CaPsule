@@ -1,0 +1,14 @@
+{
+  "task_id": "R41-T039",
+  "assignments": {
+    "expected": [0, 0, 0, 1, 1, 1],
+    "actual": [0, 0, 0, 1, 1, 1],
+    "match": true
+  },
+  "perturbation_robustness": {
+    "order_invariant_after_id_alignment": true,
+    "missing_field_rejected": true,
+    "shape_mismatch_rejected": true,
+    "broad_adversarial_claim": false
+  }
+}
