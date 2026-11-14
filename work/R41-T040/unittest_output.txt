@@ -1,0 +1,15 @@
+test_before_and_after_reload_predictions_agree_within_tolerance (test_pipeline.TestWineQualitySavedPipeline.test_before_and_after_reload_predictions_agree_within_tolerance)
+Verify model before saving and after reloading yields identical predictions. ... ok
+test_deterministic_formula_fixture_consistency (test_pipeline.TestWineQualitySavedPipeline.test_deterministic_formula_fixture_consistency)
+Verify fixture conforms to target = 2 * x1 + 1 with stable IDs. ... ok
+test_schema_mismatch_fails_clearly (test_pipeline.TestWineQualitySavedPipeline.test_schema_mismatch_fails_clearly)
+Verify input missing expected feature or corrupted dtype raises ValueError. ... ok
+test_version_mismatch_fails_clearly (test_pipeline.TestWineQualitySavedPipeline.test_version_mismatch_fails_clearly)
+Verify loading an incompatible schema version is explicitly rejected. ... ok
+test_zero_training_data_or_credentials_needed_at_inference (test_pipeline.TestWineQualitySavedPipeline.test_zero_training_data_or_credentials_needed_at_inference)
+Verify reloaded pipeline requires neither train data nor credentials to predict. ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+OK

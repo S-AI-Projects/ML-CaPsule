@@ -1,0 +1,12 @@
+{
+  "task_id": "R41-T040",
+  "saved_pipeline": {
+    "format": "JSON",
+    "untrusted_pickle_used": false,
+    "predictions_match_before_after": true,
+    "max_discrepancy": 0.0,
+    "schema_mismatch_rejected": true,
+    "version_mismatch_rejected": true,
+    "zero_training_data_needed_at_inference": true
+  }
+}
