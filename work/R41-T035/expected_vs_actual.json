@@ -1,0 +1,16 @@
+{
+  "task_id": "R41-T035",
+  "preprocessing": {
+    "expected_shape": [4, 2],
+    "actual_shape": [4, 2],
+    "expected_dtype": "float64",
+    "actual_dtype": "float64",
+    "feature_order": ["x1", "x2"],
+    "training_means": {
+      "x1": 1.5,
+      "x2": 1.0
+    }
+  },
+  "leakage_prevented": true,
+  "contamination_rejected": true
+}

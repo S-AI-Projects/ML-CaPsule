@@ -1,0 +1,15 @@
+test_deliberate_contamination_fixture_rejected (test_pipeline.TestWorldHappinessPreprocessing.test_deliberate_contamination_fixture_rejected)
+Verify corrupted or non-numeric inputs raise clear ValueError. ... ok
+test_deterministic_formula_fixture_consistency (test_pipeline.TestWorldHappinessPreprocessing.test_deterministic_formula_fixture_consistency)
+Verify fixture conforms to target = 2 * x1 + 1 with stable IDs. ... ok
+test_fitting_on_held_out_input_is_impossible (test_pipeline.TestWorldHappinessPreprocessing.test_fitting_on_held_out_input_is_impossible)
+Verify transforming held-out rows preserves original training parameters without leakage. ... ok
+test_preprocessor_output_values_dtype_and_shape (test_pipeline.TestWorldHappinessPreprocessing.test_preprocessor_output_values_dtype_and_shape)
+Verify output shape (4,2), dtype float64, and strictly retained feature order. ... ok
+test_transform_before_fit_raises_runtime_error (test_pipeline.TestWorldHappinessPreprocessing.test_transform_before_fit_raises_runtime_error)
+Verify calling transform prior to fitting is rejected. ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+OK
