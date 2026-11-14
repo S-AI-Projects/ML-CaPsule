@@ -1,0 +1,17 @@
+test_contradictory_settings_rejected (test_pipeline.TestCaliforniaHousingReproducibleConfig.test_contradictory_settings_rejected)
+Verify conflicting algorithm or overlapping splits are rejected. ... ok
+test_deterministic_formula_fixture_consistency (test_pipeline.TestCaliforniaHousingReproducibleConfig.test_deterministic_formula_fixture_consistency)
+Verify fixture conforms to target = 2 * x1 + 1 with stable IDs. ... ok
+test_environment_versions_recorded (test_pipeline.TestCaliforniaHousingReproducibleConfig.test_environment_versions_recorded)
+Verify environment versions are present in serialized configuration. ... ok
+test_incompatible_input_shape_rejected (test_pipeline.TestCaliforniaHousingReproducibleConfig.test_incompatible_input_shape_rejected)
+Verify input record missing a configured feature raises ValueError. ... ok
+test_reloaded_configuration_reconstructs_identical_predictions (test_pipeline.TestCaliforniaHousingReproducibleConfig.test_reloaded_configuration_reconstructs_identical_predictions)
+Verify serializing and reloading config reconstructs identical split and predictions. ... ok
+test_unknown_field_is_rejected (test_pipeline.TestCaliforniaHousingReproducibleConfig.test_unknown_field_is_rejected)
+Verify configuration containing unexpected key raises ValueError. ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.001s
+
+OK
