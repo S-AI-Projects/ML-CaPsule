@@ -1,0 +1,17 @@
+{
+  "task_id": "R41-T038",
+  "error_analysis": {
+    "total_records": 8,
+    "correct_count": 7,
+    "error_count": 1,
+    "error_rate": 0.125,
+    "injected_error_detected": {
+      "record_id": "c7",
+      "expected": 1,
+      "predicted": 0,
+      "reason_category": "false_negative_underestimation"
+    },
+    "correct_records_excluded_from_errors": true,
+    "aggregate_matches_detailed_count": true
+  }
+}
