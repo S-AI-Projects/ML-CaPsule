@@ -1,0 +1,14 @@
+{
+  "task_id": "R41-T036",
+  "smoke_run": {
+    "hardware": "CPU",
+    "samples_trained": 4,
+    "max_samples_bound": 32,
+    "steps_executed": 15,
+    "max_steps_bound": 20,
+    "loss_is_finite": true,
+    "requires_gpu": false,
+    "requires_credentials": false,
+    "model_type": "deterministic_cpu_linear_sgd_baseline"
+  }
+}
