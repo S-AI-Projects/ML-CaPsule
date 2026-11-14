@@ -1,0 +1,23 @@
+{
+  "metadata": {
+    "task_id": "R41-T038",
+    "project_section": "Mobile price range – classification",
+    "data_origin": "SYNTHETIC_PIPELINE_VERIFICATION_ONLY",
+    "disclaimer": "Simulated offline CPU-only fixture for pipeline verification only; NOT real observations from the named Mobile price range dataset and NOT evidence of real-world or clinical performance.",
+    "stratified_split": {
+      "train": ["c1", "c2", "c5", "c6"],
+      "validation": ["c3", "c7"],
+      "test": ["c4", "c8"]
+    }
+  },
+  "records": [
+    {"record_id": "c1", "group_id": "grp_low", "x1": 0.0, "x2": 1.0, "label": 0},
+    {"record_id": "c2", "group_id": "grp_low", "x1": 1.0, "x2": 1.0, "label": 0},
+    {"record_id": "c3", "group_id": "grp_low", "x1": 2.0, "x2": 1.0, "label": 0},
+    {"record_id": "c4", "group_id": "grp_low", "x1": 3.0, "x2": 1.0, "label": 0},
+    {"record_id": "c5", "group_id": "grp_high", "x1": 4.0, "x2": 1.0, "label": 1},
+    {"record_id": "c6", "group_id": "grp_high", "x1": 5.0, "x2": 1.0, "label": 1},
+    {"record_id": "c7", "group_id": "grp_high", "x1": 6.0, "x2": 1.0, "label": 1},
+    {"record_id": "c8", "group_id": "grp_high", "x1": 7.0, "x2": 1.0, "label": 1}
+  ]
+}
