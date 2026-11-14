@@ -1,0 +1,14 @@
+{
+  "task_id": "R41-T032",
+  "assignments": {
+    "expected": [0, 0, 0, 1, 1, 1],
+    "actual": [0, 0, 0, 1, 1, 1],
+    "match": true
+  },
+  "split": {
+    "is_disjoint": true,
+    "complete_coverage": true,
+    "reproducible": true,
+    "rejected_overlaps": true
+  }
+}
