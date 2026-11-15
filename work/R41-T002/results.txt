@@ -1,0 +1,17 @@
+test_duplicate_record_ids_are_rejected (test_pipeline.SplitManifestTests.test_duplicate_record_ids_are_rejected) ... ok
+test_each_split_contains_both_classes (test_pipeline.SplitManifestTests.test_each_split_contains_both_classes) ... ok
+test_expected_manifest (test_pipeline.SplitManifestTests.test_expected_manifest) ... ok
+test_fixture_has_eight_records_and_balanced_labels (test_pipeline.SplitManifestTests.test_fixture_has_eight_records_and_balanced_labels) ... ok
+test_fixture_uses_required_feature_values (test_pipeline.SplitManifestTests.test_fixture_uses_required_feature_values) ... ok
+test_group_leakage_is_rejected (test_pipeline.SplitManifestTests.test_group_leakage_is_rejected) ... ok
+test_invalid_manifest_splits_rejected (test_pipeline.SplitManifestTests.test_invalid_manifest_splits_rejected) ... ok
+test_missing_record_is_rejected (test_pipeline.SplitManifestTests.test_missing_record_is_rejected) ... ok
+test_record_and_group_isolation (test_pipeline.SplitManifestTests.test_record_and_group_isolation) ... ok
+test_record_overlap_is_rejected (test_pipeline.SplitManifestTests.test_record_overlap_is_rejected) ... ok
+test_split_is_deterministic (test_pipeline.SplitManifestTests.test_split_is_deterministic) ... ok
+test_unknown_record_id_is_rejected (test_pipeline.SplitManifestTests.test_unknown_record_id_is_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.001s
+
+OK
