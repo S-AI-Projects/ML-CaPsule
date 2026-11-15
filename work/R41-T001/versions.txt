@@ -1,0 +1,10 @@
+R41-T001 Environment and Tool Versions
+======================================
+Date: 2026-11-15T06:05:15.312940+00:00
+Python Version: 3.15.2 (main, Oct 25 2026, 16:57:51) [Clang 21.0.0 (clang-2100.3.34.2)]
+Python Implementation: CPython
+Platform: macOS-27.2-arm64-arm-64bit-Mach-O
+Operating System: Darwin 27.2.0
+Architecture: arm64
+Dependencies: Standard Library Only (dataclasses, typing, unittest, math, json, copy, pathlib)
+External Packages Required: None (0 third-party packages)
