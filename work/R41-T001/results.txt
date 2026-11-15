@@ -1,0 +1,35 @@
+test_empty_group_id (test_pipeline.TestGroupIdValidation.test_empty_group_id) ... ok
+test_missing_group_id (test_pipeline.TestGroupIdValidation.test_missing_group_id) ... ok
+test_non_string_group_id (test_pipeline.TestGroupIdValidation.test_non_string_group_id) ... ok
+test_boolean_rejected_for_label (test_pipeline.TestLabelValidation.test_boolean_rejected_for_label) ... ok
+test_float_label_rejected (test_pipeline.TestLabelValidation.test_float_label_rejected) ... ok
+test_missing_label (test_pipeline.TestLabelValidation.test_missing_label) ... ok
+test_out_of_range_integer_label (test_pipeline.TestLabelValidation.test_out_of_range_integer_label) ... ok
+test_failure_fields_populated_cleanly (test_pipeline.TestMultipleFailuresAndReporting.test_failure_fields_populated_cleanly) ... ok
+test_mixed_valid_and_invalid_records_not_dropped (test_pipeline.TestMultipleFailuresAndReporting.test_mixed_valid_and_invalid_records_not_dropped) ... ok
+test_multiple_failures_in_single_record_reported (test_pipeline.TestMultipleFailuresAndReporting.test_multiple_failures_in_single_record_reported) ... ok
+test_non_dict_record_handled_safely (test_pipeline.TestMultipleFailuresAndReporting.test_non_dict_record_handled_safely) ... ok
+test_boolean_rejected_as_numeric (test_pipeline.TestNumericScalarValidation.test_boolean_rejected_as_numeric) ... ok
+test_malformed_numeric_string_x1 (test_pipeline.TestNumericScalarValidation.test_malformed_numeric_string_x1) ... ok
+test_malformed_numeric_string_x2 (test_pipeline.TestNumericScalarValidation.test_malformed_numeric_string_x2) ... ok
+test_nan_and_inf_rejected (test_pipeline.TestNumericScalarValidation.test_nan_and_inf_rejected) ... ok
+test_none_numeric_rejected (test_pipeline.TestNumericScalarValidation.test_none_numeric_rejected) ... ok
+test_sequence_tensor_rejected_for_x1 (test_pipeline.TestNumericScalarValidation.test_sequence_tensor_rejected_for_x1) ... ok
+test_sequence_tensor_rejected_for_x2 (test_pipeline.TestNumericScalarValidation.test_sequence_tensor_rejected_for_x2) ... ok
+test_duplicate_record_id (test_pipeline.TestRecordIdValidation.test_duplicate_record_id) ... ok
+test_empty_string_record_id (test_pipeline.TestRecordIdValidation.test_empty_string_record_id) ... ok
+test_missing_record_id (test_pipeline.TestRecordIdValidation.test_missing_record_id) ... ok
+test_non_string_record_id (test_pipeline.TestRecordIdValidation.test_non_string_record_id) ... ok
+test_none_record_id (test_pipeline.TestRecordIdValidation.test_none_record_id) ... ok
+test_disclaimer_present (test_pipeline.TestSyntheticFixtureSpecification.test_disclaimer_present) ... ok
+test_fixture_exact_field_values (test_pipeline.TestSyntheticFixtureSpecification.test_fixture_exact_field_values) ... ok
+test_fixture_ids_are_stable_unique_strings (test_pipeline.TestSyntheticFixtureSpecification.test_fixture_ids_are_stable_unique_strings) ... ok
+test_fixture_row_count (test_pipeline.TestSyntheticFixtureSpecification.test_fixture_row_count) ... ok
+test_stratified_split_integrity (test_pipeline.TestSyntheticFixtureSpecification.test_stratified_split_integrity) ... ok
+test_canonical_fixture_passes_validation (test_pipeline.TestValidFixturePasses.test_canonical_fixture_passes_validation) ... ok
+test_empty_dataset_handling (test_pipeline.TestValidFixturePasses.test_empty_dataset_handling) ... ok
+
+----------------------------------------------------------------------
+Ran 30 tests in 0.001s
+
+OK

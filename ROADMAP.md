@@ -87,6 +87,7 @@
 | Rock Paper Scissors Python Game | Python basics, OpenCV | [View](./Rock%20Paper%20Scissors%20Python%20Game) |
 | Github Topic Scraper | web scraping, BeautifulSoup | [View](./GitHub%20Topic%20Scraper) |
 | TweetMiner AI | NLP, Tweepy, VADER, TextBlob, scikit-learn | [View](./TweetMiner_AI) |
+| Data Contract Validation (R41-T001) | Data contract validation, schema verification, unittest | [View](./course-labs/r41-t001) |
 
 
 ---
