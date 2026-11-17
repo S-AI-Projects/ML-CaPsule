@@ -223,6 +223,11 @@ Multidisciplinary field combining statistics, ML, computing, and domain expertis
 
 ### 🔵 Regression
 
+> **Bounded dataset-contract example:** [Concrete-strength regression input
+> validator](course-labs/r41-t041/README.md) uses an explicitly simulated
+> formula fixture for pipeline verification only; it is not real-world
+> performance evidence.
+
 | # | Dataset | Description | Level | Download |
 |---|---------|-------------|:-----:|----------|
 | 1 | **Boston Housing** | Predict housing prices | ⭐ | [Kaggle](https://www.kaggle.com/datasets/altavish/boston-housing-dataset) |
