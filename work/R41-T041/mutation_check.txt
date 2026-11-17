@@ -1,0 +1,8 @@
+Failure-path verification
+
+Command: python3 -m unittest discover -s course-labs/r41-t041 -p "test_*.py"
+Temporary change: expected fixture record_count changed from 6 to 7.
+Observed: test_literal_formula_fixture_is_valid_and_split_is_explicit failed
+with AssertionError: 6 != 7; unittest reported 10 tests and 1 failure.
+Conclusion: the required check fails when an expected result is deliberately
+changed. The source expectation was restored to 6 before the final passing run.

@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Concrete-strength regression input row",
+  "description": "Contract for simulated pipeline-verification records; not the source dataset schema.",
+  "type": "object",
+  "required": ["record_id", "x1", "x2", "target"],
+  "additionalProperties": false,
+  "properties": {
+    "record_id": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "x1": {"type": "number"},
+    "x2": {"type": "number"},
+    "target": {"type": "number"}
+  }
+}

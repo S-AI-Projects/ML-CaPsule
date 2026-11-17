@@ -1,0 +1,40 @@
+{
+  "fixture_report": {
+    "record_count": 6,
+    "valid": true,
+    "issues": []
+  },
+  "split_counts": {
+    "train": 4,
+    "validation": 1,
+    "test": 1
+  },
+  "failure_reports": {
+    "missing_id": {
+      "record_count": 1,
+      "valid": false,
+      "issues": [
+        {"record_id": "<missing>", "field": "record_id", "reason": "is required"}
+      ]
+    },
+    "malformed_numeric_and_tensor": {
+      "record_count": 1,
+      "valid": false,
+      "issues": [
+        {"record_id": "r1", "field": "x1", "reason": "must be a real numeric scalar"},
+        {"record_id": "r1", "field": "x2", "reason": "must be a real numeric scalar"}
+      ]
+    },
+    "duplicate_id": {
+      "record_count": 2,
+      "valid": false,
+      "issues": [
+        {"record_id": "r1", "field": "record_id", "reason": "duplicates record_id first seen in row 1"}
+      ]
+    }
+  },
+  "unittest": {
+    "test_count": 10,
+    "result": "OK"
+  }
+}
