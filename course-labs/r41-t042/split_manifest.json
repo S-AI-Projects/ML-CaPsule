@@ -1,0 +1,10 @@
+{
+  "data_kind": "fictional_pipeline_fixture",
+  "seed": 41,
+  "method": "seeded record shuffle; 4 train, 1 validation, 1 test",
+  "splits": {
+    "train": ["t5", "t6", "t1", "t2"],
+    "validation": ["t3"],
+    "test": ["t4"]
+  }
+}

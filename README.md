@@ -250,6 +250,8 @@ Multidisciplinary field combining statistics, ML, computing, and domain expertis
 | 6 | **AG News** | 4-topic news classification | ⭐⭐ | [Hugging Face](https://huggingface.co/datasets/ag_news) |
 | 7 | **Quora Question Pairs** | Semantic equivalence detection | ⭐⭐⭐ | [Kaggle](https://www.kaggle.com/c/quora-question-pairs) |
 
+> **Pipeline fixture only:** [Deterministic text split manifest](course-labs/r41-t042/README.md) documents a six-row fictional fixture; it is not the IMDB corpus or evidence of real-world model performance.
+
 ### 🔴 Computer Vision
 
 | # | Dataset | Description | Level | Download |
