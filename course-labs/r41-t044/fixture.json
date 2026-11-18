@@ -1,0 +1,49 @@
+{
+  "fixture_name": "six-image synthetic grayscale smoke fixture",
+  "data_kind": "simulated",
+  "purpose": "offline pipeline verification only; not Fashion-MNIST data",
+  "schema_fields": ["record_id", "group_id", "pixels", "label"],
+  "split_group_ids": {
+    "train": ["group-1"],
+    "validation": ["group-2"],
+    "test": ["group-3"]
+  },
+  "records": [
+    {
+      "record_id": "zero-1",
+      "group_id": "group-1",
+      "pixels": [[0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]],
+      "label": 0
+    },
+    {
+      "record_id": "diagonal-1",
+      "group_id": "group-1",
+      "pixels": [[255, 0, 0, 0], [0, 255, 0, 0], [0, 0, 255, 0], [0, 0, 0, 255]],
+      "label": 1
+    },
+    {
+      "record_id": "zero-2",
+      "group_id": "group-2",
+      "pixels": [[0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]],
+      "label": 0
+    },
+    {
+      "record_id": "diagonal-2",
+      "group_id": "group-2",
+      "pixels": [[255, 0, 0, 0], [0, 255, 0, 0], [0, 0, 255, 0], [0, 0, 0, 255]],
+      "label": 1
+    },
+    {
+      "record_id": "zero-3",
+      "group_id": "group-3",
+      "pixels": [[0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]],
+      "label": 0
+    },
+    {
+      "record_id": "diagonal-3",
+      "group_id": "group-3",
+      "pixels": [[255, 0, 0, 0], [0, 255, 0, 0], [0, 0, 255, 0], [0, 0, 0, 255]],
+      "label": 1
+    }
+  ]
+}

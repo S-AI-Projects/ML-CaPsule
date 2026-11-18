@@ -1,0 +1,4 @@
+Python 3.15.2
+Implementation: CPython
+Platform: macOS-27.2.1-arm64-arm-64bit-Mach-O
+Third-party packages: none (standard library only)

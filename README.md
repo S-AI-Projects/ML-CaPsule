@@ -257,6 +257,10 @@ Multidisciplinary field combining statistics, ML, computing, and domain expertis
 | 6 | **Intel Image Classification** | 6 natural scene categories | ⭐⭐ | [Kaggle](https://www.kaggle.com/datasets/puneet6060/intel-image-classification) |
 | 7 | **Chest X-Ray Pneumonia** | Pneumonia detection | ⭐⭐ | [Kaggle](https://www.kaggle.com/datasets/paultimothymooney/chest-xray-pneumonia) |
 
+> **Pipeline verification only:** [Fashion-MNIST metric contract](course-labs/r41-t044/README.md)
+> checks explicit classification and regression metrics on a six-image
+> simulated fixture; it is not Fashion-MNIST performance evidence.
+
 ### 🟣 Clustering / Unsupervised
 
 | # | Dataset | Description | Level | Download |
