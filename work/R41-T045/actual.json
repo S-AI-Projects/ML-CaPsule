@@ -1,0 +1,40 @@
+{
+  "data_kind": "simulated_pipeline_fixture",
+  "seed": 45,
+  "feature_order": ["x1", "x2"],
+  "split_record_ids": {
+    "train": ["iris-sim-001", "iris-sim-004", "iris-sim-008", "iris-sim-006"],
+    "validation": ["iris-sim-002", "iris-sim-005"],
+    "test": ["iris-sim-003", "iris-sim-007"]
+  },
+  "training_mean": [3.75, 1.0],
+  "training_scale": [2.5860201081971503, 1.0],
+  "transformed": {
+    "train": {
+      "values": [
+        [-1.4501047335684953, 0.0],
+        [-0.29002094671369905, 0.0],
+        [1.2567574357593625, 0.0],
+        [0.4833682445228318, 0.0]
+      ],
+      "dtype": "float64",
+      "shape": [4, 2]
+    },
+    "validation": {
+      "values": [
+        [-1.0634101379502299, 0.0],
+        [0.09667364890456635, 0.0]
+      ],
+      "dtype": "float64",
+      "shape": [2, 2]
+    },
+    "test": {
+      "values": [
+        [-0.6767155423319645, 0.0],
+        [0.8700628401410971, 0.0]
+      ],
+      "dtype": "float64",
+      "shape": [2, 2]
+    }
+  }
+}

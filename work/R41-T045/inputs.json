@@ -1,0 +1,15 @@
+{
+  "data_kind": "simulated_pipeline_fixture",
+  "description": "Eight invented numeric rows for preprocessing-contract verification only; not Iris observations.",
+  "seed": 45,
+  "records": [
+    {"record_id": "iris-sim-001", "group_id": "iris-group-001", "x1": 0, "x2": 1, "label": 0},
+    {"record_id": "iris-sim-002", "group_id": "iris-group-002", "x1": 1, "x2": 1, "label": 0},
+    {"record_id": "iris-sim-003", "group_id": "iris-group-003", "x1": 2, "x2": 1, "label": 0},
+    {"record_id": "iris-sim-004", "group_id": "iris-group-004", "x1": 3, "x2": 1, "label": 0},
+    {"record_id": "iris-sim-005", "group_id": "iris-group-005", "x1": 4, "x2": 1, "label": 1},
+    {"record_id": "iris-sim-006", "group_id": "iris-group-006", "x1": 5, "x2": 1, "label": 1},
+    {"record_id": "iris-sim-007", "group_id": "iris-group-007", "x1": 6, "x2": 1, "label": 1},
+    {"record_id": "iris-sim-008", "group_id": "iris-group-008", "x1": 7, "x2": 1, "label": 1}
+  ]
+}
