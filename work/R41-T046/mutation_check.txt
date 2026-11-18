@@ -1,0 +1,8 @@
+Control check: changed the expected loss assertion from
+0.6931471805599453 to -999.0, then ran:
+
+python3 -m unittest discover -s course-labs/r41-t046 -p "test_*.py"
+
+Result: FAILED with exit code 1 (8 tests, 1 failure, AssertionError because the
+training loss did not equal the mutated expected value). Restored the expected
+value and reran the required check; it passed.

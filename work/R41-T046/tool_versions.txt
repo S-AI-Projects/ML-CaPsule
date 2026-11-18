@@ -1,0 +1,4 @@
+Python 3.15.2
+Implementation dependencies: Python standard library only (no NumPy/scikit-learn)
+Test runner: Python unittest (standard library)
+Git 2.55.0

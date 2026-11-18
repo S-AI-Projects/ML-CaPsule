@@ -1,0 +1,15 @@
+{
+  "data_kind": "simulated_pipeline_fixture",
+  "description": "Eight invented numeric rows for a bounded classifier smoke test; not Taiwan credit-default records.",
+  "seed": 46,
+  "records": [
+    {"record_id": "credit-sim-001", "group_id": "credit-group-001", "x1": 0, "x2": 1, "label": 0},
+    {"record_id": "credit-sim-002", "group_id": "credit-group-002", "x1": 1, "x2": 1, "label": 0},
+    {"record_id": "credit-sim-003", "group_id": "credit-group-003", "x1": 2, "x2": 1, "label": 0},
+    {"record_id": "credit-sim-004", "group_id": "credit-group-004", "x1": 3, "x2": 1, "label": 0},
+    {"record_id": "credit-sim-005", "group_id": "credit-group-005", "x1": 4, "x2": 1, "label": 1},
+    {"record_id": "credit-sim-006", "group_id": "credit-group-006", "x1": 5, "x2": 1, "label": 1},
+    {"record_id": "credit-sim-007", "group_id": "credit-group-007", "x1": 6, "x2": 1, "label": 1},
+    {"record_id": "credit-sim-008", "group_id": "credit-group-008", "x1": 7, "x2": 1, "label": 1}
+  ]
+}

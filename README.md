@@ -221,6 +221,8 @@ Multidisciplinary field combining statistics, ML, computing, and domain expertis
 | 7 | **Bank Marketing** | Term deposit subscription | ⭐⭐ | [UCI](https://archive.ics.uci.edu/ml/datasets/Bank+Marketing) |
 | 8 | **Wine Quality** | Good vs bad wine classification | ⭐ | [UCI](https://archive.ics.uci.edu/ml/datasets/wine+quality) |
 
+> **Pipeline verification only:** [Taiwan credit-default classifier smoke test](course-labs/r41-t046/README.md) runs a constant baseline on eight simulated rows, not credit-default observations or performance evidence.
+
 ### 🔵 Regression
 
 | # | Dataset | Description | Level | Download |
