@@ -47,6 +47,12 @@
 
 > 💡 **No mentor? No problem.** Learn by building, become interview-ready, and grow with a thriving open-source community.
 
+### Course Laboratory
+
+- [R41-T060: 20 Newsgroups pipeline fixture](./course-labs/r41-t060/README.md) -
+  A bounded, offline, simulated text-pipeline verification component. It is
+  explicitly not a real 20 Newsgroups corpus or performance benchmark.
+
 <br>
 
 <table align="center">

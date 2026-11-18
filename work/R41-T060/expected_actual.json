@@ -1,0 +1,16 @@
+{
+  "tolerance": 0,
+  "before_save_predictions": [
+    1,
+    0
+  ],
+  "expected_predictions": [
+    1,
+    0
+  ],
+  "actual_predictions": [
+    1,
+    0
+  ],
+  "match": true
+}

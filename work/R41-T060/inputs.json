@@ -1,0 +1,20 @@
+{
+  "fixed_seed": 42,
+  "fixture": "course-labs/r41-t060/fixture.json",
+  "train_record_ids": [
+    "t4",
+    "t2",
+    "t3",
+    "t5"
+  ],
+  "validation_record_ids": [
+    "t1"
+  ],
+  "test_record_ids": [
+    "t6"
+  ],
+  "prediction_texts": [
+    "red apple",
+    "blue cloud"
+  ]
+}
