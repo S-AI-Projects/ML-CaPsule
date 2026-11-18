@@ -1,0 +1,40 @@
+{
+  "data_kind": "simulated_pipeline_fixture",
+  "seed": 46,
+  "model": "training_majority_constant_baseline",
+  "update_steps": 0,
+  "split_record_ids": {
+    "train": ["credit-sim-003", "credit-sim-004", "credit-sim-008", "credit-sim-005"],
+    "validation": ["credit-sim-002", "credit-sim-007"],
+    "test": ["credit-sim-001", "credit-sim-006"]
+  },
+  "outputs": {
+    "train": {
+      "probabilities": [0.5, 0.5, 0.5, 0.5],
+      "predictions": [0, 0, 0, 0],
+      "probability_shape": [4],
+      "prediction_shape": [4],
+      "record_ids": ["credit-sim-003", "credit-sim-004", "credit-sim-008", "credit-sim-005"],
+      "y_true": [0, 0, 1, 1],
+      "loss": 0.6931471805599453
+    },
+    "validation": {
+      "probabilities": [0.5, 0.5],
+      "predictions": [0, 0],
+      "probability_shape": [2],
+      "prediction_shape": [2],
+      "record_ids": ["credit-sim-002", "credit-sim-007"],
+      "y_true": [0, 1],
+      "loss": 0.6931471805599453
+    },
+    "test": {
+      "probabilities": [0.5, 0.5],
+      "predictions": [0, 0],
+      "probability_shape": [2],
+      "prediction_shape": [2],
+      "record_ids": ["credit-sim-001", "credit-sim-006"],
+      "y_true": [0, 1],
+      "loss": 0.6931471805599453
+    }
+  }
+}
