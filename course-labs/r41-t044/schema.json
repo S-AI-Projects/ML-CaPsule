@@ -1,0 +1,68 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "R41-T044 simulated image fixture",
+  "description": "Schema for the six-row synthetic smoke fixture, not Fashion-MNIST.",
+  "type": "object",
+  "required": [
+    "fixture_name",
+    "data_kind",
+    "purpose",
+    "schema_fields",
+    "split_group_ids",
+    "records"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "fixture_name": {"type": "string", "minLength": 1},
+    "data_kind": {"const": "simulated"},
+    "purpose": {"type": "string", "minLength": 1},
+    "schema_fields": {
+      "type": "array",
+      "const": ["record_id", "group_id", "pixels", "label"]
+    },
+    "split_group_ids": {
+      "type": "object",
+      "required": ["train", "validation", "test"],
+      "additionalProperties": false,
+      "properties": {
+        "train": {"$ref": "#/$defs/groupIds"},
+        "validation": {"$ref": "#/$defs/groupIds"},
+        "test": {"$ref": "#/$defs/groupIds"}
+      }
+    },
+    "records": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"$ref": "#/$defs/record"}
+    }
+  },
+  "$defs": {
+    "groupIds": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {"type": "string", "minLength": 1}
+    },
+    "record": {
+      "type": "object",
+      "required": ["record_id", "group_id", "pixels", "label"],
+      "additionalProperties": false,
+      "properties": {
+        "record_id": {"type": "string", "minLength": 1, "pattern": "\\S"},
+        "group_id": {"type": "string", "minLength": 1, "pattern": "\\S"},
+        "pixels": {
+          "type": "array",
+          "minItems": 4,
+          "maxItems": 4,
+          "items": {
+            "type": "array",
+            "minItems": 4,
+            "maxItems": 4,
+            "items": {"type": "integer", "minimum": 0, "maximum": 255}
+          }
+        },
+        "label": {"type": "integer", "enum": [0, 1]}
+      }
+    }
+  }
+}

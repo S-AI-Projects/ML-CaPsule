@@ -1,0 +1,7 @@
+Command (run from course-labs/r41-t044):
+python3 -c 'from pipeline import binary_classification_metrics; assert binary_classification_metrics([1,1,0,0],[1,0,1,0])["precision"] == 0.6'
+
+Expected precision was deliberately changed from 0.5 to 0.6.
+Observed: AssertionError; Python exit status 1.
+The wrapper recognized the non-zero status and reported:
+PASS: deliberately changed expected precision caused non-zero exit (1)
