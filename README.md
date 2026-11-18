@@ -221,6 +221,8 @@ Multidisciplinary field combining statistics, ML, computing, and domain expertis
 | 7 | **Bank Marketing** | Term deposit subscription | ⭐⭐ | [UCI](https://archive.ics.uci.edu/ml/datasets/Bank+Marketing) |
 | 8 | **Wine Quality** | Good vs bad wine classification | ⭐ | [UCI](https://archive.ics.uci.edu/ml/datasets/wine+quality) |
 
+> **Pipeline verification only:** [Iris k-NN preprocessing contract](course-labs/r41-t045/README.md) uses eight simulated rows, not Iris observations or species-performance evidence.
+
 ### 🔵 Regression
 
 | # | Dataset | Description | Level | Download |

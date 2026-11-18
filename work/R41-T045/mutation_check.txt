@@ -1,0 +1,9 @@
+Control check: changed the expected first training value in
+test_pipeline_output_values_shapes_and_dtype from -1.4501047335684953 to
+-999.0, then ran:
+
+python3 -m unittest discover -s course-labs/r41-t045 -p "test_*.py"
+
+Result: FAILED with exit code 1 (12 tests, 1 failure, AssertionError for the
+mutated expected value). Restored the expected value and reran the required
+check; it passed.
