@@ -1,0 +1,22 @@
+{
+  "seed": 43,
+  "model": "training_majority_class",
+  "predicted_label": 0,
+  "training_class_counts": {
+    "0": 2,
+    "1": 2
+  },
+  "train_record_ids": ["t6", "t5", "t4", "t2"],
+  "validation": {
+    "record_ids": ["t3"],
+    "y_true": [0],
+    "y_pred": [0],
+    "accuracy": 1.0
+  },
+  "test": {
+    "record_ids": ["t1"],
+    "y_true": [1],
+    "y_pred": [0],
+    "accuracy": 0.0
+  }
+}

@@ -1,0 +1,7 @@
+Assertion-failure control:
+
+A temporary Python assertion compared the pipeline's test accuracy (0.0) to a
+deliberately changed expected value (1.0), and was executed as a child process.
+The child reported `AssertionError` and exited with status 1. The repository
+test was not modified by this control; the required suite above passes with
+the checked-in expected results.
