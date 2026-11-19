@@ -1,0 +1,39 @@
+Description
+Implements a deterministic split manifest for the Abalone age regression teaching component. Ensures strict mutual disjointness across train, validation, and test partitions, preserves group and chronological time-series isolation, and rejects intentionally overlapping IDs or groups. Includes a 6-row synthetic deterministic formula fixture and a bounded CPU-only closed-form linear regression baseline.
+
+Related Issue
+Fixes: #22
+
+Type of Change
+- [x] New Feature
+- [x] Tests
+- [x] Documentation
+
+Changes Made
+- Defined regression schema in `course-labs/r41-t022/schema.json` enforcing required fields (`record_id`, `x1`, `x2`, `target`).
+- Created 6-row synthetic formula fixture (`course-labs/r41-t022/fixture.json`) adhering to $target = 2 \cdot x_1 + 1$ with exact partition assignments: training IDs `r1..r4`, validation `r5`, test `r6`.
+- Implemented `SplitManifest`, `create_deterministic_split()`, and `validate_manifest()` in `course-labs/r41-t022/pipeline.py` enforcing pairwise disjointness, complete coverage, group isolation, and chronological ordering while rejecting overlapping IDs/groups.
+- Implemented closed-form `SimpleLinearRegression` recovering exact parameters ($\text{slope}=2.0, \text{intercept}=1.0$) with zero MSE.
+- Added comprehensive unit test suite in `course-labs/r41-t022/test_pipeline.py` (10 tests passing).
+- Documented data contract, manifest guarantees, and pipeline limits in `course-labs/r41-t022/README.md` and linked in root `README.md`.
+- Saved verification evidence (tool versions, expected vs actual outputs, unittest output, mutation check) in `work/R41-T022/`.
+
+Screenshots / Recordings
+N/A (Offline CPU-only CLI test verification)
+
+Testing
+Executed local unittest suite:
+`python3 -m unittest discover -s course-labs/r41-t022 -p "test_*.py" -v`
+Result: Ran 10 tests in 0.001s ... OK
+
+Checklist
+- [x] I have tested my changes locally.
+- [x] I have added or updated tests, if needed.
+- [x] I have updated documentation, if needed.
+- [x] I have followed the project's coding guidelines.
+- [x] I have run the relevant tests and checks.
+- [x] I have addressed previous review feedback, if applicable.
+
+Additional Notes
+All evaluations use offline synthetic fixtures for pipeline verification only, not observations from the named real Abalone dataset and not evidence of real-world or clinical performance.
+Student: Sharon Robinson | Task: R41-T022 (2 of 10) | Working branch: student/e26b07f0819

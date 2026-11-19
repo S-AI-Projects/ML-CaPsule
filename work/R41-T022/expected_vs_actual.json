@@ -1,0 +1,37 @@
+{
+  "task_id": "R41-T022",
+  "project_section": "Abalone age – regression",
+  "formula_check": {
+    "formula": "target = 2 * x1 + 1",
+    "formula_satisfied": true,
+    "total_records": 6,
+    "discrepancies": []
+  },
+  "manifest": {
+    "train_ids": ["r1", "r2", "r3", "r4"],
+    "validation_ids": ["r5"],
+    "test_ids": ["r6"]
+  },
+  "validation_metrics": {
+    "is_disjoint": true,
+    "complete_coverage": true,
+    "is_chronological": true,
+    "group_isolation_preserved": true,
+    "overlapping_ids_rejected": true,
+    "group_leakage_rejected": true,
+    "temporal_leakage_rejected": true,
+    "errors": []
+  },
+  "regression_baseline": {
+    "recovered_slope": 2.0,
+    "expected_slope": 2.0,
+    "recovered_intercept": 1.0,
+    "expected_intercept": 1.0,
+    "validation_prediction": 9.0,
+    "validation_target": 9.0,
+    "validation_mse": 0.0,
+    "test_prediction": 11.0,
+    "test_target": 11.0,
+    "test_mse": 0.0
+  }
+}
