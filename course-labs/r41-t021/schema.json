@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "MNISTKNNBaselineContract",
+  "description": "Schema definition for MNIST k-NN baseline smoke fixture (Task R41-T021)",
+  "type": "object",
+  "required": ["record_id", "group_id", "pixels", "label"],
+  "properties": {
+    "record_id": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Unique record identifier"
+    },
+    "group_id": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Group or cohort identifier (e.g. grp_0, grp_1)"
+    },
+    "pixels": {
+      "type": "array",
+      "description": "4x4 grayscale image pixel matrix (values in [0, 255])",
+      "items": {
+        "type": "array",
+        "items": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 255
+        },
+        "minItems": 4,
+        "maxItems": 4
+      },
+      "minItems": 4,
+      "maxItems": 4
+    },
+    "label": {
+      "type": "integer",
+      "enum": [0, 1],
+      "description": "Binary ground-truth class label (0 for all-zero, 1 for white diagonal)"
+    },
+    "split": {
+      "type": "string",
+      "enum": ["train", "validation", "test"],
+      "description": "Dataset partition assignment"
+    }
+  },
+  "additionalProperties": true
+}

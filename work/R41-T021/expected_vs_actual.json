@@ -1,0 +1,41 @@
+{
+  "task_id": "R41-T021",
+  "project_section": "MNIST – k-NN baseline",
+  "validation": {
+    "expected_valid": true,
+    "actual_valid": true,
+    "total_records_checked": 6,
+    "failure_count": 0,
+    "failures": []
+  },
+  "diagnostics_checks": {
+    "missing_record_id_diagnosed": true,
+    "missing_group_id_diagnosed": true,
+    "missing_label_diagnosed": true,
+    "missing_pixels_diagnosed": true,
+    "duplicate_record_id_diagnosed": true,
+    "malformed_text_diagnosed": true,
+    "malformed_numeric_label_diagnosed": true,
+    "malformed_tensor_dimension_diagnosed": true,
+    "pixel_out_of_range_diagnosed": true
+  },
+  "split": {
+    "disjoint": true,
+    "complete_coverage": true,
+    "stratified": true,
+    "counts": {
+      "train": 2,
+      "validation": 2,
+      "test": 2
+    }
+  },
+  "knn_baseline": {
+    "k": 1,
+    "validation_accuracy": 1.0,
+    "test_accuracy": 1.0,
+    "validation_predictions": [0, 1],
+    "validation_expected": [0, 1],
+    "test_predictions": [0, 1],
+    "test_expected": [0, 1]
+  }
+}

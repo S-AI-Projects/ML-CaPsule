@@ -1,0 +1,25 @@
+test_deliberate_mutation_failure (test_pipeline.TestMNISTDataContract.test_deliberate_mutation_failure)
+Verify deliberate tampering of expected output produces an assertion failure. ... ok
+test_duplicate_record_id_reported (test_pipeline.TestMNISTDataContract.test_duplicate_record_id_reported)
+Verify duplicate record_id values are flagged with specific reason. ... ok
+test_environment_info_recorded (test_pipeline.TestMNISTDataContract.test_environment_info_recorded)
+Verify environment info reports Python and OS versions. ... ok
+test_explicit_stratified_split_separation (test_pipeline.TestMNISTDataContract.test_explicit_stratified_split_separation)
+Verify explicit train/validation/test split separation with balanced stratification. ... ok
+test_fixture_six_synthetic_rows_contract (test_pipeline.TestMNISTDataContract.test_fixture_six_synthetic_rows_contract)
+Verify literal synthetic fixture: six 4x4 images, 3 zero (label 0), 3 diagonal (label 1). ... ok
+test_knn_baseline_bounded_cpu_run (test_pipeline.TestMNISTDataContract.test_knn_baseline_bounded_cpu_run)
+Verify offline CPU-only 1-NN baseline accurately classifies validation and test splits. ... ok
+test_malformed_numeric_and_text_data_reported (test_pipeline.TestMNISTDataContract.test_malformed_numeric_and_text_data_reported)
+Verify malformed text, non-integer labels, booleans, and string values are diagnosed. ... ok
+test_malformed_tensor_data_reported (test_pipeline.TestMNISTDataContract.test_malformed_tensor_data_reported)
+Verify tensor shape errors (non-4x4, irregular row lengths, out-of-range pixel values). ... ok
+test_missing_id_and_required_fields_reported (test_pipeline.TestMNISTDataContract.test_missing_id_and_required_fields_reported)
+Verify missing record_id, group_id, label, or pixels are diagnosed without dropping rows. ... ok
+test_valid_fixture_passes (test_pipeline.TestMNISTDataContract.test_valid_fixture_passes)
+Verify the canonical 6-row synthetic fixture passes schema validation with zero failures. ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.001s
+
+OK
