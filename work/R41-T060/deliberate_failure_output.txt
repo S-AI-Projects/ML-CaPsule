@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "<stdin>", line 3, in <module>
+AssertionError: deliberately changed expected result: actual=[1, 0] expected=[9, 9]
+deliberate_failure_exit=1
