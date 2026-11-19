@@ -1,0 +1,13 @@
+.....F
+======================================================================
+FAIL: test_training_mean_uses_only_training_rows_and_evaluates_held_out_mae (test_pipeline.TrainingMeanBaselineTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/var/folders/mx/3tssvxkn7bsc4d_5vkdp06l80000gn/T/r41-t053-failure-check-8wri39cz/r41-t053/test_pipeline.py", line 57, in test_training_mean_uses_only_training_rows_and_evaluates_held_out_mae
+    self.assertEqual(result["held_out_mae"], 99.0)
+AssertionError: 6.0 != 99.0
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.001s
+
+FAILED (failures=1)
