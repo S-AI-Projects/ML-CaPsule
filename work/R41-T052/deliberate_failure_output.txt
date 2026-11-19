@@ -1,0 +1,21 @@
+...F...
+======================================================================
+FAIL: test_manifest_is_exact_and_repeatable (test_pipeline.SplitManifestTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/var/folders/mx/3tssvxkn7bsc4d_5vkdp06l80000gn/T/r41-t052-failure-check-eis8uu8_/r41-t052/test_pipeline.py", line 41, in test_manifest_is_exact_and_repeatable
+    self.assertEqual(first, expected)
+AssertionError: {'sch[71 chars]'r1', 'r2', 'r3', 'r4'], 'validation': ['r5'], 'test': ['r6']}} != {'sch[71 chars]'r1', 'r2', 'r3'], 'validation': ['r5'], 'test': ['r6']}}
+  {'schema_version': 'r41-t052.split.v1',
+   'seed': 42,
+   'split_ids': {'test': ['r6'],
+-                'train': ['r1', 'r2', 'r3', 'r4'],
+?                                          ------
+
++                'train': ['r1', 'r2', 'r3'],
+                 'validation': ['r5']}}
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.001s
+
+FAILED (failures=1)

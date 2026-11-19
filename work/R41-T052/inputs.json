@@ -1,0 +1,12 @@
+{
+  "seed": 42,
+  "records": [
+    {"record_id": "r1", "x1": 0, "x2": 1, "target": 1},
+    {"record_id": "r2", "x1": 1, "x2": 1, "target": 3},
+    {"record_id": "r3", "x1": 2, "x2": 1, "target": 5},
+    {"record_id": "r4", "x1": 3, "x2": 1, "target": 7},
+    {"record_id": "r5", "x1": 4, "x2": 1, "target": 9},
+    {"record_id": "r6", "x1": 5, "x2": 1, "target": 11}
+  ],
+  "contamination_fixture": "course-labs/r41-t052/contaminated_manifest.json"
+}
