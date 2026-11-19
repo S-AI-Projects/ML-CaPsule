@@ -47,6 +47,12 @@
 
 > 💡 **No mentor? No problem.** Learn by building, become interview-ready, and grow with a thriving open-source community.
 
+### Course Laboratory
+
+- [R41-T053: Training-mean regression baseline](./course-labs/r41-t053/README.md) -
+  A bounded, offline, simulated formula fixture for held-out baseline
+  evaluation.
+
 <br>
 
 <table align="center">

@@ -1,0 +1,17 @@
+{
+  "split_ids": {
+    "train": ["r1", "r2", "r3", "r4"],
+    "validation": ["r5"],
+    "test": ["r6"]
+  },
+  "training_mean": 4.0,
+  "validation_predictions": {
+    "r5": 4.0
+  },
+  "test_predictions": {
+    "r6": 4.0
+  },
+  "validation_mae": 5.0,
+  "test_mae": 7.0,
+  "held_out_mae": 6.0
+}

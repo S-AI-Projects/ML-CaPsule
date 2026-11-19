@@ -1,0 +1,9 @@
+{
+  "seed": 42,
+  "split_ids": {
+    "train": ["r1", "r2", "r3", "r4", "r5"],
+    "validation": ["r5"],
+    "test": ["r6"]
+  },
+  "description": "Deliberately invalid: held-out record r5 is included in training."
+}
