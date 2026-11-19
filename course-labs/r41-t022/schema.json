@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AbaloneRegressionFixtureContract",
+  "description": "Schema definition for Abalone age regression deterministic formula fixture (Task R41-T022)",
+  "type": "object",
+  "required": ["record_id", "x1", "x2", "target"],
+  "properties": {
+    "record_id": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Unique record identifier (e.g. r1..r6)"
+    },
+    "group_id": {
+      "type": "string",
+      "description": "Optional group/user identifier for group isolation"
+    },
+    "timestamp": {
+      "type": "integer",
+      "description": "Optional chronological timestamp or sequence index"
+    },
+    "x1": {
+      "type": "number",
+      "description": "Primary feature variable in {0, 1, 2, 3, 4, 5}"
+    },
+    "x2": {
+      "type": "number",
+      "description": "Constant secondary feature (1.0)"
+    },
+    "target": {
+      "type": "number",
+      "description": "Deterministic regression target following formula target = 2 * x1 + 1"
+    },
+    "split": {
+      "type": "string",
+      "enum": ["train", "validation", "test"],
+      "description": "Deterministic split assignment"
+    }
+  },
+  "additionalProperties": true
+}

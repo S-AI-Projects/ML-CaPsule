@@ -233,6 +233,8 @@ Multidisciplinary field combining statistics, ML, computing, and domain expertis
 | 6 | **Medical Cost** | Insurance charge prediction | ⭐ | [Kaggle](https://www.kaggle.com/datasets/mirichoi0218/insurance) |
 | 7 | **Bike Sharing Demand** | Hourly rental counts | ⭐⭐ | [Kaggle](https://www.kaggle.com/c/bike-sharing-demand) |
 
+> **Pipeline verification only:** [Abalone age – regression split manifest](course-labs/r41-t022/README.md) defines a deterministic leakage-free split on six simulated rows, not real Abalone observations or performance evidence.
+
 ### 🟡 NLP
 
 | # | Dataset | Description | Level | Download |
@@ -964,3 +966,6 @@ Start with beginner-friendly projects, then move to intermediate and advanced on
 | [Zomato Restaurant & Price EDA](Zomato%20Restaurant%20&%20Price%20EDA) | 🟢 Beginner | 1-3 hours |
 </details>
 <!-- Projects end -->
+
+- [R41-T022: Prevent split leakage: Abalone age – regression](course-labs/r41-t022/README.md)
+

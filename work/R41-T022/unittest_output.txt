@@ -1,0 +1,25 @@
+test_chronological_time_series_order_and_leakage_rejection (test_pipeline.TestAbaloneSplitManifest.test_chronological_time_series_order_and_leakage_rejection)
+Verify time-series chronological monotonicity and rejection of future-to-past leakage. ... ok
+test_deliberate_mutation_failure (test_pipeline.TestAbaloneSplitManifest.test_deliberate_mutation_failure)
+Verify check fails when an expected target is deliberately altered. ... ok
+test_environment_info_recorded (test_pipeline.TestAbaloneSplitManifest.test_environment_info_recorded)
+Verify environment versions capture Python and OS. ... ok
+test_fixture_six_synthetic_rows_and_deterministic_formula (test_pipeline.TestAbaloneSplitManifest.test_fixture_six_synthetic_rows_and_deterministic_formula)
+Verify fixture has 6 synthetic rows with x1 in [0..5], x2=1, and target=2*x1+1. ... ok
+test_group_leakage_rejected (test_pipeline.TestAbaloneSplitManifest.test_group_leakage_rejected)
+Verify manifest leaking group IDs across train and validation splits is rejected. ... ok
+test_intentionally_overlapping_ids_rejected (test_pipeline.TestAbaloneSplitManifest.test_intentionally_overlapping_ids_rejected)
+Verify manifest with overlapping record IDs across splits is rejected. ... ok
+test_linear_regression_exact_parameter_recovery (test_pipeline.TestAbaloneSplitManifest.test_linear_regression_exact_parameter_recovery)
+Verify CPU-only linear regression fits slope=2, intercept=1 and recovers targets with 0 MSE. ... ok
+test_manifest_partition_assignments (test_pipeline.TestAbaloneSplitManifest.test_manifest_partition_assignments)
+Verify exact record IDs assigned to each split: train r1..r4, validation r5, test r6. ... ok
+test_repeated_runs_produce_same_manifest (test_pipeline.TestAbaloneSplitManifest.test_repeated_runs_produce_same_manifest)
+Verify deterministic generation reproduces the identical manifest across repeated runs. ... ok
+test_train_val_test_sets_disjoint_and_complete (test_pipeline.TestAbaloneSplitManifest.test_train_val_test_sets_disjoint_and_complete)
+Verify train, validation, and test sets are strictly disjoint and have complete coverage. ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.001s
+
+OK
