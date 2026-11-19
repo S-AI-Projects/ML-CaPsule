@@ -47,6 +47,12 @@
 
 > 💡 **No mentor? No problem.** Learn by building, become interview-ready, and grow with a thriving open-source community.
 
+### Course Laboratory
+
+- [R41-T056: Classification pipeline smoke fixture](./course-labs/r41-t056/README.md) -
+  A bounded, offline, simulated decision-stump example with a fixed
+  group-stratified split.
+
 <br>
 
 <table align="center">

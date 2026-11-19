@@ -1,0 +1,38 @@
+{
+  "expected": {
+    "split_ids": {
+      "train": ["r1", "r2", "r5", "r6"],
+      "validation": ["r3", "r7"],
+      "test": ["r0", "r4"]
+    },
+    "predictions": {
+      "r3": 0,
+      "r7": 1,
+      "r0": 0,
+      "r4": 1
+    },
+    "prediction_shape": [4],
+    "loss": 0.0,
+    "training_loss": 0.0,
+    "step_count": 3,
+    "training_epochs": 1
+  },
+  "actual": {
+    "split_ids": {
+      "train": ["r1", "r2", "r5", "r6"],
+      "validation": ["r3", "r7"],
+      "test": ["r0", "r4"]
+    },
+    "predictions": {
+      "r3": 0,
+      "r7": 1,
+      "r0": 0,
+      "r4": 1
+    },
+    "prediction_shape": [4],
+    "loss": 0.0,
+    "training_loss": 0.0,
+    "step_count": 3,
+    "training_epochs": 1
+  }
+}
