@@ -1,0 +1,12 @@
+{
+  "schema": "r41-t058.predictions.v1",
+  "description": "One deliberately incorrect assignment is injected for report verification.",
+  "predictions": [
+    {"record_id": "p1", "predicted_value": 0},
+    {"record_id": "p2", "predicted_value": 0},
+    {"record_id": "p3", "predicted_value": 0},
+    {"record_id": "p4", "predicted_value": 1},
+    {"record_id": "p5", "predicted_value": 1},
+    {"record_id": "p6", "predicted_value": 0}
+  ]
+}
