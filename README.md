@@ -47,6 +47,12 @@
 
 > 💡 **No mentor? No problem.** Learn by building, become interview-ready, and grow with a thriving open-source community.
 
+### Course Laboratory
+
+- [R41-T055: Training-only preprocessing fixture](./course-labs/r41-t055/README.md) -
+  A bounded, offline, simulated clustering example that retains scaler
+  parameters fitted only on training data.
+
 <br>
 
 <table align="center">
