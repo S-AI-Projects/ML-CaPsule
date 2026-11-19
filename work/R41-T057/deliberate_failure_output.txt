@@ -1,0 +1,19 @@
+...F...
+======================================================================
+FAIL: test_saved_and_reloaded_config_recreates_splits_and_predictions (test_pipeline.PipelineConfigTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/var/folders/mx/3tssvxkn7bsc4d_5vkdp06l80000gn/T/r41-t057-failure-check-dn2zay0n/r41-t057/test_pipeline.py", line 49, in test_saved_and_reloaded_config_recreates_splits_and_predictions
+    self.assertEqual(
+AssertionError: {'d7': 14, 'd8': 14, 'd9': 14, 'd10': 14} != {'d7': 999, 'd8': 14, 'd9': 14, 'd10': 14}
+- {'d10': 14, 'd7': 14, 'd8': 14, 'd9': 14}
+?                   ^^
+
++ {'d10': 14, 'd7': 999, 'd8': 14, 'd9': 14}
+?                   ^^^
+
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.003s
+
+FAILED (failures=1)
