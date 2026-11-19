@@ -1,0 +1,13 @@
+....F.
+======================================================================
+FAIL: test_report_contains_only_the_injected_wrong_prediction (test_pipeline.PipelineTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/var/folders/mx/3tssvxkn7bsc4d_5vkdp06l80000gn/T/r41-t058-failure-check-2z7vqvf1/r41-t058/test_pipeline.py", line 58, in test_report_contains_only_the_injected_wrong_prediction
+    self.assertEqual(report["summary"]["error_count"], len(report["rows"]) + 1)
+AssertionError: 1 != 2
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.001s
+
+FAILED (failures=1)

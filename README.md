@@ -47,6 +47,12 @@
 
 > 💡 **No mentor? No problem.** Learn by building, become interview-ready, and grow with a thriving open-source community.
 
+### Course Laboratory
+
+- [R41-T058: Clustering error-analysis fixture](./course-labs/r41-t058/README.md) -
+  A bounded, offline, simulated clustering example with a deliberately
+  incorrect prediction and a tested error report.
+
 <br>
 
 <table align="center">
