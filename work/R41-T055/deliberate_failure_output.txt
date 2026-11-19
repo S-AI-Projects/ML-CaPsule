@@ -1,0 +1,13 @@
+.F....
+======================================================================
+FAIL: test_fitted_scaler_uses_only_training_ids_and_transforms_with_float64_shape (test_pipeline.PreprocessingContractTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/var/folders/mx/3tssvxkn7bsc4d_5vkdp06l80000gn/T/r41-t055-failure-check-pozzwd5b/r41-t055/test_pipeline.py", line 80, in test_fitted_scaler_uses_only_training_ids_and_transforms_with_float64_shape
+    self.assertAlmostEqual(actual, expected, places=12)
+AssertionError: -1.1766968108291043 != 999.0 within 12 places (1000.1766968108291 difference)
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.001s
+
+FAILED (failures=1)

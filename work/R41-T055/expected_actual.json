@@ -1,0 +1,24 @@
+{
+  "split_ids": {
+    "train": ["p4", "p2", "p3", "p5"],
+    "validation": ["p1"],
+    "test": ["p6"]
+  },
+  "fitted_parameters": {
+    "training_ids": ["p4", "p2", "p3", "p5"],
+    "feature_order": ["x1", "x2"],
+    "mean": [2.75, 3.0],
+    "scale": [2.277608394786075, 2.5495097567963922]
+  },
+  "centroid_assignments": [0, 0, 0, 1, 1, 1],
+  "held_out_transform": {
+    "record_ids": ["p1", "p6"],
+    "values": [
+      [-1.2074068598865937, -1.1766968108291043],
+      [1.4269353798659745, 0.7844645405527362]
+    ],
+    "dtype": "float64",
+    "shape": [2, 2]
+  },
+  "contaminated_split_rejected": true
+}
