@@ -1,0 +1,16 @@
+{
+  "schema_version": "r41-t057.config.v1",
+  "seed": 42,
+  "feature_order": [
+    "value"
+  ],
+  "split_ids": {
+    "train": ["d1", "d2", "d3", "d4", "d5", "d6"],
+    "validation": ["d7", "d8"],
+    "test": ["d9", "d10"]
+  },
+  "algorithm": {
+    "name": "last_value",
+    "window_size": 1
+  }
+}

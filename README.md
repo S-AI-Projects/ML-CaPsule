@@ -47,6 +47,12 @@
 
 > 💡 **No mentor? No problem.** Learn by building, become interview-ready, and grow with a thriving open-source community.
 
+### Course Laboratory
+
+- [R41-T057: Time-series configuration fixture](./course-labs/r41-t057/README.md) -
+  A bounded, offline, simulated forecasting component with strict
+  serializable configuration and chronological splits.
+
 <br>
 
 <table align="center">

@@ -1,0 +1,31 @@
+{
+  "expected": {
+    "split_ids": {
+      "train": ["d1", "d2", "d3", "d4", "d5", "d6"],
+      "validation": ["d7", "d8"],
+      "test": ["d9", "d10"]
+    },
+    "predictions": {
+      "d7": 14,
+      "d8": 14,
+      "d9": 14,
+      "d10": 14
+    }
+  },
+  "actual": {
+    "split_ids": {
+      "train": ["d1", "d2", "d3", "d4", "d5", "d6"],
+      "validation": ["d7", "d8"],
+      "test": ["d9", "d10"]
+    },
+    "predictions": {
+      "d7": 14,
+      "d8": 14,
+      "d9": 14,
+      "d10": 14
+    }
+  },
+  "saved_config_reloaded": true,
+  "unknown_field_rejected": true,
+  "incompatible_feature_shape_rejected": true
+}
