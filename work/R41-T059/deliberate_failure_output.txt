@@ -1,0 +1,19 @@
+...F
+======================================================================
+FAIL: test_record_permutation_preserves_forecasts_after_id_alignment (test_pipeline.PipelineTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/var/folders/mx/3tssvxkn7bsc4d_5vkdp06l80000gn/T/r41-t059-failure-check-gtr9e41p/r41-t059/test_pipeline.py", line 41, in test_record_permutation_preserves_forecasts_after_id_alignment
+    self.assertEqual(expected, {"d7": 999, "d8": 14, "d9": 14, "d10": 14})
+AssertionError: {'d7': 14, 'd8': 14, 'd9': 14, 'd10': 14} != {'d7': 999, 'd8': 14, 'd9': 14, 'd10': 14}
+- {'d10': 14, 'd7': 14, 'd8': 14, 'd9': 14}
+?                   ^^
+
++ {'d10': 14, 'd7': 999, 'd8': 14, 'd9': 14}
+?                   ^^^
+
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.001s
+
+FAILED (failures=1)

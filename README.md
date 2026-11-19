@@ -47,6 +47,13 @@
 
 > 💡 **No mentor? No problem.** Learn by building, become interview-ready, and grow with a thriving open-source community.
 
+### Course Laboratory
+
+- [R41-T059: Melbourne temperature forecasting robustness fixture](./course-labs/r41-t059/README.md) -
+  A bounded, offline, simulated time-series verification component. It keeps
+  chronological splits and checks prediction stability after ID-aligned input
+  reordering.
+
 <br>
 
 <table align="center">
