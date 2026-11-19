@@ -1,0 +1,35 @@
+{
+  "split_ids": {
+    "train": ["r1", "r2", "r3", "r4"],
+    "validation": ["r5"],
+    "test": ["r6"]
+  },
+  "diagnostics": [
+    {
+      "record_id": null,
+      "row_index": 0,
+      "field": "record_id",
+      "reason": "missing_required_field"
+    },
+    {
+      "record_id": "r2",
+      "row_index": 1,
+      "field": "x1",
+      "reason": "expected_numeric_scalar"
+    },
+    {
+      "record_id": "r3",
+      "row_index": 2,
+      "field": "x2",
+      "reason": "tensor_or_vector_not_supported"
+    },
+    {
+      "record_id": "r5",
+      "row_index": 5,
+      "field": "record_id",
+      "reason": "duplicate_record_id"
+    }
+  ],
+  "input_count_on_failure": 6,
+  "invalid_rows_silently_dropped": false
+}

@@ -1,0 +1,16 @@
+...F..
+======================================================================
+FAIL: test_missing_record_id_reports_row_field_and_reason (test_pipeline.DatasetContractTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/var/folders/mx/3tssvxkn7bsc4d_5vkdp06l80000gn/T/r41-t051-failure-check-5gx3eqvs/r41-t051/test_pipeline.py", line 52, in test_missing_record_id_reports_row_field_and_reason
+    self.assertEqual(error["reason"], "different_reason")
+AssertionError: 'missing_required_field' != 'different_reason'
+- missing_required_field
++ different_reason
+
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.001s
+
+FAILED (failures=1)
