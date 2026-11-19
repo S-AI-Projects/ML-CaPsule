@@ -1,0 +1,9 @@
+{
+  "schema_version": "r41-t052.split.v1",
+  "seed": 42,
+  "split_ids": {
+    "train": ["r1", "r2", "r3", "r4"],
+    "validation": ["r5"],
+    "test": ["r6"]
+  }
+}

@@ -47,6 +47,12 @@
 
 > 💡 **No mentor? No problem.** Learn by building, become interview-ready, and grow with a thriving open-source community.
 
+### Course Laboratory
+
+- [R41-T052: Deterministic split manifest fixture](./course-labs/r41-t052/README.md) -
+  A bounded, offline, simulated regression fixture with explicit leakage
+  checks for IDs, groups, and time.
+
 <br>
 
 <table align="center">

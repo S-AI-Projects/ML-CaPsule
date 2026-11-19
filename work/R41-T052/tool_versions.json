@@ -1,0 +1,6 @@
+{
+  "python": "3.9.6",
+  "platform": "Darwin",
+  "dependencies": "Python standard library only",
+  "test_command": "python3 -m unittest discover -s course-labs/r41-t052 -p \"test_*.py\""
+}
