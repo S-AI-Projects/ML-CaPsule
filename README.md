@@ -257,6 +257,8 @@ Multidisciplinary field combining statistics, ML, computing, and domain expertis
 | 6 | **Intel Image Classification** | 6 natural scene categories | ⭐⭐ | [Kaggle](https://www.kaggle.com/datasets/puneet6060/intel-image-classification) |
 | 7 | **Chest X-Ray Pneumonia** | Pneumonia detection | ⭐⭐ | [Kaggle](https://www.kaggle.com/datasets/paultimothymooney/chest-xray-pneumonia) |
 
+> **Pipeline verification only:** [MNIST – k-NN baseline data contract validator](course-labs/r41-t021/README.md) validates input schemas on six 4×4 synthetic images, not real MNIST observations or performance evidence.
+
 ### 🟣 Clustering / Unsupervised
 
 | # | Dataset | Description | Level | Download |
@@ -964,3 +966,6 @@ Start with beginner-friendly projects, then move to intermediate and advanced on
 | [Zomato Restaurant & Price EDA](Zomato%20Restaurant%20&%20Price%20EDA) | 🟢 Beginner | 1-3 hours |
 </details>
 <!-- Projects end -->
+
+- [R41-T021: Validate data contract: MNIST – k-NN baseline](course-labs/r41-t021/README.md)
+

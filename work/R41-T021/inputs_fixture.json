@@ -1,0 +1,93 @@
+{
+  "metadata": {
+    "task_id": "R41-T021",
+    "project_section": "MNIST – k-NN baseline",
+    "data_origin": "SYNTHETIC_PIPELINE_VERIFICATION_ONLY",
+    "disclaimer": "Simulated offline CPU-only fixture for pipeline verification only; NOT observations from the named real MNIST dataset and NOT evidence of real-world or clinical performance.",
+    "image_dimensions": [4, 4],
+    "total_records": 6,
+    "classes": {
+      "0": "all-zero 4x4 grayscale image",
+      "1": "white diagonal (255) 4x4 grayscale image"
+    },
+    "split_design": {
+      "train": ["rec_01", "rec_04"],
+      "validation": ["rec_02", "rec_05"],
+      "test": ["rec_03", "rec_06"]
+    }
+  },
+  "records": [
+    {
+      "record_id": "rec_01",
+      "group_id": "grp_0",
+      "pixels": [
+        [0, 0, 0, 0],
+        [0, 0, 0, 0],
+        [0, 0, 0, 0],
+        [0, 0, 0, 0]
+      ],
+      "label": 0,
+      "split": "train"
+    },
+    {
+      "record_id": "rec_02",
+      "group_id": "grp_0",
+      "pixels": [
+        [0, 0, 0, 0],
+        [0, 0, 0, 0],
+        [0, 0, 0, 0],
+        [0, 0, 0, 0]
+      ],
+      "label": 0,
+      "split": "validation"
+    },
+    {
+      "record_id": "rec_03",
+      "group_id": "grp_0",
+      "pixels": [
+        [0, 0, 0, 0],
+        [0, 0, 0, 0],
+        [0, 0, 0, 0],
+        [0, 0, 0, 0]
+      ],
+      "label": 0,
+      "split": "test"
+    },
+    {
+      "record_id": "rec_04",
+      "group_id": "grp_1",
+      "pixels": [
+        [255, 0, 0, 0],
+        [0, 255, 0, 0],
+        [0, 0, 255, 0],
+        [0, 0, 0, 255]
+      ],
+      "label": 1,
+      "split": "train"
+    },
+    {
+      "record_id": "rec_05",
+      "group_id": "grp_1",
+      "pixels": [
+        [255, 0, 0, 0],
+        [0, 255, 0, 0],
+        [0, 0, 255, 0],
+        [0, 0, 0, 255]
+      ],
+      "label": 1,
+      "split": "validation"
+    },
+    {
+      "record_id": "rec_06",
+      "group_id": "grp_1",
+      "pixels": [
+        [255, 0, 0, 0],
+        [0, 255, 0, 0],
+        [0, 0, 255, 0],
+        [0, 0, 0, 255]
+      ],
+      "label": 1,
+      "split": "test"
+    }
+  ]
+}

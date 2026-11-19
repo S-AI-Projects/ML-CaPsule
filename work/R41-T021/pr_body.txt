@@ -1,0 +1,38 @@
+Description
+Implements a strict schema validator for image input fields (`record_id`, `group_id`, `pixels`, `label`) for the MNIST – k-NN baseline teaching component. Validates unique identifiers, non-empty text, numeric labels, and 4×4 image tensor bounds without silently dropping records. Includes a 6-row synthetic smoke fixture and a bounded CPU-only k-NN baseline.
+
+Related Issue
+Fixes: #21
+
+Type of Change
+- [x] New Feature
+- [x] Tests
+- [x] Documentation
+
+Changes Made
+- Defined image schema in `course-labs/r41-t021/schema.json` enforcing required fields (`record_id`, `group_id`, `pixels`, `label`).
+- Created 6-row synthetic 4×4 image fixture (`course-labs/r41-t021/fixture.json`) with 3 all-zero images (label 0) and 3 white diagonal images (label 1).
+- Implemented `validate_records()` and `KNNImageClassifier` in `course-labs/r41-t021/pipeline.py` diagnosing missing fields, duplicate IDs, malformed text, non-integer/bool labels, and tensor dimension errors without dropping records.
+- Added comprehensive unit test suite in `course-labs/r41-t021/test_pipeline.py` (10 tests passing).
+- Documented data contract, stratified split design, and pipeline limits in `course-labs/r41-t021/README.md` and linked in root `README.md`.
+- Recorded verification evidence (tool versions, expected vs actual outputs, unittest output, mutation check) in `work/R41-T021/`.
+
+Screenshots / Recordings
+N/A (Offline CPU-only CLI test verification)
+
+Testing
+Executed local unittest suite:
+`python3 -m unittest discover -s course-labs/r41-t021 -p "test_*.py" -v`
+Result: Ran 10 tests in 0.001s ... OK
+
+Checklist
+- [x] I have tested my changes locally.
+- [x] I have added or updated tests, if needed.
+- [x] I have updated documentation, if needed.
+- [x] I have followed the project's coding guidelines.
+- [x] I have run the relevant tests and checks.
+- [x] I have addressed previous review feedback, if applicable.
+
+Additional Notes
+All results use offline synthetic 4×4 fixtures strictly for pipeline verification and data contract validation. They are not observations from the named real MNIST dataset and are not evidence of real-world or clinical performance.
+Student: Sharon Robinson | Task: R41-T021 (1 of 10) | Working branch: student/e26b07f0819
