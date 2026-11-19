@@ -1,0 +1,10 @@
+{
+  "valid_fixture": "course-labs/r41-t051/fixture.json",
+  "seed": 42,
+  "invalid_cases": [
+    {"record_id": null, "row_index": 0, "field": "record_id", "input": "missing"},
+    {"record_id": "r2", "row_index": 1, "field": "x1", "input": "one"},
+    {"record_id": "r3", "row_index": 2, "field": "x2", "input": [0, 1]},
+    {"record_id": "r5", "row_index": 5, "field": "record_id", "input": "duplicate"}
+  ]
+}

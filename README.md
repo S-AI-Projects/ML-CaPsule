@@ -47,6 +47,12 @@
 
 > 💡 **No mentor? No problem.** Learn by building, become interview-ready, and grow with a thriving open-source community.
 
+### Course Laboratory
+
+- [R41-T051: Regression dataset contract fixture](./course-labs/r41-t051/README.md) -
+  A bounded, offline, simulated formula fixture with structured validation
+  diagnostics.
+
 <br>
 
 <table align="center">
