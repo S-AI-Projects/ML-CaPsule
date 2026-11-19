@@ -47,6 +47,12 @@
 
 > 💡 **No mentor? No problem.** Learn by building, become interview-ready, and grow with a thriving open-source community.
 
+### Course Laboratory
+
+- [R41-T054: Explicit metric verification fixture](./course-labs/r41-t054/README.md) -
+  A bounded, offline, simulated text fixture documenting binary, macro, and
+  regression metric conventions.
+
 <br>
 
 <table align="center">
