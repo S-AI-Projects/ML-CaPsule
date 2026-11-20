@@ -1,0 +1,20 @@
+{
+  "metadata": {
+    "task_id": "R41-T024",
+    "project_section": "Loan Approval – Decision Tree",
+    "fixture_type": "SYNTHETIC – deterministic classification fixture; NOT observations from the named real Loan Approval dataset",
+    "schema_version": "1.0.0",
+    "data_disclaimer": "These rows are synthetically generated for pipeline verification only. They are not observations from any real loan approval dataset and must not be cited as evidence of real-world or clinical performance.",
+    "split_design": "Fixed stratified split preserving class balance (2 label-0 + 2 label-1 in train; 1+1 in validation; 1+1 in test). Groups g1/g2 (label=0) and g3/g4 (label=1); no group spans two splits."
+  },
+  "records": [
+    {"record_id": "r1", "group_id": "g1", "x1": 0, "x2": 1, "label": 0, "split": "train"},
+    {"record_id": "r2", "group_id": "g1", "x1": 1, "x2": 1, "label": 0, "split": "train"},
+    {"record_id": "r3", "group_id": "g2", "x1": 2, "x2": 1, "label": 0, "split": "validation"},
+    {"record_id": "r4", "group_id": "g2", "x1": 3, "x2": 1, "label": 0, "split": "test"},
+    {"record_id": "r5", "group_id": "g3", "x1": 4, "x2": 1, "label": 1, "split": "train"},
+    {"record_id": "r6", "group_id": "g3", "x1": 5, "x2": 1, "label": 1, "split": "train"},
+    {"record_id": "r7", "group_id": "g4", "x1": 6, "x2": 1, "label": 1, "split": "validation"},
+    {"record_id": "r8", "group_id": "g4", "x1": 7, "x2": 1, "label": 1, "split": "test"}
+  ]
+}

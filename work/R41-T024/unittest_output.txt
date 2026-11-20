@@ -1,0 +1,25 @@
+test_canonical_precision_recall_half (test_pipeline.TestClassificationEvaluation.test_canonical_precision_recall_half)
+truth=[1,1,0,0], prediction=[1,0,1,0] ... ok
+test_confusion_matrix_canonical (test_pipeline.TestClassificationEvaluation.test_confusion_matrix_canonical)
+Verify TP=1, FP=1, FN=1, TN=1 for the canonical example. ... ok
+test_deliberate_mutation_failure (test_pipeline.TestClassificationEvaluation.test_deliberate_mutation_failure)
+Deliberately mutate the expected precision to confirm the test framework ... ok
+test_environment_info_recorded (test_pipeline.TestClassificationEvaluation.test_environment_info_recorded)
+Environment info dict must include python_version and task_id. ... ok
+test_fixture_eight_synthetic_rows (test_pipeline.TestClassificationEvaluation.test_fixture_eight_synthetic_rows)
+Fixture must contain exactly 8 rows with x1=0..7, x2=1, correct labels. ... ok
+test_macro_averaging_canonical (test_pipeline.TestClassificationEvaluation.test_macro_averaging_canonical)
+truth=[1,1,0,0], prediction=[1,0,1,0] ... ok
+test_perfect_prediction (test_pipeline.TestClassificationEvaluation.test_perfect_prediction)
+truth == prediction → precision = recall = f1 = 1.0. ... ok
+test_stratified_split_separation (test_pipeline.TestClassificationEvaluation.test_stratified_split_separation)
+Train=4, val=2, test=2; each split has balanced class labels. ... ok
+test_zero_denominator_policy_nan (test_pipeline.TestClassificationEvaluation.test_zero_denominator_policy_nan)
+All predictions are 0 → precision denominator = 0. ... ok
+test_zero_denominator_policy_zero (test_pipeline.TestClassificationEvaluation.test_zero_denominator_policy_zero)
+All predictions are 0 → no predicted positives → precision denominator = 0. ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.010s
+
+OK
