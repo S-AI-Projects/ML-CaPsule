@@ -1,0 +1,58 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "R41-T024 Classification Fixture Schema",
+  "description": "Schema for the Loan Approval – Decision Tree synthetic classification fixture. These are synthetic rows, not observations from the named real Loan Approval dataset.",
+  "version": "1.0.0",
+  "type": "object",
+  "required": ["records"],
+  "properties": {
+    "records": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["record_id", "group_id", "x1", "x2", "label", "split"],
+        "additionalProperties": false,
+        "properties": {
+          "record_id": {
+            "type": "string",
+            "pattern": "^r[0-9]+$",
+            "description": "Stable unique row identifier."
+          },
+          "group_id": {
+            "type": "string",
+            "pattern": "^g[0-9]+$",
+            "description": "Stable group identifier for stratified splitting."
+          },
+          "x1": {
+            "type": "integer",
+            "minimum": 0,
+            "description": "Synthetic feature 1 (integer index 0–7)."
+          },
+          "x2": {
+            "type": "integer",
+            "enum": [1],
+            "description": "Synthetic feature 2 (constant = 1)."
+          },
+          "label": {
+            "type": "integer",
+            "enum": [0, 1],
+            "description": "Binary class label (0 = negative, 1 = positive)."
+          },
+          "split": {
+            "type": "string",
+            "enum": ["train", "validation", "test"],
+            "description": "Fixed stratified split assignment."
+          }
+        }
+      }
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "task_id": {"type": "string"},
+        "fixture_type": {"type": "string"},
+        "data_disclaimer": {"type": "string"}
+      }
+    }
+  }
+}
