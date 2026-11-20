@@ -1,0 +1,41 @@
+{
+  "task_id": "R41-T023",
+  "project_section": "Auto MPG \u2013 regression",
+  "baseline_type": "TrainingMeanBaseline (training-mean predictor)",
+  "fixture": {
+    "formula_satisfied": true,
+    "total_records": 6,
+    "train_ids": ["r1", "r2", "r3", "r4"],
+    "validation_ids": ["r5"],
+    "test_ids": ["r6"]
+  },
+  "baseline_parameters": {
+    "training_mean": 4.0,
+    "train_targets": [1.0, 3.0, 5.0, 7.0]
+  },
+  "evaluation": {
+    "validation": {
+      "record_id": "r5",
+      "actual": 9.0,
+      "predicted": 4.0,
+      "mae": 5.0,
+      "mse": 25.0,
+      "rmse": 5.0
+    },
+    "test": {
+      "record_id": "r6",
+      "actual": 11.0,
+      "predicted": 4.0,
+      "mae": 7.0,
+      "mse": 49.0,
+      "rmse": 7.0
+    }
+  },
+  "oracle_contrast": {
+    "model": "LinearRegressionComparator",
+    "recovered_slope": 2.0,
+    "recovered_intercept": 1.0,
+    "validation_mse": 0.0,
+    "validation_mae": 0.0
+  }
+}
