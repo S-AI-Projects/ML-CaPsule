@@ -1,0 +1,25 @@
+test_baseline_parameters_use_only_training_data (test_pipeline.TestAutoMPGBaselineComparison.test_baseline_parameters_use_only_training_data)
+Verify baseline calculates the target mean strictly from training records (mean = 4.0). ... ok
+test_comparator_linear_regression_fit (test_pipeline.TestAutoMPGBaselineComparison.test_comparator_linear_regression_fit)
+Verify oracle linear model achieves MSE 0.0, demonstrating baseline contrast. ... ok
+test_deliberate_mutation_failure (test_pipeline.TestAutoMPGBaselineComparison.test_deliberate_mutation_failure)
+Verify test framework fails nonzero when an expected baseline metric is altered. ... ok
+test_environment_info_recorded (test_pipeline.TestAutoMPGBaselineComparison.test_environment_info_recorded)
+Verify runtime environment information is present. ... ok
+test_fit_on_empty_or_corrupted_records_raises_error (test_pipeline.TestAutoMPGBaselineComparison.test_fit_on_empty_or_corrupted_records_raises_error)
+Verify fitting on empty records or missing target raises ValueError. ... ok
+test_fixture_six_synthetic_rows_and_deterministic_formula (test_pipeline.TestAutoMPGBaselineComparison.test_fixture_six_synthetic_rows_and_deterministic_formula)
+Verify fixture contains six synthetic rows strictly generated via target = 2 * x1 + 1. ... ok
+test_held_out_test_evaluation (test_pipeline.TestAutoMPGBaselineComparison.test_held_out_test_evaluation)
+Verify evaluation on held-out test record r6 (actual 11.0, predicted 4.0, MAE 7.0, MSE 49.0). ... ok
+test_held_out_validation_evaluation (test_pipeline.TestAutoMPGBaselineComparison.test_held_out_validation_evaluation)
+Verify evaluation on held-out validation record r5 (actual 9.0, predicted 4.0, MAE 5.0, MSE 25.0). ... ok
+test_predict_without_fit_raises_error (test_pipeline.TestAutoMPGBaselineComparison.test_predict_without_fit_raises_error)
+Verify calling predict before fit raises RuntimeError. ... ok
+test_train_val_test_partition_assignments (test_pipeline.TestAutoMPGBaselineComparison.test_train_val_test_partition_assignments)
+Verify explicit split separation: train r1..r4, validation r5, test r6. ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.001s
+
+OK
