@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "R41-T047 simulated classification record",
+  "description": "An invented fixture record, not a Breast Cancer Wisconsin dataset observation.",
+  "type": "object",
+  "properties": {
+    "record_id": {"type": "string", "minLength": 1},
+    "group_id": {"type": "string", "minLength": 1},
+    "x1": {"type": "number"},
+    "x2": {"type": "number"},
+    "label": {"type": "integer", "enum": [0, 1]}
+  },
+  "required": ["record_id", "group_id", "x1", "x2", "label"],
+  "additionalProperties": false
+}

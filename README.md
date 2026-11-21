@@ -221,6 +221,10 @@ Multidisciplinary field combining statistics, ML, computing, and domain expertis
 | 7 | **Bank Marketing** | Term deposit subscription | ⭐⭐ | [UCI](https://archive.ics.uci.edu/ml/datasets/Bank+Marketing) |
 | 8 | **Wine Quality** | Good vs bad wine classification | ⭐ | [UCI](https://archive.ics.uci.edu/ml/datasets/wine+quality) |
 
+> **Pipeline verification only:** [Breast Cancer Wisconsin feature-selection
+> configuration](course-labs/r41-t047/README.md) uses eight synthetic rows; it
+> is not the named real dataset or clinical-performance evidence.
+
 ### 🔵 Regression
 
 > **Bounded dataset-contract example:** [Concrete-strength regression input
