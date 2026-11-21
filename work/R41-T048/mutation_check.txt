@@ -1,0 +1,5 @@
+Mutation check:
+- Temporarily changed the expected prediction for r6 from 12 to 13.
+- Command: python3 -m unittest discover -s course-labs/r41-t048 -p "test_*.py"
+- Result: non-zero exit (1); the concrete error-report equality assertion failed as expected.
+- Restored the checked-in expectation to 12; see mutated_expectation_failure.txt.

@@ -1,0 +1,19 @@
+{
+  "data_kind": "simulated_pipeline_verification",
+  "fixture_kind": "deterministic_formula",
+  "records": [
+    {"record_id": "r1", "split": "train", "expected_value": 1.0, "predicted_value": 1.0, "absolute_error": 0.0, "reason_category": "no_error"},
+    {"record_id": "r2", "split": "train", "expected_value": 3.0, "predicted_value": 3.0, "absolute_error": 0.0, "reason_category": "no_error"},
+    {"record_id": "r3", "split": "train", "expected_value": 5.0, "predicted_value": 5.0, "absolute_error": 0.0, "reason_category": "no_error"},
+    {"record_id": "r4", "split": "train", "expected_value": 7.0, "predicted_value": 7.0, "absolute_error": 0.0, "reason_category": "no_error"},
+    {"record_id": "r5", "split": "validation", "expected_value": 9.0, "predicted_value": 9.0, "absolute_error": 0.0, "reason_category": "no_error"},
+    {"record_id": "r6", "split": "test", "expected_value": 11.0, "predicted_value": 12.0, "absolute_error": 1.0, "reason_category": "overprediction"}
+  ],
+  "aggregates": {
+    "train": {"record_count": 4, "error_count": 0, "no_error_count": 4},
+    "validation": {"record_count": 1, "error_count": 0, "no_error_count": 1},
+    "test": {"record_count": 1, "error_count": 1, "no_error_count": 0}
+  },
+  "total_record_count": 6,
+  "total_error_count": 1
+}

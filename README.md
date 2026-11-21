@@ -242,6 +242,10 @@ Multidisciplinary field combining statistics, ML, computing, and domain expertis
 | 6 | **Medical Cost** | Insurance charge prediction | ⭐ | [Kaggle](https://www.kaggle.com/datasets/mirichoi0218/insurance) |
 | 7 | **Bike Sharing Demand** | Hourly rental counts | ⭐⭐ | [Kaggle](https://www.kaggle.com/c/bike-sharing-demand) |
 
+> **Pipeline verification only:** [Medical insurance costs error analysis](course-labs/r41-t048/README.md)
+> reports one deliberately injected error in a six-row synthetic formula
+> fixture; it is not evidence about real insurance costs.
+
 ### 🟡 NLP
 
 | # | Dataset | Description | Level | Download |

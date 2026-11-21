@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "R41-T048 deterministic formula regression record",
+  "description": "One simulated fixture record, not an insurance-cost observation.",
+  "type": "object",
+  "properties": {
+    "record_id": {"type": "string", "minLength": 1},
+    "x1": {"type": "number"},
+    "x2": {"type": "number"},
+    "target": {"type": "number"}
+  },
+  "required": ["record_id", "x1", "x2", "target"],
+  "additionalProperties": false
+}
