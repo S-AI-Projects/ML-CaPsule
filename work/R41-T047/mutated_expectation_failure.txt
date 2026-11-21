@@ -1,0 +1,23 @@
+....F.
+======================================================================
+FAIL: test_serialized_config_reloads_same_split_and_predictions (test_pipeline.ClassificationConfigurationTests.test_serialized_config_reloads_same_split_and_predictions)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/veer/ML-CaPsule-R41-T041/course-labs/r41-t047/test_pipeline.py", line 72, in test_serialized_config_reloads_same_split_and_predictions
+    self.assertEqual(actual["validation"], EXPECTED["validation"])
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: {'rec[31 chars]syn-006'], 'y_true': [0, 1], 'y_pred': [0, 1], 'accuracy': 1.0} != {'rec[31 chars]syn-006'], 'y_true': [0, 1], 'y_pred': [1, 1], 'accuracy': 1.0}
+  {'accuracy': 1.0,
+   'record_ids': ['bcw-syn-002', 'bcw-syn-006'],
+-  'y_pred': [0, 1],
+?             ^
+
++  'y_pred': [1, 1],
+?             ^
+
+   'y_true': [0, 1]}
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.001s
+
+FAILED (failures=1)

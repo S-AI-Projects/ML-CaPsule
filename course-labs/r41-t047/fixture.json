@@ -1,0 +1,15 @@
+{
+  "data_kind": "simulated",
+  "context": "Breast Cancer Wisconsin feature-selection pipeline fixture",
+  "description": "Eight invented rows for pipeline verification; none are observations from the Breast Cancer Wisconsin dataset.",
+  "records": [
+    {"record_id": "bcw-syn-001", "group_id": "bcw-group-001", "x1": 0, "x2": 1, "label": 0},
+    {"record_id": "bcw-syn-002", "group_id": "bcw-group-002", "x1": 1, "x2": 1, "label": 0},
+    {"record_id": "bcw-syn-003", "group_id": "bcw-group-003", "x1": 2, "x2": 1, "label": 0},
+    {"record_id": "bcw-syn-004", "group_id": "bcw-group-004", "x1": 3, "x2": 1, "label": 0},
+    {"record_id": "bcw-syn-005", "group_id": "bcw-group-005", "x1": 4, "x2": 1, "label": 1},
+    {"record_id": "bcw-syn-006", "group_id": "bcw-group-006", "x1": 5, "x2": 1, "label": 1},
+    {"record_id": "bcw-syn-007", "group_id": "bcw-group-007", "x1": 6, "x2": 1, "label": 1},
+    {"record_id": "bcw-syn-008", "group_id": "bcw-group-008", "x1": 7, "x2": 1, "label": 1}
+  ]
+}
