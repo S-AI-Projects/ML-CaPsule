@@ -1,0 +1,63 @@
+{
+  "algorithm": {
+    "distance": "euclidean",
+    "n_features": 1,
+    "name": "nearest_centroid",
+    "selector": "max_class_mean_gap",
+    "tie_break": "lower_label"
+  },
+  "centroids": {
+    "0": [
+      1.5
+    ],
+    "1": [
+      5.5
+    ]
+  },
+  "data_kind": "simulated_pipeline_verification",
+  "feature_order": [
+    "x1",
+    "x2"
+  ],
+  "schema_version": 1,
+  "seed": 47,
+  "selected_features": [
+    "x1"
+  ],
+  "test": {
+    "accuracy": 1.0,
+    "record_ids": [
+      "bcw-syn-003",
+      "bcw-syn-007"
+    ],
+    "y_pred": [
+      0,
+      1
+    ],
+    "y_true": [
+      0,
+      1
+    ]
+  },
+  "train_record_ids": [
+    "bcw-syn-001",
+    "bcw-syn-004",
+    "bcw-syn-005",
+    "bcw-syn-008"
+  ],
+  "validation": {
+    "accuracy": 1.0,
+    "record_ids": [
+      "bcw-syn-002",
+      "bcw-syn-006"
+    ],
+    "y_pred": [
+      0,
+      1
+    ],
+    "y_true": [
+      0,
+      1
+    ]
+  }
+}
