@@ -1,0 +1,15 @@
+..F...
+======================================================================
+FAIL: test_injected_wrong_prediction_is_reported_but_correct_predictions_are_not (test_pipeline.ErrorAnalysisTests.test_injected_wrong_prediction_is_reported_but_correct_predictions_are_not)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/veer/ML-CaPsule-R41-T041/course-labs/r41-t048/test_pipeline.py", line 62, in test_injected_wrong_prediction_is_reported_but_correct_predictions_are_not
+    self.assertEqual(report, EXPECTED)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+AssertionError: {'dat[878 chars]e': 12.0, 'absolute_error': 1.0, 'reason_categ[296 chars]': 1} != {'dat[878 chars]e': 13.0, 'absolute_error': 1.0, 'reason_categ[296 chars]': 1}
+Diff is 2134 characters long. Set self.maxDiff to None to see it.
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.001s
+
+FAILED (failures=1)
