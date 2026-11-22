@@ -1,0 +1,27 @@
+{
+  "data_kind": "simulated_pipeline_verification",
+  "fixture_kind": "deterministic_formula",
+  "seed": 49,
+  "coefficients": [
+    1.0,
+    2.0
+  ],
+  "train_record_ids": [
+    "r1",
+    "r2",
+    "r3",
+    "r4"
+  ],
+  "predictions": {
+    "r5": {
+      "target": 9.0,
+      "predicted": 9.0,
+      "absolute_error": 0.0
+    },
+    "r6": {
+      "target": 11.0,
+      "predicted": 11.0,
+      "absolute_error": 0.0
+    }
+  }
+}

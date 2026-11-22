@@ -245,6 +245,11 @@ Multidisciplinary field combining statistics, ML, computing, and domain expertis
 > **Pipeline verification only:** [Medical insurance costs error analysis](course-labs/r41-t048/README.md)
 > reports one deliberately injected error in a six-row synthetic formula
 > fixture; it is not evidence about real insurance costs.
+>
+> **Pipeline verification only:** [Avocado prices numeric-regression robustness
+> fixture](course-labs/r41-t049/README.md) uses six simulated formula rows to
+> verify ID-aligned record reordering and reject unsupported missing-field or
+> shape inputs; it is not evidence about real Avocado prices.
 
 ### 🟡 NLP
 
@@ -257,6 +262,8 @@ Multidisciplinary field combining statistics, ML, computing, and domain expertis
 | 5 | **Fake News** | Real vs fake articles | ⭐⭐ | [Kaggle](https://www.kaggle.com/datasets/clmentbisaillon/fake-and-real-news-dataset) |
 | 6 | **AG News** | 4-topic news classification | ⭐⭐ | [Hugging Face](https://huggingface.co/datasets/ag_news) |
 | 7 | **Quora Question Pairs** | Semantic equivalence detection | ⭐⭐⭐ | [Kaggle](https://www.kaggle.com/c/quora-question-pairs) |
+
+> **Pipeline verification only:** [Majority-class text baseline](course-labs/r41-t043/README.md) evaluates a training-only baseline on a separate six-row simulated fixture; it is not language-detection performance evidence.
 
 > **Pipeline fixture only:** [Deterministic text split manifest](course-labs/r41-t042/README.md) documents a six-row fictional fixture; it is not the IMDB corpus or evidence of real-world model performance.
 
