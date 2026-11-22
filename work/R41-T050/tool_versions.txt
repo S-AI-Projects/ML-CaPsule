@@ -1,0 +1,5 @@
+python=3.15.2
+platform=macOS-27.2.1-arm64-arm-64bit-Mach-O
+implementation=Python standard library only
+seed=50
+cpu_only=true

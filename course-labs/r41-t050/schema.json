@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "data_kind": "simulated",
+  "fixture_kind": "deterministic_timeseries",
+  "required": ["record_id", "timestamp", "value"],
+  "record_id": "non-empty unique string",
+  "timestamp": "ISO-8601 YYYY-MM-DD string",
+  "value": "finite number",
+  "splits": ["train", "validation", "test"],
+  "fixed_seed": 50,
+  "ordering_rule": "do not shuffle; train, validation, and test are consecutive by timestamp"
+}

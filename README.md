@@ -910,6 +910,10 @@ Start with beginner-friendly projects, then move to intermediate and advanced on
 | [R language](R%20language) | 🟡 Intermediate | 3-6 hours |
 | [railway_person_detection](railway_person_detection) | 🟡 Intermediate | 3-6 hours |
 | [Rainfall_Trend_Analysis_and_Forecasting](Rainfall_Trend_Analysis_and_Forecasting) | 🟡 Intermediate | 3-6 hours |
+
+> **Pipeline verification only:** [Indian rainfall saved-time-series interface](course-labs/r41-t050/README.md)
+> uses ten simulated consecutive rows to test JSON save/reload and schema validation;
+> it is not evidence about real Indian rainfall or forecast performance.
 | [Random forest from scratch](Random%20forest%20from%20scratch) | 🟡 Intermediate | 3-6 hours |
 | [Random forest test](Random%20forest%20test) | 🟡 Intermediate | 3-6 hours |
 | [Random Oversampler](Random%20Oversampler) | 🟡 Intermediate | 3-6 hours |

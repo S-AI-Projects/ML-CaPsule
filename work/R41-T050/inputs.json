@@ -1,0 +1,101 @@
+{
+  "fixture": {
+    "data_kind": "simulated",
+    "fixture_kind": "deterministic_timeseries",
+    "seed": 50,
+    "records": [
+      {
+        "record_id": "d1",
+        "timestamp": "2025-01-01",
+        "value": 10
+      },
+      {
+        "record_id": "d2",
+        "timestamp": "2025-01-02",
+        "value": 12
+      },
+      {
+        "record_id": "d3",
+        "timestamp": "2025-01-03",
+        "value": 11
+      },
+      {
+        "record_id": "d4",
+        "timestamp": "2025-01-04",
+        "value": 13
+      },
+      {
+        "record_id": "d5",
+        "timestamp": "2025-01-05",
+        "value": 15
+      },
+      {
+        "record_id": "d6",
+        "timestamp": "2025-01-06",
+        "value": 14
+      },
+      {
+        "record_id": "d7",
+        "timestamp": "2025-01-07",
+        "value": 16
+      },
+      {
+        "record_id": "d8",
+        "timestamp": "2025-01-08",
+        "value": 18
+      },
+      {
+        "record_id": "d9",
+        "timestamp": "2025-01-09",
+        "value": 17
+      },
+      {
+        "record_id": "d10",
+        "timestamp": "2025-01-10",
+        "value": 19
+      }
+    ],
+    "split_ids": {
+      "train": [
+        "d1",
+        "d2",
+        "d3",
+        "d4",
+        "d5",
+        "d6"
+      ],
+      "validation": [
+        "d7",
+        "d8"
+      ],
+      "test": [
+        "d9",
+        "d10"
+      ]
+    }
+  },
+  "record_ids": [
+    "d1",
+    "d2",
+    "d3",
+    "d4",
+    "d5",
+    "d6",
+    "d7",
+    "d8",
+    "d9",
+    "d10"
+  ],
+  "values": [
+    10,
+    12,
+    11,
+    13,
+    15,
+    14,
+    16,
+    18,
+    17,
+    19
+  ]
+}

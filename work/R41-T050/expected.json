@@ -1,0 +1,15 @@
+{
+  "data_kind": "simulated_pipeline_verification",
+  "fixture_kind": "deterministic_timeseries",
+  "seed": 50,
+  "forecast_value": 12.5,
+  "validation_record_ids": [
+    "d7",
+    "d8"
+  ],
+  "test_record_ids": [
+    "d9",
+    "d10"
+  ],
+  "before_after_tolerance": 1e-12
+}
