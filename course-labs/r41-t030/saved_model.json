@@ -1,0 +1,21 @@
+{
+  "artifact_format": "json",
+  "schema_version": "1.0.0",
+  "task_id": "R41-T030",
+  "model_type": "ols_linear_trend",
+  "seed": 42,
+  "origin_timestamp": "2026-01-01",
+  "train_end_timestamp": "2026-01-06",
+  "n_train_observations": 6,
+  "input_schema": {
+    "required_fields": [
+      "record_id",
+      "timestamp"
+    ],
+    "timestamp_format": "YYYY-MM-DD"
+  },
+  "parameters": {
+    "intercept": 10.285714285714285,
+    "slope": 0.8857142857142857
+  }
+}

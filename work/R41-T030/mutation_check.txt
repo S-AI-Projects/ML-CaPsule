@@ -1,0 +1,17 @@
+Mutation: altered EXPECTED_SLOPE from 31.0/35.0 to 5.0 in a temporary copy of test_pipeline.py
+Exit code: 1 (non-zero as required)
+
+.....F......
+======================================================================
+FAIL: test_fitted_ols_parameters_match_analytical_train_only_solution (test_pipeline.TestSavedArtifactReloadAndInference.test_fitted_ols_parameters_match_analytical_train_only_solution)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/var/folders/nn/ml4_14xj4yv42l87c003wt0w0000gn/T/tmpc943qvnm/r41-t030/test_pipeline.py", line 81, in test_fitted_ols_parameters_match_analytical_train_only_solution
+    self.assertAlmostEqual(self.artifact.slope, EXPECTED_SLOPE, places=12)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 0.8857142857142857 != 5.0 within 12 places (4.114285714285714 difference)
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.003s
+
+FAILED (failures=1)
