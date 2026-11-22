@@ -1,0 +1,24 @@
+Mutation: altered EXPECTED_VAL_PREDS from [0, 1] to [1, 0] in a temporary copy of test_pipeline.py
+Exit code: 1 (non-zero as required)
+
+.F................
+======================================================================
+FAIL: test_reconstructed_split_ids_and_predictions_match_expected (test_pipeline.TestConfigSerializationAndReproducibility.test_reconstructed_split_ids_and_predictions_match_expected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/var/folders/nn/ml4_14xj4yv42l87c003wt0w0000gn/T/tmperg4ptkd/r41-t027/test_pipeline.py", line 103, in test_reconstructed_split_ids_and_predictions_match_expected
+    self.assertEqual(run["splits"]["validation"]["predictions"], EXPECTED_VAL_PREDS)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Lists differ: [0, 1] != [1, 0]
+
+First differing element 0:
+0
+1
+
+- [0, 1]
++ [1, 0]
+
+----------------------------------------------------------------------
+Ran 18 tests in 0.015s
+
+FAILED (failures=1)

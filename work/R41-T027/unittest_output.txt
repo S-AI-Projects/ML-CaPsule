@@ -1,0 +1,25 @@
+$ python3 -m unittest discover -s course-labs/r41-t027 -p "test_*.py" -v
+test_environment_versions_are_recorded (test_pipeline.TestConfigSerializationAndReproducibility.test_environment_versions_are_recorded) ... ok
+test_reconstructed_split_ids_and_predictions_match_expected (test_pipeline.TestConfigSerializationAndReproducibility.test_reconstructed_split_ids_and_predictions_match_expected) ... ok
+test_roundtrip_json_file_reconstructs_identical_splits_and_predictions (test_pipeline.TestConfigSerializationAndReproducibility.test_roundtrip_json_file_reconstructs_identical_splits_and_predictions) ... ok
+test_mutated_expected_weight_fails_assertion (test_pipeline.TestDeliberateMutationGuard.test_mutated_expected_weight_fails_assertion) ... ok
+test_group_leakage_and_unknown_split_id_rejected (test_pipeline.TestIncompatibleInputShapeAndSplitIntegrity.test_group_leakage_and_unknown_split_id_rejected) ... ok
+test_incompatible_matrix_width_rejected (test_pipeline.TestIncompatibleInputShapeAndSplitIntegrity.test_incompatible_matrix_width_rejected) ... ok
+test_predict_before_fit_raises (test_pipeline.TestIncompatibleInputShapeAndSplitIntegrity.test_predict_before_fit_raises) ... ok
+test_swapped_missing_or_extra_record_features_rejected (test_pipeline.TestIncompatibleInputShapeAndSplitIntegrity.test_swapped_missing_or_extra_record_features_rejected) ... ok
+test_explicit_synthetic_labelling (test_pipeline.TestSyntheticFixtureContract.test_explicit_synthetic_labelling) ... ok
+test_literal_eight_rows_and_ids (test_pipeline.TestSyntheticFixtureContract.test_literal_eight_rows_and_ids) ... ok
+test_schema_matches_config_contract (test_pipeline.TestSyntheticFixtureContract.test_schema_matches_config_contract) ... ok
+test_contradictory_linear_kernel_with_gamma_rejected (test_pipeline.TestUnknownAndContradictoryConfigRejection.test_contradictory_linear_kernel_with_gamma_rejected) ... ok
+test_contradictory_rbf_kernel_without_gamma_or_with_linear_svm_name_rejected (test_pipeline.TestUnknownAndContradictoryConfigRejection.test_contradictory_rbf_kernel_without_gamma_or_with_linear_svm_name_rejected) ... ok
+test_invalid_hyperparameters_and_duplicate_features_rejected (test_pipeline.TestUnknownAndContradictoryConfigRejection.test_invalid_hyperparameters_and_duplicate_features_rejected) ... ok
+test_overlapping_split_ids_rejected (test_pipeline.TestUnknownAndContradictoryConfigRejection.test_overlapping_split_ids_rejected) ... ok
+test_unknown_split_and_algorithm_fields_rejected (test_pipeline.TestUnknownAndContradictoryConfigRejection.test_unknown_split_and_algorithm_fields_rejected) ... ok
+test_unknown_top_level_field_rejected (test_pipeline.TestUnknownAndContradictoryConfigRejection.test_unknown_top_level_field_rejected) ... ok
+test_unsupported_schema_version_rejected (test_pipeline.TestUnknownAndContradictoryConfigRejection.test_unsupported_schema_version_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 18 tests in 0.015s
+
+OK
+Exit code: 0
