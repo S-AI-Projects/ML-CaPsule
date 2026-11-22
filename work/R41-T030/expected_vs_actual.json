@@ -1,0 +1,142 @@
+{
+  "task_id": "R41-T030",
+  "project_section": "Global CO2 emissions \u2013 trend forecast",
+  "verification_only": true,
+  "synthetic_disclaimer": "SYNTHETIC TEN-DAY TIME-SERIES FIXTURE ONLY (d1..d10). These values are NOT real Global CO2 emissions observations and results are pipeline verification only, NOT evidence of real-world or clinical performance.",
+  "all_match": true,
+  "max_abs_diff": 1.7763568394002505e-15,
+  "max_reload_abs_diff": 0.0,
+  "expected": {
+    "parameters": {
+      "intercept": 10.285714285714286,
+      "slope": 0.8857142857142857
+    },
+    "reload_tolerance": 1e-12,
+    "validation_predictions": [
+      15.6,
+      16.485714285714284
+    ],
+    "test_predictions": [
+      17.37142857142857,
+      18.257142857142856
+    ]
+  },
+  "actual": {
+    "task_id": "R41-T030",
+    "project_section": "Global CO2 emissions \u2013 trend forecast",
+    "verification_only": true,
+    "synthetic_disclaimer": "SYNTHETIC TEN-DAY TIME-SERIES FIXTURE ONLY (d1..d10). These values are NOT real Global CO2 emissions observations and results are pipeline verification only, NOT evidence of real-world or clinical performance.",
+    "reload_tolerance": 1e-12,
+    "max_reload_abs_diff": 0.0,
+    "reload_within_tolerance": true,
+    "artifact": {
+      "artifact_format": "json",
+      "schema_version": "1.0.0",
+      "task_id": "R41-T030",
+      "model_type": "ols_linear_trend",
+      "seed": 42,
+      "origin_timestamp": "2026-01-01",
+      "train_end_timestamp": "2026-01-06",
+      "n_train_observations": 6,
+      "input_schema": {
+        "required_fields": [
+          "record_id",
+          "timestamp"
+        ],
+        "timestamp_format": "YYYY-MM-DD"
+      },
+      "parameters": {
+        "intercept": 10.285714285714285,
+        "slope": 0.8857142857142857
+      }
+    },
+    "splits": {
+      "train_ids": [
+        "d1",
+        "d2",
+        "d3",
+        "d4",
+        "d5",
+        "d6"
+      ],
+      "validation": {
+        "record_ids": [
+          "d7",
+          "d8"
+        ],
+        "actual_values": [
+          16.0,
+          18.0
+        ],
+        "before_reload": [
+          {
+            "record_id": "d7",
+            "timestamp": "2026-01-07",
+            "day_index": 6,
+            "predicted_value": 15.599999999999998
+          },
+          {
+            "record_id": "d8",
+            "timestamp": "2026-01-08",
+            "day_index": 7,
+            "predicted_value": 16.485714285714284
+          }
+        ],
+        "after_reload": [
+          {
+            "record_id": "d7",
+            "timestamp": "2026-01-07",
+            "day_index": 6,
+            "predicted_value": 15.599999999999998
+          },
+          {
+            "record_id": "d8",
+            "timestamp": "2026-01-08",
+            "day_index": 7,
+            "predicted_value": 16.485714285714284
+          }
+        ],
+        "mae": 0.9571428571428591
+      },
+      "test": {
+        "record_ids": [
+          "d9",
+          "d10"
+        ],
+        "actual_values": [
+          17.0,
+          19.0
+        ],
+        "before_reload": [
+          {
+            "record_id": "d9",
+            "timestamp": "2026-01-09",
+            "day_index": 8,
+            "predicted_value": 17.37142857142857
+          },
+          {
+            "record_id": "d10",
+            "timestamp": "2026-01-10",
+            "day_index": 9,
+            "predicted_value": 18.257142857142856
+          }
+        ],
+        "after_reload": [
+          {
+            "record_id": "d9",
+            "timestamp": "2026-01-09",
+            "day_index": 8,
+            "predicted_value": 17.37142857142857
+          },
+          {
+            "record_id": "d10",
+            "timestamp": "2026-01-10",
+            "day_index": 9,
+            "predicted_value": 18.257142857142856
+          }
+        ],
+        "mae": 0.5571428571428569
+      }
+    }
+  }
+}
