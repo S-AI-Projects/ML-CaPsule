@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "R41-T025 Zoo Animals Decision-Tree Numeric Preprocessing Data Contract",
+  "description": "Data contract for the eight-row synthetic pipeline-verification fixture. These synthetic rows are NOT observations from the UCI Zoo dataset and must NOT be cited as evidence of real-world or clinical performance.",
+  "task_id": "R41-T025",
+  "project_section": "Zoo animals – decision tree",
+  "synthetic_only": true,
+  "feature_order": ["x1", "x2"],
+  "valid_labels": [0, 1],
+  "valid_splits": ["train", "validation", "test"],
+  "missing_value_policies": ["reject", "impute_train_mean"],
+  "default_missing_value_policy": "reject",
+  "required_fields": ["record_id", "group_id", "x1", "x2", "label"],
+  "optional_fields": ["split"],
+  "properties": {
+    "record_id": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Stable unique row identifier across the fixture (e.g. r1..r8)."
+    },
+    "group_id": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Stable group identifier isolated across train/validation/test splits to prevent group leakage."
+    },
+    "x1": {
+      "type": "number",
+      "description": "Finite numeric synthetic feature taking values [0, 1, 2, 3, 4, 5, 6, 7]; booleans and NaN/Inf are rejected."
+    },
+    "x2": {
+      "type": "number",
+      "description": "Finite constant numeric synthetic feature equal to 1 across all eight rows; exercises zero-variance scaling safety."
+    },
+    "label": {
+      "type": "integer",
+      "enum": [0, 1],
+      "description": "Binary integer class label in {0, 1}; booleans and out-of-set integers are rejected."
+    },
+    "split": {
+      "type": "string",
+      "enum": ["train", "validation", "test"],
+      "description": "Fixed stratified partition assignment ensuring explicit train/validation/test separation."
+    }
+  },
+  "split_invariants": {
+    "pairwise_disjoint_record_ids": true,
+    "pairwise_disjoint_group_ids": true,
+    "stratified_across_all_splits": true,
+    "fit_partition_only": "train"
+  }
+}

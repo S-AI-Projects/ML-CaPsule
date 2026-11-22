@@ -1,0 +1,186 @@
+{
+  "task_id": "R41-T025",
+  "project_section": "Zoo animals \u2013 decision tree",
+  "verification_only": true,
+  "synthetic_disclaimer": "SYNTHETIC PIPELINE-VERIFICATION FIXTURE ONLY. These eight rows are not observations from the named UCI Zoo dataset or any real-world dataset, and results are not evidence of real-world or clinical performance.",
+  "all_match": true,
+  "max_abs_diff": 0.0,
+  "expected": {
+    "means": [
+      2.5,
+      1.0
+    ],
+    "stds": [
+      2.0615528128088303,
+      0.0
+    ],
+    "scales": [
+      2.0615528128088303,
+      1.0
+    ],
+    "splits": {
+      "train": {
+        "record_ids": [
+          "r1",
+          "r2",
+          "r5",
+          "r6"
+        ],
+        "shape": [
+          4,
+          2
+        ],
+        "dtype": "float64",
+        "values": [
+          [
+            -1.212678125181665,
+            0.0
+          ],
+          [
+            -0.7276068751089989,
+            0.0
+          ],
+          [
+            0.7276068751089989,
+            0.0
+          ],
+          [
+            1.212678125181665,
+            0.0
+          ]
+        ]
+      },
+      "validation": {
+        "record_ids": [
+          "r3",
+          "r7"
+        ],
+        "shape": [
+          2,
+          2
+        ],
+        "dtype": "float64",
+        "values": [
+          [
+            -0.24253562503633297,
+            0.0
+          ],
+          [
+            1.697749375254331,
+            0.0
+          ]
+        ]
+      },
+      "test": {
+        "record_ids": [
+          "r4",
+          "r8"
+        ],
+        "shape": [
+          2,
+          2
+        ],
+        "dtype": "float64",
+        "values": [
+          [
+            0.24253562503633297,
+            0.0
+          ],
+          [
+            2.182820625326997,
+            0.0
+          ]
+        ]
+      }
+    }
+  },
+  "actual": {
+    "means": [
+      2.5,
+      1.0
+    ],
+    "stds": [
+      2.0615528128088303,
+      0.0
+    ],
+    "scales": [
+      2.0615528128088303,
+      1.0
+    ],
+    "splits": {
+      "train": {
+        "record_ids": [
+          "r1",
+          "r2",
+          "r5",
+          "r6"
+        ],
+        "shape": [
+          4,
+          2
+        ],
+        "dtype": "float64",
+        "values": [
+          [
+            -1.212678125181665,
+            0.0
+          ],
+          [
+            -0.7276068751089989,
+            0.0
+          ],
+          [
+            0.7276068751089989,
+            0.0
+          ],
+          [
+            1.212678125181665,
+            0.0
+          ]
+        ]
+      },
+      "validation": {
+        "record_ids": [
+          "r3",
+          "r7"
+        ],
+        "shape": [
+          2,
+          2
+        ],
+        "dtype": "float64",
+        "values": [
+          [
+            -0.24253562503633297,
+            0.0
+          ],
+          [
+            1.697749375254331,
+            0.0
+          ]
+        ]
+      },
+      "test": {
+        "record_ids": [
+          "r4",
+          "r8"
+        ],
+        "shape": [
+          2,
+          2
+        ],
+        "dtype": "float64",
+        "values": [
+          [
+            0.24253562503633297,
+            0.0
+          ],
+          [
+            2.182820625326997,
+            0.0
+          ]
+        ]
+      }
+    }
+  }
+}

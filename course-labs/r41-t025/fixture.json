@@ -1,0 +1,20 @@
+{
+  "task_id": "R41-T025",
+  "project_section": "Zoo animals – decision tree",
+  "is_synthetic": true,
+  "disclaimer": "SYNTHETIC PIPELINE-VERIFICATION FIXTURE ONLY. These eight rows are not observations from the named UCI Zoo dataset or any real-world dataset, and results are not evidence of real-world or clinical performance.",
+  "seed": 42,
+  "feature_order": ["x1", "x2"],
+  "valid_labels": [0, 1],
+  "split_strategy": "fixed_stratified_group_isolated_train_val_test",
+  "records": [
+    {"record_id": "r1", "group_id": "g1", "x1": 0, "x2": 1, "label": 0, "split": "train"},
+    {"record_id": "r2", "group_id": "g1", "x1": 1, "x2": 1, "label": 0, "split": "train"},
+    {"record_id": "r3", "group_id": "g2", "x1": 2, "x2": 1, "label": 0, "split": "validation"},
+    {"record_id": "r4", "group_id": "g3", "x1": 3, "x2": 1, "label": 0, "split": "test"},
+    {"record_id": "r5", "group_id": "g4", "x1": 4, "x2": 1, "label": 1, "split": "train"},
+    {"record_id": "r6", "group_id": "g4", "x1": 5, "x2": 1, "label": 1, "split": "train"},
+    {"record_id": "r7", "group_id": "g5", "x1": 6, "x2": 1, "label": 1, "split": "validation"},
+    {"record_id": "r8", "group_id": "g6", "x1": 7, "x2": 1, "label": 1, "split": "test"}
+  ]
+}
