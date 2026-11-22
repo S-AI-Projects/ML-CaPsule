@@ -1,0 +1,24 @@
+$ python3 -m unittest discover -s course-labs/r41-t028 -p "test_*.py" -v
+test_mutated_expected_error_count_fails_assertion (test_pipeline.TestDeliberateMutationGuard.test_mutated_expected_error_count_fails_assertion) ... ok
+test_aggregate_counts_match_detailed_rows (test_pipeline.TestErrorAnalysisReportAndInjectedError.test_aggregate_counts_match_detailed_rows) ... ok
+test_clean_held_out_report_has_zero_errors (test_pipeline.TestErrorAnalysisReportAndInjectedError.test_clean_held_out_report_has_zero_errors) ... ok
+test_full_fixture_report_excludes_all_five_correct_predictions (test_pipeline.TestErrorAnalysisReportAndInjectedError.test_full_fixture_report_excludes_all_five_correct_predictions) ... ok
+test_injected_wrong_prediction_appears_and_correct_prediction_does_not (test_pipeline.TestErrorAnalysisReportAndInjectedError.test_injected_wrong_prediction_appears_and_correct_prediction_does_not) ... ok
+test_natural_error_reason_categories_and_markdown_output (test_pipeline.TestErrorAnalysisReportAndInjectedError.test_natural_error_reason_categories_and_markdown_output) ... ok
+test_clean_predictions_match_expected (test_pipeline.TestExplicitTrainValTestAndNaiveBayes.test_clean_predictions_match_expected) ... ok
+test_disjoint_train_val_test_splits (test_pipeline.TestExplicitTrainValTestAndNaiveBayes.test_disjoint_train_val_test_splits) ... ok
+test_vocabulary_comes_from_train_only (test_pipeline.TestExplicitTrainValTestAndNaiveBayes.test_vocabulary_comes_from_train_only) ... ok
+test_error_row_rejects_correct_prediction (test_pipeline.TestFailureCasesAndGuards.test_error_row_rejects_correct_prediction) ... ok
+test_invalid_labels_empty_text_and_unfitted_predict_rejected (test_pipeline.TestFailureCasesAndGuards.test_invalid_labels_empty_text_and_unfitted_predict_rejected) ... ok
+test_missing_or_extra_prediction_ids_rejected (test_pipeline.TestFailureCasesAndGuards.test_missing_or_extra_prediction_ids_rejected) ... ok
+test_non_train_record_passed_to_fit_rejected (test_pipeline.TestFailureCasesAndGuards.test_non_train_record_passed_to_fit_rejected) ... ok
+test_overlapping_record_id_across_splits_rejected (test_pipeline.TestFailureCasesAndGuards.test_overlapping_record_id_across_splits_rejected) ... ok
+test_explicit_synthetic_fixture_labelling (test_pipeline.TestSyntheticTextFixtureContract.test_explicit_synthetic_fixture_labelling) ... ok
+test_literal_six_records_texts_and_labels (test_pipeline.TestSyntheticTextFixtureContract.test_literal_six_records_texts_and_labels) ... ok
+test_schema_declares_required_fields_and_reason_categories (test_pipeline.TestSyntheticTextFixtureContract.test_schema_declares_required_fields_and_reason_categories) ... ok
+
+----------------------------------------------------------------------
+Ran 17 tests in 0.001s
+
+OK
+Exit code: 0

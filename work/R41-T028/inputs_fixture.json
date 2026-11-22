@@ -1,0 +1,15 @@
+{
+  "task_id": "R41-T028",
+  "project_section": "Twitter airline sentiment – Naive Bayes",
+  "is_synthetic": true,
+  "disclaimer": "FICTIONAL SYNTHETIC TEXT PIPELINE FIXTURE ONLY (t1..t6). This is NOT a real Twitter airline sentiment corpus and results are pipeline verification only, NOT evidence of real-world or clinical performance.",
+  "seed": 42,
+  "records": [
+    {"record_id": "t1", "text": "red apple", "label": 1, "split": "train"},
+    {"record_id": "t2", "text": "green apple", "label": 1, "split": "train"},
+    {"record_id": "t3", "text": "blue sky", "label": 0, "split": "train"},
+    {"record_id": "t4", "text": "dark sky", "label": 0, "split": "train"},
+    {"record_id": "t5", "text": "red fruit", "label": 1, "split": "validation"},
+    {"record_id": "t6", "text": "blue cloud", "label": 0, "split": "test"}
+  ]
+}

@@ -1,0 +1,17 @@
+Mutation: altered EXPECTED_INJECTED_ERROR_COUNT from 1 to 2 in a temporary copy of test_pipeline.py
+Exit code: 1 (non-zero as required)
+
+....F............
+======================================================================
+FAIL: test_injected_wrong_prediction_appears_and_correct_prediction_does_not (test_pipeline.TestErrorAnalysisReportAndInjectedError.test_injected_wrong_prediction_appears_and_correct_prediction_does_not)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/var/folders/nn/ml4_14xj4yv42l87c003wt0w0000gn/T/tmplxicmqj1/r41-t028/test_pipeline.py", line 125, in test_injected_wrong_prediction_appears_and_correct_prediction_does_not
+    self.assertEqual(held_out["error_count"], EXPECTED_INJECTED_ERROR_COUNT)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 1 != 2
+
+----------------------------------------------------------------------
+Ran 17 tests in 0.001s
+
+FAILED (failures=1)

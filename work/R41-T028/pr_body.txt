@@ -1,0 +1,56 @@
+## Description
+
+Implements and verifies a structured **error-analysis report** and bounded Multinomial Naive Bayes text baseline for the **Twitter airline sentiment – Naive Bayes** teaching component (`course-labs/r41-t028`). Each misclassified record is reported with its stable `record_id`, `expected_value`, `predicted_value`, `split`, and controlled `reason_category`, while correctly classified records are strictly excluded from error rows.
+
+To make the error-analysis pipeline end-to-end testable on the six-record synthetic fixture (`t1..t6`), one deliberately wrong prediction is injected on `t5` (expected `1`, flipped to `0`, tagged `injected_test_error`), verifying that `t5` appears in the report, correct predictions (such as `t6` and `t1..t4`) do not, and every aggregate counter reconciles exactly with the detailed rows.
+
+## Related Issue
+
+Fixes: #28
+
+## Type of Change
+
+- [x] New Feature
+- [x] Tests
+- [x] Documentation
+
+## Changes Made
+
+- Defined the text fixture and error-analysis reason schema in `course-labs/r41-t028/schema.json` (`record_id`, `text`, `label`, `split`, and controlled `reason_categories`).
+- Created the literal six-record fictional text fixture in `course-labs/r41-t028/fixture.json` (`t1..t6`, `["red apple","green apple","blue sky","dark sky","red fruit","blue cloud"]`, labels `[1,1,0,0,1,0]`) with explicit train (`t1..t4`), validation (`t5`), and test (`t6`) separation.
+- Implemented `MultinomialNaiveBayes` (Laplace smoothing, training-only vocabulary), `inject_deliberate_wrong_prediction`, `ErrorRow`, `ErrorAnalysisReport`, `ErrorReasonCategory`, `build_error_analysis_report`, and `run_error_analysis_pipeline` in `course-labs/r41-t028/pipeline.py` using only the Python 3 standard library.
+- Added 17 unit tests in `course-labs/r41-t028/test_pipeline.py` asserting fixture schema, train-only vocabulary, clean predictions, presence of injected error `t5`, exclusion of correct predictions, exact aggregate-to-row reconciliation, natural reason categorization, failure guards, and a deliberate mutation check.
+- Documented results, limits, data contract, synthetic disclaimer, and optional Twitter US Airline Sentiment real-data extension requirements in `course-labs/r41-t028/README.md` and linked it from root `README.md`.
+- Saved verification evidence (inputs, expected vs actual JSON, unittest output, non-zero mutation check, and tool versions) in `work/R41-T028/`.
+
+## Screenshots / Recordings
+
+N/A (Offline CPU-only CLI unittest verification; full logs captured in `work/R41-T028/unittest_output.txt` and `work/R41-T028/mutation_check.txt`).
+
+## Testing
+
+Ran the required offline CPU-only unittest discovery command directly with system Python 3:
+
+```bash
+python3 -m unittest discover -s course-labs/r41-t028 -p "test_*.py" -v
+```
+
+Result:
+- `Ran 17 tests in 0.001s — OK` (exit code `0`).
+- Verified injected wrong prediction `t5` appears in `error_rows` (`reason_category="injected_test_error"`), correct predictions are excluded, and all aggregate counts match detailed rows.
+- Verified non-zero failure on deliberate mutation (`EXPECTED_INJECTED_ERROR_COUNT` altered from `1` to `2` -> exit code `1`, logged in `work/R41-T028/mutation_check.txt`).
+
+## Checklist
+
+- [x] I have tested my changes locally.
+- [x] I have added or updated tests, if needed.
+- [x] I have updated documentation, if needed.
+- [x] I have followed the project's coding guidelines.
+- [x] I have run the relevant tests and checks.
+- [x] I have addressed previous review feedback, if applicable.
+
+## Additional Notes
+
+All outputs in this PR come strictly from six fictional two-word text records (`t1..t6`) for **pipeline verification only** — they are not a real Twitter airline sentiment corpus and are not evidence of real-world or clinical performance. Per task instructions, `work/R41-T028/` is included on this organisation-fork branch for coursework review and would be removed from any later upstream branch.
+
+Student: Sharon Robinson | Task: R41-T028 (8 of 10) | Assigned working branch: `student/e26b07f0819`
