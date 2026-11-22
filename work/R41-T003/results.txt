@@ -1,0 +1,34 @@
+test_canonical_pipeline_execution (test_pipeline.TestEndToEndBaselineRegression.test_canonical_pipeline_execution) ... ok
+test_regression_fails_if_expected_result_is_altered (test_pipeline.TestEndToEndBaselineRegression.test_regression_fails_if_expected_result_is_altered)
+Verify that the test suite fails if the concrete expected result is changed. ... ok
+test_boolean_label_rejected (test_pipeline.TestInputAndSplitValidation.test_boolean_label_rejected) ... ok
+test_duplicate_record_id_raises (test_pipeline.TestInputAndSplitValidation.test_duplicate_record_id_raises) ... ok
+test_empty_record_id_raises (test_pipeline.TestInputAndSplitValidation.test_empty_record_id_raises) ... ok
+test_float_label_rejected (test_pipeline.TestInputAndSplitValidation.test_float_label_rejected) ... ok
+test_missing_required_field_raises (test_pipeline.TestInputAndSplitValidation.test_missing_required_field_raises) ... ok
+test_out_of_range_label_rejected (test_pipeline.TestInputAndSplitValidation.test_out_of_range_label_rejected) ... ok
+test_split_manifest_data_leakage_overlap_rejected (test_pipeline.TestInputAndSplitValidation.test_split_manifest_data_leakage_overlap_rejected) ... ok
+test_split_manifest_missing_split_name (test_pipeline.TestInputAndSplitValidation.test_split_manifest_missing_split_name) ... ok
+test_split_manifest_unassigned_records_rejected (test_pipeline.TestInputAndSplitValidation.test_split_manifest_unassigned_records_rejected) ... ok
+test_split_manifest_unknown_record_id (test_pipeline.TestInputAndSplitValidation.test_split_manifest_unknown_record_id) ... ok
+test_deterministic_tie_breaking (test_pipeline.TestMajorityClassBaseline.test_deterministic_tie_breaking) ... ok
+test_empty_train_records_raises (test_pipeline.TestMajorityClassBaseline.test_empty_train_records_raises) ... ok
+test_held_out_labels_do_not_influence_fit (test_pipeline.TestMajorityClassBaseline.test_held_out_labels_do_not_influence_fit) ... ok
+test_majority_class_selected_from_training_only (test_pipeline.TestMajorityClassBaseline.test_majority_class_selected_from_training_only) ... ok
+test_majority_class_zero_when_zeros_dominate (test_pipeline.TestMajorityClassBaseline.test_majority_class_zero_when_zeros_dominate) ... ok
+test_predict_before_fit_raises (test_pipeline.TestMajorityClassBaseline.test_predict_before_fit_raises) ... ok
+test_predict_outputs_majority_class (test_pipeline.TestMajorityClassBaseline.test_predict_outputs_majority_class) ... ok
+test_accuracy_calculation (test_pipeline.TestMetricsCalculation.test_accuracy_calculation) ... ok
+test_empty_metrics (test_pipeline.TestMetricsCalculation.test_empty_metrics) ... ok
+test_mismatched_lengths_raise (test_pipeline.TestMetricsCalculation.test_mismatched_lengths_raise) ... ok
+test_perfect_accuracy (test_pipeline.TestMetricsCalculation.test_perfect_accuracy) ... ok
+test_zero_accuracy (test_pipeline.TestMetricsCalculation.test_zero_accuracy) ... ok
+test_disclaimer_present (test_pipeline.TestSyntheticFixtureSpecification.test_disclaimer_present) ... ok
+test_fixture_class_balance (test_pipeline.TestSyntheticFixtureSpecification.test_fixture_class_balance) ... ok
+test_fixture_exact_count_and_keys (test_pipeline.TestSyntheticFixtureSpecification.test_fixture_exact_count_and_keys) ... ok
+test_fixture_exact_rows_and_labels (test_pipeline.TestSyntheticFixtureSpecification.test_fixture_exact_rows_and_labels) ... ok
+
+----------------------------------------------------------------------
+Ran 28 tests in 0.001s
+
+OK
