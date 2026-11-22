@@ -1,0 +1,25 @@
+Mutation: altered EXPECTED_HELD_OUT_SCORES["u1:b"] from 0.5 to 0.99 in a temporary copy of test_pipeline.py
+Exit code: 1 (non-zero as required)
+
+.........F..
+======================================================================
+FAIL: test_documented_held_out_scores_and_rankings_match_expected (test_pipeline.TestValidTransformationRobustness.test_documented_held_out_scores_and_rankings_match_expected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/var/folders/nn/ml4_14xj4yv42l87c003wt0w0000gn/T/tmpebcc1xqw/r41-t029/test_pipeline.py", line 116, in test_documented_held_out_scores_and_rankings_match_expected
+    self.assertAlmostEqual(
+    ~~~~~~~~~~~~~~~~~~~~~~^
+        combined_held_out[pair_key]["score"],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        expected_score,
+        ^^^^^^^^^^^^^^^
+        places=12,
+        ^^^^^^^^^^
+    )
+    ^
+AssertionError: 0.4999999999999999 != 0.99 within 12 places (0.4900000000000001 difference)
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.001s
+
+FAILED (failures=1)

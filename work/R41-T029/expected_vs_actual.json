@@ -1,0 +1,211 @@
+{
+  "task_id": "R41-T029",
+  "project_section": "Goodbooks-10k \u2013 content-based recommender",
+  "verification_only": true,
+  "claims_broad_adversarial_robustness": false,
+  "synthetic_disclaimer": "SYNTHETIC INTERACTION FIXTURE ONLY. These six interactions are NOT observations from the Goodbooks-10k dataset, do NOT provide evidence of real-world or clinical performance, and do NOT claim broad adversarial robustness.",
+  "all_match": true,
+  "max_abs_diff": 1.1102230246251565e-16,
+  "expected": {
+    "invariance_preserved": true,
+    "validation_scores": {
+      "u1:b": 0.5,
+      "u2:c": 0.0
+    },
+    "test_scores": {
+      "u3:c": 0.5
+    },
+    "recommendations_top2": {
+      "u1": [
+        "b",
+        "c"
+      ],
+      "u2": [
+        "b",
+        "c"
+      ],
+      "u3": [
+        "a",
+        "c"
+      ]
+    },
+    "explicit_fallbacks": {
+      "unseen_user": {
+        "is_fallback": true,
+        "fallback_reason": "unseen_user",
+        "score": 0.0
+      },
+      "unseen_item": {
+        "is_fallback": true,
+        "fallback_reason": "unseen_item",
+        "score": 0.0
+      },
+      "unseen_content_tokens": {
+        "is_fallback": true,
+        "fallback_reason": "unseen_content_tokens",
+        "score": 0.0
+      }
+    }
+  },
+  "actual": {
+    "task_id": "R41-T029",
+    "project_section": "Goodbooks-10k \u2013 content-based recommender",
+    "verification_only": true,
+    "claims_broad_adversarial_robustness": false,
+    "synthetic_disclaimer": "SYNTHETIC INTERACTION FIXTURE ONLY. These six interactions are NOT observations from the Goodbooks-10k dataset, do NOT provide evidence of real-world or clinical performance, and do NOT claim broad adversarial robustness.",
+    "seed": 42,
+    "original_order_ids": [
+      "i1",
+      "i2",
+      "i3",
+      "i4",
+      "i5",
+      "i6"
+    ],
+    "permuted_order_ids": [
+      "i5",
+      "i1",
+      "i2",
+      "i6",
+      "i3",
+      "i4"
+    ],
+    "splits": {
+      "train": [
+        [
+          "u1",
+          "a",
+          5.0
+        ],
+        [
+          "u2",
+          "a",
+          4.0
+        ],
+        [
+          "u3",
+          "b",
+          4.0
+        ]
+      ],
+      "validation": [
+        [
+          "u1",
+          "b",
+          3.0
+        ],
+        [
+          "u2",
+          "c",
+          2.0
+        ]
+      ],
+      "test": [
+        [
+          "u3",
+          "c",
+          5.0
+        ]
+      ]
+    },
+    "invariance_preserved": true,
+    "validation_scores": {
+      "u1:b": {
+        "user_id": "u1",
+        "item_id": "b",
+        "score": 0.4999999999999999,
+        "is_fallback": false,
+        "fallback_reason": null
+      },
+      "u2:c": {
+        "user_id": "u2",
+        "item_id": "c",
+        "score": 0.0,
+        "is_fallback": false,
+        "fallback_reason": null
+      }
+    },
+    "test_scores": {
+      "u3:c": {
+        "user_id": "u3",
+        "item_id": "c",
+        "score": 0.4999999999999999,
+        "is_fallback": false,
+        "fallback_reason": null
+      }
+    },
+    "recommendations": {
+      "u1": [
+        {
+          "user_id": "u1",
+          "item_id": "b",
+          "score": 0.4999999999999999,
+          "is_fallback": false,
+          "fallback_reason": null
+        },
+        {
+          "user_id": "u1",
+          "item_id": "c",
+          "score": 0.0,
+          "is_fallback": false,
+          "fallback_reason": null
+        }
+      ],
+      "u2": [
+        {
+          "user_id": "u2",
+          "item_id": "b",
+          "score": 0.4999999999999999,
+          "is_fallback": false,
+          "fallback_reason": null
+        },
+        {
+          "user_id": "u2",
+          "item_id": "c",
+          "score": 0.0,
+          "is_fallback": false,
+          "fallback_reason": null
+        }
+      ],
+      "u3": [
+        {
+          "user_id": "u3",
+          "item_id": "a",
+          "score": 0.4999999999999999,
+          "is_fallback": false,
+          "fallback_reason": null
+        },
+        {
+          "user_id": "u3",
+          "item_id": "c",
+          "score": 0.4999999999999999,
+          "is_fallback": false,
+          "fallback_reason": null
+        }
+      ]
+    },
+    "explicit_fallbacks": {
+      "unseen_user": {
+        "user_id": "u_unknown",
+        "item_id": "a",
+        "score": 0.0,
+        "is_fallback": true,
+        "fallback_reason": "unseen_user"
+      },
+      "unseen_item": {
+        "user_id": "u1",
+        "item_id": "z_unknown",
+        "score": 0.0,
+        "is_fallback": true,
+        "fallback_reason": "unseen_item"
+      },
+      "unseen_content_tokens": {
+        "user_id": "u1",
+        "item_id": "item_new",
+        "score": 0.0,
+        "is_fallback": true,
+        "fallback_reason": "unseen_content_tokens"
+      }
+    }
+  }
+}

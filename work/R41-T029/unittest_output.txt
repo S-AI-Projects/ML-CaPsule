@@ -1,0 +1,19 @@
+$ python3 -m unittest discover -s course-labs/r41-t029 -p "test_*.py" -v
+test_mutated_expected_score_fails_assertion (test_pipeline.TestDeliberateMutationGuard.test_mutated_expected_score_fails_assertion) ... ok
+test_explicit_synthetic_and_non_adversarial_scope_labelling (test_pipeline.TestSyntheticInteractionFixtureContract.test_explicit_synthetic_and_non_adversarial_scope_labelling) ... ok
+test_leave_last_out_reserves_final_interaction_per_user (test_pipeline.TestSyntheticInteractionFixtureContract.test_leave_last_out_reserves_final_interaction_per_user) ... ok
+test_literal_six_interactions_and_stable_ids (test_pipeline.TestSyntheticInteractionFixtureContract.test_literal_six_interactions_and_stable_ids) ... ok
+test_invalid_rating_values_are_rejected (test_pipeline.TestUnsupportedInputsAndExplicitFallbacks.test_invalid_rating_values_are_rejected) ... ok
+test_missing_required_field_is_rejected (test_pipeline.TestUnsupportedInputsAndExplicitFallbacks.test_missing_required_field_is_rejected) ... ok
+test_reversed_within_user_time_order_is_rejected (test_pipeline.TestUnsupportedInputsAndExplicitFallbacks.test_reversed_within_user_time_order_is_rejected) ... ok
+test_scoring_before_fit_raises (test_pipeline.TestUnsupportedInputsAndExplicitFallbacks.test_scoring_before_fit_raises) ... ok
+test_unseen_user_item_and_tokens_map_to_explicit_fallbacks (test_pipeline.TestUnsupportedInputsAndExplicitFallbacks.test_unseen_user_item_and_tokens_map_to_explicit_fallbacks) ... ok
+test_documented_held_out_scores_and_rankings_match_expected (test_pipeline.TestValidTransformationRobustness.test_documented_held_out_scores_and_rankings_match_expected) ... ok
+test_permuted_order_differs_from_original_yet_preserves_aligned_results (test_pipeline.TestValidTransformationRobustness.test_permuted_order_differs_from_original_yet_preserves_aligned_results) ... ok
+test_within_user_time_order_is_strictly_preserved_by_valid_perturbation (test_pipeline.TestValidTransformationRobustness.test_within_user_time_order_is_strictly_preserved_by_valid_perturbation) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.001s
+
+OK
+Exit code: 0
