@@ -1,0 +1,16 @@
+Evidence captured locally; checks are standard-library only and offline.
+
+Python: 3.15.2
+Test runner: Python unittest (stdlib)
+Git: 2.55.0
+Platform: macOS (Darwin)
+
+Required check:
+python3 -m unittest discover -s course-labs/r41-t042 -p "test_*.py"
+Observed: Ran 8 tests in 0.001s; OK; exit status 0.
+
+Negative control:
+Temporarily replaced the test module's EXPECTED_SPLITS in memory with an
+intentionally incorrect manifest and reran all tests. The exact-manifest test
+failed with an assertion mismatch (1 failure, 7 passing), and the wrapper
+confirmed the failure was detected. No source or expectation file was changed.

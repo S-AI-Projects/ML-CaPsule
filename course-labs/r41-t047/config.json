@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "seed": 47,
+  "feature_order": ["x1", "x2"],
+  "split_ids": {
+    "train": ["bcw-syn-001", "bcw-syn-004", "bcw-syn-005", "bcw-syn-008"],
+    "validation": ["bcw-syn-002", "bcw-syn-006"],
+    "test": ["bcw-syn-003", "bcw-syn-007"]
+  },
+  "algorithm": {
+    "name": "nearest_centroid",
+    "selector": "max_class_mean_gap",
+    "n_features": 1,
+    "distance": "euclidean",
+    "tie_break": "lower_label"
+  }
+}
