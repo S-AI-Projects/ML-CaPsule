@@ -1,0 +1,152 @@
+{
+  "task_id": "R41-T028",
+  "project_section": "Twitter airline sentiment \u2013 Naive Bayes",
+  "verification_only": true,
+  "synthetic_disclaimer": "FICTIONAL SYNTHETIC TEXT PIPELINE FIXTURE ONLY (t1..t6). This is NOT a real Twitter airline sentiment corpus and results are pipeline verification only, NOT evidence of real-world or clinical performance.",
+  "all_match": true,
+  "expected": {
+    "clean_predictions": {
+      "t1": 1,
+      "t2": 1,
+      "t3": 0,
+      "t4": 0,
+      "t5": 1,
+      "t6": 0
+    },
+    "clean_held_out_error_count": 0,
+    "injected_held_out_report": {
+      "total_evaluated": 2,
+      "correct_count": 1,
+      "error_count": 1,
+      "false_positive_count": 0,
+      "false_negative_count": 1,
+      "counts_by_reason": {
+        "injected_test_error": 1
+      },
+      "counts_by_split": {
+        "validation": 1
+      },
+      "error_record_ids": [
+        "t5"
+      ],
+      "excluded_correct_record_ids": [
+        "t6"
+      ]
+    },
+    "injected_all_records_report": {
+      "total_evaluated": 6,
+      "correct_count": 5,
+      "error_count": 1,
+      "error_record_ids": [
+        "t5"
+      ],
+      "excluded_correct_record_ids": [
+        "t1",
+        "t2",
+        "t3",
+        "t4",
+        "t6"
+      ]
+    }
+  },
+  "actual": {
+    "task_id": "R41-T028",
+    "project_section": "Twitter airline sentiment \u2013 Naive Bayes",
+    "verification_only": true,
+    "synthetic_disclaimer": "FICTIONAL SYNTHETIC TEXT PIPELINE FIXTURE ONLY (t1..t6). This is NOT a real Twitter airline sentiment corpus and results are pipeline verification only, NOT evidence of real-world or clinical performance.",
+    "seed": 42,
+    "train_vocabulary": [
+      "apple",
+      "blue",
+      "dark",
+      "green",
+      "red",
+      "sky"
+    ],
+    "splits": {
+      "train": [
+        "t1",
+        "t2",
+        "t3",
+        "t4"
+      ],
+      "validation": [
+        "t5"
+      ],
+      "test": [
+        "t6"
+      ]
+    },
+    "clean_predictions": {
+      "t1": 1,
+      "t2": 1,
+      "t3": 0,
+      "t4": 0,
+      "t5": 1,
+      "t6": 0
+    },
+    "injected_wrong_record_id": "t5",
+    "clean_held_out_report": {
+      "total_evaluated": 2,
+      "correct_count": 2,
+      "error_count": 0,
+      "false_positive_count": 0,
+      "false_negative_count": 0,
+      "counts_by_reason": {},
+      "counts_by_split": {},
+      "error_rows": []
+    },
+    "injected_held_out_report": {
+      "total_evaluated": 2,
+      "correct_count": 1,
+      "error_count": 1,
+      "false_positive_count": 0,
+      "false_negative_count": 1,
+      "counts_by_reason": {
+        "injected_test_error": 1
+      },
+      "counts_by_split": {
+        "validation": 1
+      },
+      "error_rows": [
+        {
+          "record_id": "t5",
+          "split": "validation",
+          "text": "red fruit",
+          "expected_value": 1,
+          "predicted_value": 0,
+          "reason_category": "injected_test_error",
+          "oov_tokens": [
+            "fruit"
+          ]
+        }
+      ]
+    },
+    "injected_all_records_report": {
+      "total_evaluated": 6,
+      "correct_count": 5,
+      "error_count": 1,
+      "false_positive_count": 0,
+      "false_negative_count": 1,
+      "counts_by_reason": {
+        "injected_test_error": 1
+      },
+      "counts_by_split": {
+        "validation": 1
+      },
+      "error_rows": [
+        {
+          "record_id": "t5",
+          "split": "validation",
+          "text": "red fruit",
+          "expected_value": 1,
+          "predicted_value": 0,
+          "reason_category": "injected_test_error",
+          "oov_tokens": [
+            "fruit"
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "R41-T028 Twitter Airline Sentiment – Naive Bayes Error-Analysis Data Contract",
+  "description": "Data contract for the six-record fictional text pipeline fixture (t1..t6). Treat this strictly as a pipeline-verification fixture — NOT a real Twitter airline sentiment corpus and NOT evidence of real-world or clinical performance.",
+  "task_id": "R41-T028",
+  "project_section": "Twitter airline sentiment – Naive Bayes",
+  "synthetic_only": true,
+  "required_fields": ["record_id", "text", "label"],
+  "optional_fields": ["split"],
+  "valid_labels": [0, 1],
+  "valid_splits": ["train", "validation", "test"],
+  "reason_categories": [
+    "injected_test_error",
+    "oov_token_shift",
+    "false_positive_lexical",
+    "false_negative_lexical"
+  ],
+  "properties": {
+    "record_id": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Stable unique text record identifier (t1..t6)."
+    },
+    "text": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Fictional short text phrase for pipeline verification."
+    },
+    "label": {
+      "type": "integer",
+      "enum": [0, 1],
+      "description": "Binary integer sentiment/class label in {0, 1}."
+    },
+    "split": {
+      "type": "string",
+      "enum": ["train", "validation", "test"],
+      "description": "Explicit partition assignment (train t1..t4, validation t5, test t6)."
+    }
+  }
+}
