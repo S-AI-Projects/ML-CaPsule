@@ -1,0 +1,56 @@
+## Description
+
+Implements and verifies an explicit, leak-proof numeric preprocessing contract for the **Zoo animals – decision tree** teaching component (`course-labs/r41-t025`). Numeric standardization statistics (mean, population standard deviation, and zero-variance-safe scale) are fitted exclusively on training rows (`r1, r2, r5, r6`) and returned as a frozen, transform-only `FittedNumericPreprocessor` with no `fit`, `partial_fit`, or `fit_transform` method — making fitting on held-out input structurally impossible through the public transform interface.
+
+Feature order (`["x1", "x2"]`), integer label set (`{0, 1}`), missing-value policy (`reject` by default; optional training-mean-only `impute_train_mean`), and train/validation/test contamination guards are all explicitly enforced and unit-tested on an offline, CPU-only, eight-row synthetic fixture.
+
+## Related Issue
+
+Fixes: #25
+
+## Type of Change
+
+- [x] New Feature
+- [x] Tests
+- [x] Documentation
+
+## Changes Made
+
+- Defined the numeric preprocessing data contract in `course-labs/r41-t025/schema.json` (`record_id`, `group_id`, `x1`, `x2`, `label`, `split`, `feature_order`, `valid_labels`, and `missing_value_policies`).
+- Added the literal eight-row synthetic fixture in `course-labs/r41-t025/fixture.json` (`x1=[0,1,2,3,4,5,6,7]`, `x2=1`, `label=[0,0,0,0,1,1,1,1]`) with stable row/group IDs (`r1..r8`, `g1..g6`) and a fixed stratified, group-isolated train/validation/test split (`train: r1,r2,r5,r6`, `validation: r3,r7`, `test: r4,r8`).
+- Implemented `fit_numeric_preprocessor`, frozen transform-only `FittedNumericPreprocessor`, `TransformedMatrix` (explicit `shape` and `float64` `dtype`), `MissingValuePolicy`, and `validate_and_partition_fixture` in `course-labs/r41-t025/pipeline.py` using only the Python 3 standard library.
+- Added 28 unit tests in `course-labs/r41-t025/test_pipeline.py` asserting output values, `dtype`, `shape`, training-only fitting, transform-only immutability, feature-order/label/missing-value contracts, deliberate contamination rejection, and mutation failure guard.
+- Documented results, limits, data contract, synthetic-data disclaimer, and optional UCI Zoo real-data extension requirements in `course-labs/r41-t025/README.md` and linked it from root `README.md`.
+- Saved verification evidence (inputs, expected vs actual JSON, unittest output, non-zero mutation check, and tool versions) in `work/R41-T025/`.
+
+## Screenshots / Recordings
+
+N/A (Offline CPU-only CLI unittest verification; full logs captured in `work/R41-T025/unittest_output.txt` and `work/R41-T025/mutation_check.txt`).
+
+## Testing
+
+Ran the required offline CPU-only unittest discovery command directly with system Python 3:
+
+```bash
+python3 -m unittest discover -s course-labs/r41-t025 -p "test_*.py" -v
+```
+
+Result:
+- `Ran 28 tests in 0.002s — OK` (exit code `0`).
+- Cross-checked fitted parameters and transformed outputs against `sklearn.preprocessing.StandardScaler` (`atol=1e-15`, `max_abs_diff = 0.0`).
+- Verified non-zero failure on deliberate mutation (`EXPECTED_TRAIN_MEAN_X1` mutated from `2.5` to `3.5` → exit code `1`, logged in `work/R41-T025/mutation_check.txt`).
+
+## Checklist
+
+- [x] I have tested my changes locally.
+- [x] I have added or updated tests, if needed.
+- [x] I have updated documentation, if needed.
+- [x] I have followed the project's coding guidelines.
+- [x] I have run the relevant tests and checks.
+- [x] I have addressed previous review feedback, if applicable.
+
+## Additional Notes
+
+All numerical outputs in this PR come strictly from the eight-row synthetic fixture for **pipeline verification only** — they are not observations from the named UCI Zoo dataset and are not evidence of real-world or clinical performance. Per task instructions, `work/R41-T025/` is included on this organisation-fork branch for coursework review and would be removed from any later upstream branch.
+
+Student: Sharon Robinson | Task: R41-T025 (5 of 10) | Assigned working branch: `student/e26b07f0819`

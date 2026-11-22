@@ -1,0 +1,26 @@
+Mutation: altered EXPECTED_TRAIN_MEAN_X1 from 2.5 to 3.5 in a temporary copy of test_pipeline.py
+Exit code: 1 (non-zero as required)
+
+.....................FF.....
+======================================================================
+FAIL: test_exact_transformed_values_all_splits (test_pipeline.TestTrainingOnlyFitAndTransformOutputs.test_exact_transformed_values_all_splits)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/var/folders/nn/ml4_14xj4yv42l87c003wt0w0000gn/T/tmpc3ql31ji/r41-t025/test_pipeline.py", line 195, in test_exact_transformed_values_all_splits
+    self.assertAlmostEqual(a_val, e_val, places=12)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: -1.212678125181665 != -1.697749375254331 within 12 places (0.48507125007266594 difference)
+
+======================================================================
+FAIL: test_fitted_statistics_reflect_training_rows_only (test_pipeline.TestTrainingOnlyFitAndTransformOutputs.test_fitted_statistics_reflect_training_rows_only)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/var/folders/nn/ml4_14xj4yv42l87c003wt0w0000gn/T/tmpc3ql31ji/r41-t025/test_pipeline.py", line 164, in test_fitted_statistics_reflect_training_rows_only
+    self.assertAlmostEqual(self.fitted.means[0], EXPECTED_TRAIN_MEAN_X1, places=12)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 2.5 != 3.5 within 12 places (1.0 difference)
+
+----------------------------------------------------------------------
+Ran 28 tests in 0.002s
+
+FAILED (failures=2)

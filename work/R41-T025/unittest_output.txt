@@ -1,0 +1,35 @@
+$ python3 -m unittest discover -s course-labs/r41-t025 -p "test_*.py" -v
+test_fit_with_held_out_group_overlap_rejected (test_pipeline.TestDeliberateContaminationRejection.test_fit_with_held_out_group_overlap_rejected) ... ok
+test_non_train_row_injected_into_fit_is_rejected (test_pipeline.TestDeliberateContaminationRejection.test_non_train_row_injected_into_fit_is_rejected) ... ok
+test_overlapping_group_id_across_splits_rejected (test_pipeline.TestDeliberateContaminationRejection.test_overlapping_group_id_across_splits_rejected) ... ok
+test_overlapping_record_id_across_splits_rejected (test_pipeline.TestDeliberateContaminationRejection.test_overlapping_record_id_across_splits_rejected) ... ok
+test_train_group_id_disguised_as_test_rejected_in_transform (test_pipeline.TestDeliberateContaminationRejection.test_train_group_id_disguised_as_test_rejected_in_transform) ... ok
+test_train_row_passed_into_held_out_transform_rejected (test_pipeline.TestDeliberateContaminationRejection.test_train_row_passed_into_held_out_transform_rejected) ... ok
+test_mutated_expected_value_fails_assertion (test_pipeline.TestDeliberateMutationGuard.test_mutated_expected_value_fails_assertion) ... ok
+test_impute_train_mean_policy_uses_training_mean_only (test_pipeline.TestFeatureOrderLabelAndMissingValueContracts.test_impute_train_mean_policy_uses_training_mean_only) ... ok
+test_invalid_labels_rejected (test_pipeline.TestFeatureOrderLabelAndMissingValueContracts.test_invalid_labels_rejected) ... ok
+test_invalid_missing_value_policy_rejected (test_pipeline.TestFeatureOrderLabelAndMissingValueContracts.test_invalid_missing_value_policy_rejected) ... ok
+test_missing_and_non_finite_values_rejected_under_default_policy (test_pipeline.TestFeatureOrderLabelAndMissingValueContracts.test_missing_and_non_finite_values_rejected_under_default_policy) ... ok
+test_missing_or_extra_feature_column_rejected (test_pipeline.TestFeatureOrderLabelAndMissingValueContracts.test_missing_or_extra_feature_column_rejected) ... ok
+test_swapped_feature_order_rejected_in_fit_and_transform (test_pipeline.TestFeatureOrderLabelAndMissingValueContracts.test_swapped_feature_order_rejected_in_fit_and_transform) ... ok
+test_disjoint_record_and_group_ids_across_splits (test_pipeline.TestStratifiedTrainValTestSplit.test_disjoint_record_and_group_ids_across_splits) ... ok
+test_explicit_three_way_split_membership (test_pipeline.TestStratifiedTrainValTestSplit.test_explicit_three_way_split_membership) ... ok
+test_stratified_class_balance_in_every_split (test_pipeline.TestStratifiedTrainValTestSplit.test_stratified_class_balance_in_every_split) ... ok
+test_explicit_synthetic_labelling (test_pipeline.TestSyntheticFixtureContract.test_explicit_synthetic_labelling) ... ok
+test_literal_eight_rows_and_values (test_pipeline.TestSyntheticFixtureContract.test_literal_eight_rows_and_values) ... ok
+test_schema_matches_pipeline_constants (test_pipeline.TestSyntheticFixtureContract.test_schema_matches_pipeline_constants) ... ok
+test_stable_record_and_group_ids (test_pipeline.TestSyntheticFixtureContract.test_stable_record_and_group_ids) ... ok
+test_deterministic_verification_pipeline (test_pipeline.TestTrainingOnlyFitAndTransformOutputs.test_deterministic_verification_pipeline) ... ok
+test_exact_transformed_values_all_splits (test_pipeline.TestTrainingOnlyFitAndTransformOutputs.test_exact_transformed_values_all_splits) ... ok
+test_fitted_statistics_reflect_training_rows_only (test_pipeline.TestTrainingOnlyFitAndTransformOutputs.test_fitted_statistics_reflect_training_rows_only) ... ok
+test_output_shapes_and_dtypes (test_pipeline.TestTrainingOnlyFitAndTransformOutputs.test_output_shapes_and_dtypes) ... ok
+test_train_standardized_moments_and_held_out_non_zero_mean (test_pipeline.TestTrainingOnlyFitAndTransformOutputs.test_train_standardized_moments_and_held_out_non_zero_mean) ... ok
+test_fitted_statistics_are_immutable (test_pipeline.TestTransformInterfaceCannotFit.test_fitted_statistics_are_immutable) ... ok
+test_no_fit_methods_exist_on_public_transform_interface (test_pipeline.TestTransformInterfaceCannotFit.test_no_fit_methods_exist_on_public_transform_interface) ... ok
+test_transforming_extreme_held_out_values_does_not_change_stats (test_pipeline.TestTransformInterfaceCannotFit.test_transforming_extreme_held_out_values_does_not_change_stats) ... ok
+
+----------------------------------------------------------------------
+Ran 28 tests in 0.002s
+
+OK
+Exit code: 0
