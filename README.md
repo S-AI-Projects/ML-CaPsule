@@ -964,3 +964,7 @@ Start with beginner-friendly projects, then move to intermediate and advanced on
 | [Zomato Restaurant & Price EDA](Zomato%20Restaurant%20&%20Price%20EDA) | 🟢 Beginner | 1-3 hours |
 </details>
 <!-- Projects end -->
+
+## Course Labs
+
+- [R41-T026: Add a bounded CPU smoke run: Building energy efficiency – regression](course-labs/r41-t026/README.md)
