@@ -1,0 +1,269 @@
+{
+  "task_id": "R41-T026",
+  "project_section": "Building energy efficiency \u2013 regression",
+  "fixture_kind": "deterministic_formula_fixture",
+  "verification_only": true,
+  "synthetic_disclaimer": "SYNTHETIC DETERMINISTIC FORMULA FIXTURE ONLY (target = 2*x1 + 1). These six rows are for bounded CPU pipeline verification only \u2014 NOT observations from the UCI Energy Efficiency dataset and NOT evidence of real-world or clinical performance.",
+  "all_match": true,
+  "max_abs_diff": 1.1102230246251565e-16,
+  "expected": {
+    "bounded_sgd_smoke": {
+      "epochs_completed": 1,
+      "step_count": 4,
+      "step_losses": [
+        25.0,
+        2.25,
+        8.41,
+        0.0036
+      ],
+      "parameters": {
+        "w1": 2.02,
+        "w2": 0.946
+      },
+      "splits": {
+        "train": {
+          "prediction_shape": [
+            4
+          ],
+          "dtype": "float64",
+          "predictions": [
+            0.946,
+            2.966,
+            4.986,
+            7.006
+          ],
+          "mse_loss": 0.001076
+        },
+        "validation": {
+          "prediction_shape": [
+            1
+          ],
+          "dtype": "float64",
+          "predictions": [
+            9.026
+          ],
+          "mse_loss": 0.000676
+        },
+        "test": {
+          "prediction_shape": [
+            1
+          ],
+          "dtype": "float64",
+          "predictions": [
+            11.046
+          ],
+          "mse_loss": 0.002116
+        }
+      }
+    },
+    "constant_naive_baseline": {
+      "is_naive_baseline": true,
+      "epochs_completed": 1,
+      "step_count": 1,
+      "parameters": {
+        "train_mean": 4.0
+      },
+      "splits": {
+        "train": {
+          "prediction_shape": [
+            4
+          ],
+          "dtype": "float64",
+          "predictions": [
+            4.0,
+            4.0,
+            4.0,
+            4.0
+          ],
+          "mse_loss": 5.0
+        },
+        "validation": {
+          "prediction_shape": [
+            1
+          ],
+          "dtype": "float64",
+          "predictions": [
+            4.0
+          ],
+          "mse_loss": 25.0
+        },
+        "test": {
+          "prediction_shape": [
+            1
+          ],
+          "dtype": "float64",
+          "predictions": [
+            4.0
+          ],
+          "mse_loss": 49.0
+        }
+      }
+    }
+  },
+  "actual": {
+    "bounded_sgd_smoke": {
+      "model_name": "BoundedLinearSGDSmokeRegressor",
+      "model_kind": "bounded_cpu_linear_sgd_smoke_model",
+      "is_naive_baseline": false,
+      "asserts_interface_only": true,
+      "seed": 42,
+      "epochs_completed": 1,
+      "step_count": 4,
+      "step_losses": [
+        25.0,
+        2.25,
+        8.410000000000002,
+        0.003599999999999993
+      ],
+      "parameters": {
+        "w1": 2.02,
+        "w2": 0.9460000000000001
+      },
+      "splits": {
+        "train": {
+          "split": "train",
+          "record_ids": [
+            "r1",
+            "r2",
+            "r3",
+            "r4"
+          ],
+          "prediction_shape": [
+            4
+          ],
+          "dtype": "float64",
+          "predictions": [
+            0.9460000000000001,
+            2.966,
+            4.986,
+            7.006
+          ],
+          "targets": [
+            1.0,
+            3.0,
+            5.0,
+            7.0
+          ],
+          "mse_loss": 0.0010759999999999975,
+          "mae_loss": 0.027000000000000052
+        },
+        "validation": {
+          "split": "validation",
+          "record_ids": [
+            "r5"
+          ],
+          "prediction_shape": [
+            1
+          ],
+          "dtype": "float64",
+          "predictions": [
+            9.026
+          ],
+          "targets": [
+            9.0
+          ],
+          "mse_loss": 0.0006759999999999897,
+          "mae_loss": 0.0259999999999998
+        },
+        "test": {
+          "split": "test",
+          "record_ids": [
+            "r6"
+          ],
+          "prediction_shape": [
+            1
+          ],
+          "dtype": "float64",
+          "predictions": [
+            11.046
+          ],
+          "targets": [
+            11.0
+          ],
+          "mse_loss": 0.0021159999999999426,
+          "mae_loss": 0.045999999999999375
+        }
+      }
+    },
+    "constant_naive_baseline": {
+      "model_name": "NaiveMeanBaseline",
+      "model_kind": "constant_naive_baseline",
+      "is_naive_baseline": true,
+      "asserts_interface_only": true,
+      "seed": 42,
+      "epochs_completed": 1,
+      "step_count": 1,
+      "step_losses": [
+        5.0
+      ],
+      "parameters": {
+        "train_mean": 4.0
+      },
+      "splits": {
+        "train": {
+          "split": "train",
+          "record_ids": [
+            "r1",
+            "r2",
+            "r3",
+            "r4"
+          ],
+          "prediction_shape": [
+            4
+          ],
+          "dtype": "float64",
+          "predictions": [
+            4.0,
+            4.0,
+            4.0,
+            4.0
+          ],
+          "targets": [
+            1.0,
+            3.0,
+            5.0,
+            7.0
+          ],
+          "mse_loss": 5.0,
+          "mae_loss": 2.0
+        },
+        "validation": {
+          "split": "validation",
+          "record_ids": [
+            "r5"
+          ],
+          "prediction_shape": [
+            1
+          ],
+          "dtype": "float64",
+          "predictions": [
+            4.0
+          ],
+          "targets": [
+            9.0
+          ],
+          "mse_loss": 25.0,
+          "mae_loss": 5.0
+        },
+        "test": {
+          "split": "test",
+          "record_ids": [
+            "r6"
+          ],
+          "prediction_shape": [
+            1
+          ],
+          "dtype": "float64",
+          "predictions": [
+            4.0
+          ],
+          "targets": [
+            11.0
+          ],
+          "mse_loss": 49.0,
+          "mae_loss": 7.0
+        }
+      }
+    }
+  }
+}

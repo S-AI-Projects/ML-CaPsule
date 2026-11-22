@@ -1,0 +1,56 @@
+## Description
+
+Implements and verifies a bounded, offline, CPU-only regression pipeline smoke test for the **Building energy efficiency – regression** teaching component (`course-labs/r41-t026`). Enforces strict smoke-test bounds (`<= 32` samples, fixed seed `42`, `<= 1` training epoch, and `<= 20` gradient update steps) and asserts interface correctness — finite outputs and MSE/MAE losses, exact prediction shapes `(n_samples,)` with `dtype="float64"`, recorded step count, deterministic reproducibility, and explicit train/validation/test separation — rather than useful predictive accuracy.
+
+Includes both a tiny 1-epoch / 4-step CPU linear SGD smoke model (`BoundedLinearSGDSmokeRegressor`) and an explicitly labelled constant/naive training-mean baseline (`NaiveMeanBaseline`, `is_naive_baseline=True`).
+
+## Related Issue
+
+Fixes: #26
+
+## Type of Change
+
+- [x] New Feature
+- [x] Tests
+- [x] Documentation
+
+## Changes Made
+
+- Defined the regression smoke-test data contract and bounds in `course-labs/r41-t026/schema.json` (`record_id`, `x1`, `x2`, `target`, `split`, `max_samples=32`, `max_epochs=1`, `max_update_steps=20`, `fixed_seed=42`).
+- Created the literal six-row synthetic deterministic formula fixture in `course-labs/r41-t026/fixture.json` (`x1=[0,1,2,3,4,5]`, `x2=1`, `target=2*x1+1`; training `r1..r4`, validation `r5`, test `r6`) explicitly labelled as a `deterministic_formula_fixture`.
+- Implemented `BoundedLinearSGDSmokeRegressor`, explicitly labelled `NaiveMeanBaseline`, `PredictionOutput`, `validate_and_partition_fixture`, and `run_smoke_pipeline` in `course-labs/r41-t026/pipeline.py` using only the Python 3 standard library (no GPU, credentials, or dataset download).
+- Added 20 unit tests in `course-labs/r41-t026/test_pipeline.py` covering fixture/schema checks, train/val/test separation, bounded step/epoch accounting, finite outputs/losses, exact prediction shapes, explicit naive baseline labelling, bound/contamination/input failure cases, and a deliberate mutation guard.
+- Documented the results, limits, data contract, synthetic disclaimer, and optional UCI Energy Efficiency real-data extension requirements in `course-labs/r41-t026/README.md` and linked it from root `README.md`.
+- Saved verification evidence (inputs, expected vs actual JSON, unittest output, non-zero mutation check, and tool versions) in `work/R41-T026/`.
+
+## Screenshots / Recordings
+
+N/A (Offline CPU-only CLI unittest verification; full logs captured in `work/R41-T026/unittest_output.txt` and `work/R41-T026/mutation_check.txt`).
+
+## Testing
+
+Ran the required offline CPU-only unittest discovery command directly with system Python 3:
+
+```bash
+python3 -m unittest discover -s course-labs/r41-t026 -p "test_*.py" -v
+```
+
+Result:
+- `Ran 20 tests in 0.001s — OK` (exit code `0`).
+- Expected vs actual predictions, shapes, and losses match to `max_abs_diff = 1.11e-16`.
+- Verified non-zero failure on deliberate mutation (`EXPECTED_SGD_W1` mutated from `2.02` to `9.99` -> exit code `1`, logged in `work/R41-T026/mutation_check.txt`).
+
+## Checklist
+
+- [x] I have tested my changes locally.
+- [x] I have added or updated tests, if needed.
+- [x] I have updated documentation, if needed.
+- [x] I have followed the project's coding guidelines.
+- [x] I have run the relevant tests and checks.
+- [x] I have addressed previous review feedback, if applicable.
+
+## Additional Notes
+
+All numerical outputs in this PR come strictly from the six-row deterministic formula fixture (`target = 2 * x1 + 1`) for **pipeline verification only** — they are not observations from the named UCI Energy Efficiency dataset and are not evidence of real-world or clinical performance. Per task instructions, `work/R41-T026/` is included on this organisation-fork branch for coursework review and would be removed from any later upstream branch.
+
+Student: Sharon Robinson | Task: R41-T026 (6 of 10) | Assigned working branch: `student/e26b07f0819`

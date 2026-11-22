@@ -1,0 +1,27 @@
+$ python3 -m unittest discover -s course-labs/r41-t026 -p "test_*.py" -v
+test_bounded_step_and_epoch_counts_recorded (test_pipeline.TestBoundedSGDSmokeModel.test_bounded_step_and_epoch_counts_recorded) ... ok
+test_deterministic_reproducibility_with_fixed_seed (test_pipeline.TestBoundedSGDSmokeModel.test_deterministic_reproducibility_with_fixed_seed) ... ok
+test_finite_step_losses_and_exact_learned_weights (test_pipeline.TestBoundedSGDSmokeModel.test_finite_step_losses_and_exact_learned_weights) ... ok
+test_max_steps_cap_is_enforced_within_epoch (test_pipeline.TestBoundedSGDSmokeModel.test_max_steps_cap_is_enforced_within_epoch) ... ok
+test_prediction_shapes_dtypes_and_exact_values (test_pipeline.TestBoundedSGDSmokeModel.test_prediction_shapes_dtypes_and_exact_values) ... ok
+test_altered_expected_prediction_fails_assertion (test_pipeline.TestDeliberateMutationGuard.test_altered_expected_prediction_fails_assertion) ... ok
+test_explicit_synthetic_and_formula_labelling (test_pipeline.TestDeterministicFormulaFixture.test_explicit_synthetic_and_formula_labelling) ... ok
+test_literal_six_rows_and_formula_values (test_pipeline.TestDeterministicFormulaFixture.test_literal_six_rows_and_formula_values) ... ok
+test_schema_declares_required_fields_and_smoke_bounds (test_pipeline.TestDeterministicFormulaFixture.test_schema_declares_required_fields_and_smoke_bounds) ... ok
+test_naive_baseline_explicit_labelling_and_train_only_mean (test_pipeline.TestExplicitConstantNaiveBaseline.test_naive_baseline_explicit_labelling_and_train_only_mean) ... ok
+test_naive_baseline_shapes_and_losses (test_pipeline.TestExplicitConstantNaiveBaseline.test_naive_baseline_shapes_and_losses) ... ok
+test_exact_split_record_ids (test_pipeline.TestExplicitTrainValTestSeparation.test_exact_split_record_ids) ... ok
+test_partitions_are_pairwise_disjoint_and_complete (test_pipeline.TestExplicitTrainValTestSeparation.test_partitions_are_pairwise_disjoint_and_complete) ... ok
+test_exceeding_32_sample_bound_is_rejected (test_pipeline.TestSmokeBoundsAndFailureCases.test_exceeding_32_sample_bound_is_rejected) ... ok
+test_exceeding_epoch_or_step_or_lr_bounds_is_rejected (test_pipeline.TestSmokeBoundsAndFailureCases.test_exceeding_epoch_or_step_or_lr_bounds_is_rejected) ... ok
+test_non_finite_missing_or_bool_values_rejected (test_pipeline.TestSmokeBoundsAndFailureCases.test_non_finite_missing_or_bool_values_rejected) ... ok
+test_non_train_row_in_fit_is_rejected (test_pipeline.TestSmokeBoundsAndFailureCases.test_non_train_row_in_fit_is_rejected) ... ok
+test_overlapping_record_id_across_splits_rejected (test_pipeline.TestSmokeBoundsAndFailureCases.test_overlapping_record_id_across_splits_rejected) ... ok
+test_predict_before_fit_raises (test_pipeline.TestSmokeBoundsAndFailureCases.test_predict_before_fit_raises) ... ok
+test_train_row_passed_into_held_out_evaluate_rejected (test_pipeline.TestSmokeBoundsAndFailureCases.test_train_row_passed_into_held_out_evaluate_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 20 tests in 0.001s
+
+OK
+Exit code: 0

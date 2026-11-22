@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "R41-T026 Building Energy Efficiency – Regression Smoke Test Data Contract",
+  "description": "Data contract for the six-row synthetic deterministic formula fixture (target = 2 * x1 + 1). These rows are strictly for bounded CPU smoke-test pipeline verification — NOT observations from the UCI Energy Efficiency dataset and NOT evidence of real-world or clinical performance.",
+  "task_id": "R41-T026",
+  "project_section": "Building energy efficiency – regression",
+  "fixture_kind": "deterministic_formula_fixture",
+  "formula": "target = 2 * x1 + 1",
+  "synthetic_only": true,
+  "required_fields": ["record_id", "x1", "x2", "target"],
+  "optional_fields": ["split"],
+  "feature_order": ["x1", "x2"],
+  "valid_splits": ["train", "validation", "test"],
+  "smoke_bounds": {
+    "max_samples": 32,
+    "max_epochs": 1,
+    "max_update_steps": 20,
+    "fixed_seed": 42
+  },
+  "properties": {
+    "record_id": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Stable unique row identifier (r1..r6)."
+    },
+    "x1": {
+      "type": "number",
+      "description": "Finite numeric feature taking values [0, 1, 2, 3, 4, 5]; booleans and NaN/Inf are rejected."
+    },
+    "x2": {
+      "type": "number",
+      "description": "Finite constant numeric feature equal to 1 across all six rows (intercept/bias feature)."
+    },
+    "target": {
+      "type": "number",
+      "description": "Deterministic synthetic regression target equal to 2 * x1 + 1 ([1, 3, 5, 7, 9, 11])."
+    },
+    "split": {
+      "type": "string",
+      "enum": ["train", "validation", "test"],
+      "description": "Explicit fixed partition assignment: train r1..r4, validation r5, test r6."
+    }
+  }
+}

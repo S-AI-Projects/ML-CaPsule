@@ -1,0 +1,4 @@
+Python: 3.15.2 (main, Oct 25 2026, 16:57:51) [Clang 21.0.0 (clang-2100.3.34.2)]
+Platform: macOS-27.2.1-arm64-arm-64bit-Mach-O
+Git: git version 2.54.0 (Apple Git-157)
+Runtime dependencies for course-labs/r41-t026: Python 3 standard library only (offline, CPU-only, no GPU/credentials/downloads)

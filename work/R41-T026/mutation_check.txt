@@ -1,0 +1,17 @@
+Mutation: altered EXPECTED_SGD_W1 from 2.02 to 9.99 in a temporary copy of test_pipeline.py
+Exit code: 1 (non-zero as required)
+
+..F.................
+======================================================================
+FAIL: test_finite_step_losses_and_exact_learned_weights (test_pipeline.TestBoundedSGDSmokeModel.test_finite_step_losses_and_exact_learned_weights)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/var/folders/nn/ml4_14xj4yv42l87c003wt0w0000gn/T/tmpivyos120/r41-t026/test_pipeline.py", line 143, in test_finite_step_losses_and_exact_learned_weights
+    self.assertAlmostEqual(self.model.w1_, EXPECTED_SGD_W1, places=12)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 2.02 != 9.99 within 12 places (7.970000000000001 difference)
+
+----------------------------------------------------------------------
+Ran 20 tests in 0.002s
+
+FAILED (failures=1)
