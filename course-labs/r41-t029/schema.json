@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "R41-T029 Goodbooks-10k – Content-Based Recommender Robustness Data Contract",
+  "description": "Data contract for the six-interaction synthetic recommendation fixture. These interactions are strictly for bounded pipeline & interface robustness verification — NOT observations from Goodbooks-10k and NOT evidence of real-world or clinical performance or broad adversarial robustness.",
+  "task_id": "R41-T029",
+  "project_section": "Goodbooks-10k – content-based recommender",
+  "synthetic_only": true,
+  "required_interaction_fields": ["user_id", "item_id", "rating"],
+  "optional_interaction_fields": ["interaction_id", "user_seq", "split"],
+  "robustness_properties": {
+    "valid_transformation": "inter_user_record_reordering_preserving_within_user_time_order",
+    "forbidden_transformation": "within_user_time_order_randomization",
+    "rejected_unsupported_inputs": ["missing_required_field", "invalid_rating_type_or_range", "out_of_order_user_seq"],
+    "explicit_fallback_inputs": ["unseen_user", "unseen_item", "all_unseen_content_tokens"],
+    "claims_broad_adversarial_robustness": false
+  },
+  "properties": {
+    "user_id": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Stable user identifier (u1, u2, u3)."
+    },
+    "item_id": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Stable item identifier (a, b, c)."
+    },
+    "rating": {
+      "type": "number",
+      "minimum": 1,
+      "maximum": 5,
+      "description": "Finite numeric rating in [1, 5]; booleans and NaN/Inf rejected."
+    },
+    "interaction_id": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Stable unique interaction identifier (i1..i6)."
+    },
+    "user_seq": {
+      "type": "integer",
+      "minimum": 1,
+      "description": "Per-user chronological interaction index (1 = earlier, 2 = final held-out interaction)."
+    }
+  }
+}

@@ -1,0 +1,59 @@
+## Description
+
+Implements and verifies a stated, modality-appropriate **robustness property** for the **Goodbooks-10k – content-based recommender** interface (`course-labs/r41-t029`). Using the six-interaction synthetic fixture with leave-last-out splitting (reserving each user's final interaction for held-out validation/test splits), this lab verifies:
+
+1. **Valid transformation**: Inter-user record-order permutation that strictly preserves each user's chronological `user_seq` order (never randomizing within-user time order) produces bit-identical splits, held-out scores, and top-2 recommendations after `(user_id, item_id)` alignment.
+2. **Forbidden/unsupported inputs**: Reversing within-user time order raises `TimeOrderViolationError`; missing required fields (`user_id`, `item_id`, `rating`) or invalid ratings raise `SchemaValidationError`; unseen users, unseen items, and items with all-unseen content tokens map to explicit `ScoreResult(is_fallback=True, score=0.0, fallback_reason=...)`.
+
+Explicitly scoped to interface invariance and fallback behavior — does **not** claim broad adversarial robustness.
+
+## Related Issue
+
+Fixes: #29
+
+## Type of Change
+
+- [x] New Feature
+- [x] Tests
+- [x] Documentation
+
+## Changes Made
+
+- Defined the interaction schema and robustness contract in `course-labs/r41-t029/schema.json` (`user_id`, `item_id`, `rating`, `interaction_id`, `user_seq`, and explicit `claims_broad_adversarial_robustness: false`).
+- Created the literal six-interaction synthetic fixture in `course-labs/r41-t029/fixture.json` (`(u1,a,5),(u1,b,3),(u2,a,4),(u2,c,2),(u3,b,4),(u3,c,5)`) with stable IDs and synthetic item tags.
+- Implemented `validate_interactions`, `split_leave_last_out` (reserving final interaction per user into explicit `validation` and `test` splits), `permute_preserving_user_time_order`, `ContentBasedRecommender`, `ScoreResult`, and `run_robustness_verification` in `course-labs/r41-t029/pipeline.py` using only the Python 3 standard library.
+- Added 12 unit tests in `course-labs/r41-t029/test_pipeline.py` asserting fixture contract, leave-last-out split separation, ID-aligned order invariance under valid inter-user permutation, rejection of reversed time order and missing/invalid fields, explicit cold-start/OOV fallbacks, and a deliberate mutation guard.
+- Documented results, limits, data contract, synthetic/non-adversarial disclaimers, and optional Goodbooks-10k real-data extension requirements in `course-labs/r41-t029/README.md` and linked it from root `README.md`.
+- Saved verification evidence (inputs, expected vs actual JSON, unittest output, non-zero mutation check, and tool versions) in `work/R41-T029/`.
+
+## Screenshots / Recordings
+
+N/A (Offline CPU-only CLI unittest verification; full logs captured in `work/R41-T029/unittest_output.txt` and `work/R41-T029/mutation_check.txt`).
+
+## Testing
+
+Ran the required offline CPU-only unittest discovery command directly with system Python 3:
+
+```bash
+python3 -m unittest discover -s course-labs/r41-t029 -p "test_*.py" -v
+```
+
+Result:
+- `Ran 12 tests in 0.001s — OK` (exit code `0`).
+- Inter-user permutation (`['i5', 'i1', 'i2', 'i6', 'i3', 'i4']`) preserves all ID-aligned held-out scores (`u1:b=0.5`, `u2:c=0.0`, `u3:c=0.5`) and top-2 rankings (`max_abs_diff = 1.11e-16`).
+- Verified non-zero failure on deliberate mutation (`EXPECTED_HELD_OUT_SCORES["u1:b"]` altered from `0.5` to `0.99` -> exit code `1`, logged in `work/R41-T029/mutation_check.txt`).
+
+## Checklist
+
+- [x] I have tested my changes locally.
+- [x] I have added or updated tests, if needed.
+- [x] I have updated documentation, if needed.
+- [x] I have followed the project's coding guidelines.
+- [x] I have run the relevant tests and checks.
+- [x] I have addressed previous review feedback, if applicable.
+
+## Additional Notes
+
+All outputs in this PR come strictly from six synthetic interactions for **pipeline verification only** — they are not observations from Goodbooks-10k, are not evidence of real-world or clinical performance, and do not claim broad adversarial robustness. Per task instructions, `work/R41-T029/` is included on this organisation-fork branch for coursework review and would be removed from any later upstream branch.
+
+Student: Sharon Robinson | Task: R41-T029 (9 of 10) | Assigned working branch: `student/e26b07f0819`

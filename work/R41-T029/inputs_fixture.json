@@ -1,0 +1,20 @@
+{
+  "task_id": "R41-T029",
+  "project_section": "Goodbooks-10k – content-based recommender",
+  "is_synthetic": true,
+  "disclaimer": "SYNTHETIC INTERACTION FIXTURE ONLY. These six interactions are NOT observations from the Goodbooks-10k dataset, do NOT provide evidence of real-world or clinical performance, and do NOT claim broad adversarial robustness.",
+  "seed": 42,
+  "item_catalog": {
+    "a": ["fantasy", "adventure"],
+    "b": ["fantasy", "mystery"],
+    "c": ["science", "mystery"]
+  },
+  "interactions": [
+    {"interaction_id": "i1", "user_id": "u1", "item_id": "a", "rating": 5, "user_seq": 1},
+    {"interaction_id": "i2", "user_id": "u1", "item_id": "b", "rating": 3, "user_seq": 2},
+    {"interaction_id": "i3", "user_id": "u2", "item_id": "a", "rating": 4, "user_seq": 1},
+    {"interaction_id": "i4", "user_id": "u2", "item_id": "c", "rating": 2, "user_seq": 2},
+    {"interaction_id": "i5", "user_id": "u3", "item_id": "b", "rating": 4, "user_seq": 1},
+    {"interaction_id": "i6", "user_id": "u3", "item_id": "c", "rating": 5, "user_seq": 2}
+  ]
+}
