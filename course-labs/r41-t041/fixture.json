@@ -1,0 +1,20 @@
+{
+  "fixture_name": "deterministic formula fixture",
+  "simulated": true,
+  "purpose": "pipeline verification only; not measured concrete-strength data",
+  "formula": "target = 2 * x1 + 1",
+  "schema_fields": ["record_id", "x1", "x2", "target"],
+  "split_ids": {
+    "train": ["r1", "r2", "r3", "r4"],
+    "validation": ["r5"],
+    "test": ["r6"]
+  },
+  "records": [
+    {"record_id": "r1", "x1": 0, "x2": 1, "target": 1},
+    {"record_id": "r2", "x1": 1, "x2": 1, "target": 3},
+    {"record_id": "r3", "x1": 2, "x2": 1, "target": 5},
+    {"record_id": "r4", "x1": 3, "x2": 1, "target": 7},
+    {"record_id": "r5", "x1": 4, "x2": 1, "target": 9},
+    {"record_id": "r6", "x1": 5, "x2": 1, "target": 11}
+  ]
+}

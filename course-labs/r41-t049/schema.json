@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "data_kind": "simulated",
+  "fixture_kind": "deterministic_formula",
+  "required": ["record_id", "x1", "x2", "target"],
+  "record_id": "non-empty unique string",
+  "x1": "finite number",
+  "x2": "finite number",
+  "target": "finite number",
+  "splits": ["train", "validation", "test"],
+  "fixed_seed": 49,
+  "ordering_rule": "record order may change; stable record_id alignment is required and time order is never randomized"
+}

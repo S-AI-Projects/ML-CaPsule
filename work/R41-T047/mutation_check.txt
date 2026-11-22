@@ -1,0 +1,5 @@
+Mutation check:
+- Temporarily changed the expected validation predictions from [0, 1] to [1, 1].
+- Command: python3 -m unittest discover -s course-labs/r41-t047 -p "test_*.py"
+- Result: non-zero exit (1); the concrete-result assertion failed as expected.
+- Restored the checked-in expectation to [0, 1]; see mutated_expectation_failure.txt.

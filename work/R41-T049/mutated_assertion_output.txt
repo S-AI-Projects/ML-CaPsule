@@ -1,0 +1,14 @@
+.F....
+======================================================================
+FAIL: test_literal_synthetic_formula_fixture_and_splits (test_pipeline.RegressionRobustnessTests.test_literal_synthetic_formula_fixture_and_splits)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/veer/ML-CaPsule-R41-T041/course-labs/r41-t049/test_pipeline.py", line 25, in test_literal_synthetic_formula_fixture_and_splits
+    self.assertEqual(FIXTURE["seed"], 50)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 49 != 50
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.001s
+
+FAILED (failures=1)

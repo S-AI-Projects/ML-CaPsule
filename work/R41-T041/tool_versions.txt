@@ -1,0 +1,9 @@
+Command: python3 -m unittest discover -s course-labs/r41-t041 -p "test_*.py"
+Result: OK (10 tests)
+
+Python: 3.15.2
+Implementation: CPython
+Platform: macOS-27.2.1-arm64-arm-64bit-Mach-O
+Test framework: unittest (Python standard library)
+Numerical dependencies: none (NumPy and scikit-learn not used)
+Execution: offline, CPU-only

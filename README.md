@@ -221,7 +221,16 @@ Multidisciplinary field combining statistics, ML, computing, and domain expertis
 | 7 | **Bank Marketing** | Term deposit subscription | ⭐⭐ | [UCI](https://archive.ics.uci.edu/ml/datasets/Bank+Marketing) |
 | 8 | **Wine Quality** | Good vs bad wine classification | ⭐ | [UCI](https://archive.ics.uci.edu/ml/datasets/wine+quality) |
 
+> **Pipeline verification only:** [Breast Cancer Wisconsin feature-selection
+> configuration](course-labs/r41-t047/README.md) uses eight synthetic rows; it
+> is not the named real dataset or clinical-performance evidence.
+
 ### 🔵 Regression
+
+> **Bounded dataset-contract example:** [Concrete-strength regression input
+> validator](course-labs/r41-t041/README.md) uses an explicitly simulated
+> formula fixture for pipeline verification only; it is not real-world
+> performance evidence.
 
 | # | Dataset | Description | Level | Download |
 |---|---------|-------------|:-----:|----------|
@@ -232,6 +241,15 @@ Multidisciplinary field combining statistics, ML, computing, and domain expertis
 | 5 | **Student Performance** | Exam score prediction | ⭐ | [UCI](https://archive.ics.uci.edu/ml/datasets/student+performance) |
 | 6 | **Medical Cost** | Insurance charge prediction | ⭐ | [Kaggle](https://www.kaggle.com/datasets/mirichoi0218/insurance) |
 | 7 | **Bike Sharing Demand** | Hourly rental counts | ⭐⭐ | [Kaggle](https://www.kaggle.com/c/bike-sharing-demand) |
+
+> **Pipeline verification only:** [Medical insurance costs error analysis](course-labs/r41-t048/README.md)
+> reports one deliberately injected error in a six-row synthetic formula
+> fixture; it is not evidence about real insurance costs.
+>
+> **Pipeline verification only:** [Avocado prices numeric-regression robustness
+> fixture](course-labs/r41-t049/README.md) uses six simulated formula rows to
+> verify ID-aligned record reordering and reject unsupported missing-field or
+> shape inputs; it is not evidence about real Avocado prices.
 
 ### 🟡 NLP
 
@@ -244,6 +262,10 @@ Multidisciplinary field combining statistics, ML, computing, and domain expertis
 | 5 | **Fake News** | Real vs fake articles | ⭐⭐ | [Kaggle](https://www.kaggle.com/datasets/clmentbisaillon/fake-and-real-news-dataset) |
 | 6 | **AG News** | 4-topic news classification | ⭐⭐ | [Hugging Face](https://huggingface.co/datasets/ag_news) |
 | 7 | **Quora Question Pairs** | Semantic equivalence detection | ⭐⭐⭐ | [Kaggle](https://www.kaggle.com/c/quora-question-pairs) |
+
+> **Pipeline verification only:** [Majority-class text baseline](course-labs/r41-t043/README.md) evaluates a training-only baseline on a separate six-row simulated fixture; it is not language-detection performance evidence.
+
+> **Pipeline fixture only:** [Deterministic text split manifest](course-labs/r41-t042/README.md) documents a six-row fictional fixture; it is not the IMDB corpus or evidence of real-world model performance.
 
 ### 🔴 Computer Vision
 
@@ -888,6 +910,10 @@ Start with beginner-friendly projects, then move to intermediate and advanced on
 | [R language](R%20language) | 🟡 Intermediate | 3-6 hours |
 | [railway_person_detection](railway_person_detection) | 🟡 Intermediate | 3-6 hours |
 | [Rainfall_Trend_Analysis_and_Forecasting](Rainfall_Trend_Analysis_and_Forecasting) | 🟡 Intermediate | 3-6 hours |
+
+> **Pipeline verification only:** [Indian rainfall saved-time-series interface](course-labs/r41-t050/README.md)
+> uses ten simulated consecutive rows to test JSON save/reload and schema validation;
+> it is not evidence about real Indian rainfall or forecast performance.
 | [Random forest from scratch](Random%20forest%20from%20scratch) | 🟡 Intermediate | 3-6 hours |
 | [Random forest test](Random%20forest%20test) | 🟡 Intermediate | 3-6 hours |
 | [Random Oversampler](Random%20Oversampler) | 🟡 Intermediate | 3-6 hours |

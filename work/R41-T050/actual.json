@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "model_type": "training_median",
+  "seed": 50,
+  "feature_schema": [
+    "record_id",
+    "timestamp",
+    "value"
+  ],
+  "forecast_value": 12.5
+}

@@ -1,0 +1,8 @@
+{
+  "seed": 41,
+  "splits": {
+    "train": ["t5", "t6", "t1", "t2"],
+    "validation": ["t3"],
+    "test": ["t4"]
+  }
+}
