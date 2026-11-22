@@ -1,0 +1,54 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "R41-T027 Banknote Authentication – SVM Reproducible Configuration & Fixture Schema",
+  "schema_version": "1.0.0",
+  "description": "Data contract for the eight-row synthetic classification fixture and serializable SVM configuration. These synthetic rows are NOT observations from the UCI Banknote Authentication dataset and must NOT be cited as evidence of real-world or clinical performance.",
+  "task_id": "R41-T027",
+  "project_section": "Banknote authentication – SVM",
+  "synthetic_only": true,
+  "required_record_fields": ["record_id", "group_id", "x1", "x2", "label"],
+  "feature_ordering": ["x1", "x2"],
+  "valid_labels": [0, 1],
+  "config_required_fields": [
+    "schema_version",
+    "task_id",
+    "seed",
+    "feature_ordering",
+    "valid_labels",
+    "split_ids",
+    "algorithm"
+  ],
+  "algorithm_allowed_fields": [
+    "name",
+    "kernel",
+    "c",
+    "learning_rate",
+    "max_iter",
+    "gamma"
+  ],
+  "properties": {
+    "record_id": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Stable unique row identifier (r1..r8)."
+    },
+    "group_id": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Stable group identifier isolated across train/validation/test splits."
+    },
+    "x1": {
+      "type": "number",
+      "description": "Finite numeric synthetic feature [0, 1, 2, 3, 4, 5, 6, 7]."
+    },
+    "x2": {
+      "type": "number",
+      "description": "Finite constant numeric synthetic feature equal to 1."
+    },
+    "label": {
+      "type": "integer",
+      "enum": [0, 1],
+      "description": "Binary class label [0, 0, 0, 0, 1, 1, 1, 1]."
+    }
+  }
+}

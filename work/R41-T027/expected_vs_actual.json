@@ -1,0 +1,159 @@
+{
+  "task_id": "R41-T027",
+  "project_section": "Banknote authentication \u2013 SVM",
+  "verification_only": true,
+  "synthetic_disclaimer": "SYNTHETIC PIPELINE-VERIFICATION FIXTURE ONLY. These eight rows are NOT observations from the UCI Banknote Authentication dataset or any real-world dataset, and results are NOT evidence of real-world or clinical performance.",
+  "roundtrip_identical": true,
+  "all_match": true,
+  "max_abs_diff": 0.0,
+  "environment": {
+    "python_version": "3.15.2",
+    "python_implementation": "CPython",
+    "python_full": "3.15.2 (main, Oct 25 2026, 16:57:51) [Clang 21.0.0 (clang-2100.3.34.2)]",
+    "platform": "macOS-27.2.1-arm64-arm-64bit-Mach-O",
+    "stdlib_only": true,
+    "schema_version": "1.0.0"
+  },
+  "expected": {
+    "weights": [
+      0.5372837221280802,
+      -0.0533138933872721
+    ],
+    "bias": -1.224999999999998,
+    "splits": {
+      "train": {
+        "record_ids": [
+          "r1",
+          "r2",
+          "r5",
+          "r6"
+        ],
+        "predictions": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "validation": {
+        "record_ids": [
+          "r3",
+          "r7"
+        ],
+        "predictions": [
+          0,
+          1
+        ]
+      },
+      "test": {
+        "record_ids": [
+          "r4",
+          "r8"
+        ],
+        "predictions": [
+          1,
+          1
+        ]
+      }
+    }
+  },
+  "actual": {
+    "model_parameters": {
+      "weights": [
+        0.5372837221280802,
+        -0.0533138933872721
+      ],
+      "bias": -1.224999999999998
+    },
+    "splits": {
+      "train": {
+        "record_ids": [
+          "r1",
+          "r2",
+          "r5",
+          "r6"
+        ],
+        "group_ids": [
+          "g1",
+          "g1",
+          "g4",
+          "g4"
+        ],
+        "labels": [
+          0,
+          0,
+          1,
+          1
+        ],
+        "decision_scores": [
+          -1.2783138933872702,
+          -0.74103017125919,
+          0.8708209951250507,
+          1.4081047172531311
+        ],
+        "predictions": [
+          0,
+          0,
+          1,
+          1
+        ],
+        "prediction_shape": [
+          4
+        ],
+        "accuracy": 1.0
+      },
+      "validation": {
+        "record_ids": [
+          "r3",
+          "r7"
+        ],
+        "group_ids": [
+          "g2",
+          "g5"
+        ],
+        "labels": [
+          0,
+          1
+        ],
+        "decision_scores": [
+          -0.20374644913110984,
+          1.945388439381211
+        ],
+        "predictions": [
+          0,
+          1
+        ],
+        "prediction_shape": [
+          2
+        ],
+        "accuracy": 1.0
+      },
+      "test": {
+        "record_ids": [
+          "r4",
+          "r8"
+        ],
+        "group_ids": [
+          "g3",
+          "g6"
+        ],
+        "labels": [
+          0,
+          1
+        ],
+        "decision_scores": [
+          0.33353727299697034,
+          2.4826721615092913
+        ],
+        "predictions": [
+          1,
+          1
+        ],
+        "prediction_shape": [
+          2
+        ],
+        "accuracy": 0.5
+      }
+    }
+  }
+}

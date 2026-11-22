@@ -1,0 +1,57 @@
+## Description
+
+Implements and verifies a strict, serializable experiment configuration and bounded linear SVM verification pipeline for the **Banknote authentication – SVM** teaching component (`course-labs/r41-t027`). Captures `schema_version`, `task_id`, `seed`, `feature_ordering`, `valid_labels`, explicit `split_ids` (`train`/`validation`/`test`), and SVM `algorithm` settings in JSON, and guarantees that reloading the serialized configuration reconstructs the exact same splits, learned weights, and predictions while recording runtime environment versions.
+
+Unknown fields (at top level, in `split_ids`, or in `algorithm`), unsupported schema versions, contradictory settings (such as `kernel="linear"` with non-null `gamma`, `kernel="rbf"` without positive `gamma`, `name="linear_svm"` with non-linear kernel, or overlapping `split_ids`), and incompatible input shapes are explicitly rejected.
+
+## Related Issue
+
+Fixes: #27
+
+## Type of Change
+
+- [x] New Feature
+- [x] Tests
+- [x] Documentation
+
+## Changes Made
+
+- Defined the fixture and configuration contract in `course-labs/r41-t027/schema.json`.
+- Created the literal eight-row synthetic classification fixture in `course-labs/r41-t027/fixture.json` (`x1=[0,1,2,3,4,5,6,7]`, `x2=1`, `label=[0,0,0,0,1,1,1,1]`) with stable row/group IDs (`r1..r8`, `g1..g6`).
+- Created the serializable configuration in `course-labs/r41-t027/config.json` with `schema_version="1.0.0"`, `seed=42`, `feature_ordering=["x1", "x2"]`, explicit stratified group-isolated `split_ids` (`train: r1,r2,r5,r6`, `validation: r3,r7`, `test: r4,r8`), and linear SVM algorithm settings.
+- Implemented `ExperimentConfig`, `SplitIDsConfig`, `SVMConfig`, `reconstruct_splits`, `extract_feature_matrix`, `LinearSVMClassifier`, `collect_environment_versions`, and `run_configured_experiment` in `course-labs/r41-t027/pipeline.py` using only the Python 3 standard library.
+- Added 18 unit tests in `course-labs/r41-t027/test_pipeline.py` asserting config save/load round-trip reproducibility, environment version recording, rejection of unknown/contradictory config fields and incompatible input shapes, split integrity, and a deliberate mutation guard.
+- Documented results, limits, data/config contract, synthetic-data notice, and optional UCI Banknote Authentication real-data extension requirements in `course-labs/r41-t027/README.md` and linked it from root `README.md`.
+- Saved verification evidence (inputs, expected vs actual JSON, unittest output, non-zero mutation check, and tool/environment versions) in `work/R41-T027/`.
+
+## Screenshots / Recordings
+
+N/A (Offline CPU-only CLI unittest verification; full logs captured in `work/R41-T027/unittest_output.txt` and `work/R41-T027/mutation_check.txt`).
+
+## Testing
+
+Ran the required offline CPU-only unittest discovery command directly with system Python 3:
+
+```bash
+python3 -m unittest discover -s course-labs/r41-t027 -p "test_*.py" -v
+```
+
+Result:
+- `Ran 18 tests in 0.015s — OK` (exit code `0`).
+- Reloaded config round-trip reproduces identical splits, weights, and predictions (`max_abs_diff = 0.0`).
+- Verified non-zero failure on deliberate mutation (`EXPECTED_VAL_PREDS` altered from `[0, 1]` to `[1, 0]` -> exit code `1`, logged in `work/R41-T027/mutation_check.txt`).
+
+## Checklist
+
+- [x] I have tested my changes locally.
+- [x] I have added or updated tests, if needed.
+- [x] I have updated documentation, if needed.
+- [x] I have followed the project's coding guidelines.
+- [x] I have run the relevant tests and checks.
+- [x] I have addressed previous review feedback, if applicable.
+
+## Additional Notes
+
+All numerical outputs in this PR come strictly from the eight-row synthetic fixture for **pipeline verification only** — they are not observations from the named UCI Banknote Authentication dataset and are not evidence of real-world or clinical performance. Per task instructions, `work/R41-T027/` is included on this organisation-fork branch for coursework review and would be removed from any later upstream branch.
+
+Student: Sharon Robinson | Task: R41-T027 (7 of 10) | Assigned working branch: `student/e26b07f0819`

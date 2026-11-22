@@ -1,0 +1,20 @@
+{
+  "schema_version": "1.0.0",
+  "task_id": "R41-T027",
+  "seed": 42,
+  "feature_ordering": ["x1", "x2"],
+  "valid_labels": [0, 1],
+  "split_ids": {
+    "train": ["r1", "r2", "r5", "r6"],
+    "validation": ["r3", "r7"],
+    "test": ["r4", "r8"]
+  },
+  "algorithm": {
+    "name": "linear_svm",
+    "kernel": "linear",
+    "c": 1.0,
+    "learning_rate": 0.05,
+    "max_iter": 200,
+    "gamma": null
+  }
+}
