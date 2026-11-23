@@ -1,0 +1,15 @@
+test_injected_wrong_prediction_appears_and_correct_do_not (test_pipeline.TestErrorAnalysisReport.test_injected_wrong_prediction_appears_and_correct_do_not) ... ok
+test_moving_average_forecaster_execution (test_pipeline.TestErrorAnalysisReport.test_moving_average_forecaster_execution) ... ok
+test_chronological_values_and_ids (test_pipeline.TestSyntheticFixture.test_chronological_values_and_ids) ... ok
+test_fixture_disclaimer_present (test_pipeline.TestSyntheticFixture.test_fixture_disclaimer_present) ... ok
+test_fixture_exact_count_and_keys (test_pipeline.TestSyntheticFixture.test_fixture_exact_count_and_keys) ... ok
+test_split_manifest_no_shuffling (test_pipeline.TestSyntheticFixture.test_split_manifest_no_shuffling) ... ok
+test_boolean_values_rejected (test_pipeline.TestValidationAndNegativeRegression.test_boolean_values_rejected) ... ok
+test_duplicate_record_ids_rejected (test_pipeline.TestValidationAndNegativeRegression.test_duplicate_record_ids_rejected) ... ok
+test_negative_regression_check_fails_when_expected_altered (test_pipeline.TestValidationAndNegativeRegression.test_negative_regression_check_fails_when_expected_altered)
+Verify that altering an expected metric causes assertion failure. ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.000s
+
+OK
