@@ -1,0 +1,18 @@
+test_before_and_after_predictions_agree_within_tolerance (test_pipeline.TestSavedPipelineInterface.test_before_and_after_predictions_agree_within_tolerance) ... ok
+test_file_save_and_load (test_pipeline.TestSavedPipelineInterface.test_file_save_and_load) ... ok
+test_zero_training_data_and_credentials_needed_at_inference (test_pipeline.TestSavedPipelineInterface.test_zero_training_data_and_credentials_needed_at_inference) ... ok
+test_boolean_feature_in_inference_record_rejected (test_pipeline.TestSchemaAndVersionValidation.test_boolean_feature_in_inference_record_rejected) ... ok
+test_missing_feature_in_inference_record_rejected (test_pipeline.TestSchemaAndVersionValidation.test_missing_feature_in_inference_record_rejected) ... ok
+test_negative_regression_check_fails_when_expected_altered (test_pipeline.TestSchemaAndVersionValidation.test_negative_regression_check_fails_when_expected_altered)
+Verify that altering an expected prediction causes assertion failure. ... ok
+test_non_numeric_feature_in_inference_record_rejected (test_pipeline.TestSchemaAndVersionValidation.test_non_numeric_feature_in_inference_record_rejected) ... ok
+test_version_mismatch_fails_clearly (test_pipeline.TestSchemaAndVersionValidation.test_version_mismatch_fails_clearly) ... ok
+test_fixture_disclaimer_present (test_pipeline.TestSyntheticFixture.test_fixture_disclaimer_present) ... ok
+test_fixture_exact_count_and_keys (test_pipeline.TestSyntheticFixture.test_fixture_exact_count_and_keys) ... ok
+test_fixture_features_and_labels (test_pipeline.TestSyntheticFixture.test_fixture_features_and_labels) ... ok
+test_stratified_split_integrity (test_pipeline.TestSyntheticFixture.test_stratified_split_integrity) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.002s
+
+OK

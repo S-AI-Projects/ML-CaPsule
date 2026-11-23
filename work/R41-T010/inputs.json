@@ -1,0 +1,111 @@
+{
+  "task": "R41-T010",
+  "disclaimer": "Synthetic pipeline-verification fixture: eight rows with x1=[0..7], x2=1, label=[0,0,0,0,1,1,1,1]. Not observations from the real Stroke Prediction dataset.",
+  "synthetic_records": [
+    {
+      "record_id": "rec_001",
+      "group_id": "grp_01",
+      "x1": 0,
+      "x2": 1,
+      "label": 0
+    },
+    {
+      "record_id": "rec_002",
+      "group_id": "grp_02",
+      "x1": 1,
+      "x2": 1,
+      "label": 0
+    },
+    {
+      "record_id": "rec_003",
+      "group_id": "grp_03",
+      "x1": 2,
+      "x2": 1,
+      "label": 0
+    },
+    {
+      "record_id": "rec_004",
+      "group_id": "grp_04",
+      "x1": 3,
+      "x2": 1,
+      "label": 0
+    },
+    {
+      "record_id": "rec_005",
+      "group_id": "grp_01",
+      "x1": 4,
+      "x2": 1,
+      "label": 1
+    },
+    {
+      "record_id": "rec_006",
+      "group_id": "grp_02",
+      "x1": 5,
+      "x2": 1,
+      "label": 1
+    },
+    {
+      "record_id": "rec_007",
+      "group_id": "grp_03",
+      "x1": 6,
+      "x2": 1,
+      "label": 1
+    },
+    {
+      "record_id": "rec_008",
+      "group_id": "grp_04",
+      "x1": 7,
+      "x2": 1,
+      "label": 1
+    }
+  ],
+  "split_manifest": {
+    "train": [
+      "rec_001",
+      "rec_002",
+      "rec_005",
+      "rec_006"
+    ],
+    "validation": [
+      "rec_003",
+      "rec_007"
+    ],
+    "test": [
+      "rec_004",
+      "rec_008"
+    ]
+  },
+  "saved_model_payload": {
+    "format_version": "1.0.0",
+    "model_type": "logistic_regression",
+    "schema": {
+      "id_field": "record_id",
+      "features": [
+        "x1",
+        "x2"
+      ],
+      "label_field": "label"
+    },
+    "parameters": {
+      "weights": {
+        "x1": 1.635295644927711,
+        "x2": -1.737885409742503
+      },
+      "bias": -1.6903864852647699,
+      "threshold": 0.5
+    }
+  },
+  "predictions_before": [
+    0,
+    1,
+    1,
+    1
+  ],
+  "predictions_after": [
+    0,
+    1,
+    1,
+    1
+  ],
+  "predictions_agree": true
+}
