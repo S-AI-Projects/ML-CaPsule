@@ -1,0 +1,19 @@
+test_epoch_and_step_bounds_enforced (test_pipeline.TestBoundedCPUSmokeRun.test_epoch_and_step_bounds_enforced) ... ok
+test_expected_prediction_shapes_and_step_count (test_pipeline.TestBoundedCPUSmokeRun.test_expected_prediction_shapes_and_step_count) ... ok
+test_fixed_seed_determinism (test_pipeline.TestBoundedCPUSmokeRun.test_fixed_seed_determinism) ... ok
+test_sample_count_boundary_enforced (test_pipeline.TestBoundedCPUSmokeRun.test_sample_count_boundary_enforced) ... ok
+test_smoke_pipeline_finite_outputs_and_loss (test_pipeline.TestBoundedCPUSmokeRun.test_smoke_pipeline_finite_outputs_and_loss) ... ok
+test_naive_baseline_properties (test_pipeline.TestConstantBaselineModel.test_naive_baseline_properties) ... ok
+test_deterministic_formula_and_features (test_pipeline.TestSyntheticFixture.test_deterministic_formula_and_features) ... ok
+test_fixture_disclaimer_present (test_pipeline.TestSyntheticFixture.test_fixture_disclaimer_present) ... ok
+test_fixture_exact_count_and_keys (test_pipeline.TestSyntheticFixture.test_fixture_exact_count_and_keys) ... ok
+test_split_manifest_disjoint (test_pipeline.TestSyntheticFixture.test_split_manifest_disjoint) ... ok
+test_boolean_features_rejected (test_pipeline.TestValidationAndNegativeRegression.test_boolean_features_rejected) ... ok
+test_negative_regression_fails_when_expected_altered (test_pipeline.TestValidationAndNegativeRegression.test_negative_regression_fails_when_expected_altered)
+Verify that altering an expected metric causes assertion failure. ... ok
+test_predict_before_fit_raises_runtime_error (test_pipeline.TestValidationAndNegativeRegression.test_predict_before_fit_raises_runtime_error) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 0.001s
+
+OK
