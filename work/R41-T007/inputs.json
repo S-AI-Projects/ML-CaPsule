@@ -1,0 +1,108 @@
+{
+  "task": "R41-T007",
+  "disclaimer": "Synthetic pipeline-verification fixture: eight rows with x1=[0..7], x2=1, label=[0,0,0,0,1,1,1,1]. Not observations from the real Spotify tracks dataset.",
+  "synthetic_records": [
+    {
+      "record_id": "rec_001",
+      "group_id": "grp_01",
+      "x1": 0,
+      "x2": 1,
+      "label": 0
+    },
+    {
+      "record_id": "rec_002",
+      "group_id": "grp_02",
+      "x1": 1,
+      "x2": 1,
+      "label": 0
+    },
+    {
+      "record_id": "rec_003",
+      "group_id": "grp_03",
+      "x1": 2,
+      "x2": 1,
+      "label": 0
+    },
+    {
+      "record_id": "rec_004",
+      "group_id": "grp_04",
+      "x1": 3,
+      "x2": 1,
+      "label": 0
+    },
+    {
+      "record_id": "rec_005",
+      "group_id": "grp_01",
+      "x1": 4,
+      "x2": 1,
+      "label": 1
+    },
+    {
+      "record_id": "rec_006",
+      "group_id": "grp_02",
+      "x1": 5,
+      "x2": 1,
+      "label": 1
+    },
+    {
+      "record_id": "rec_007",
+      "group_id": "grp_03",
+      "x1": 6,
+      "x2": 1,
+      "label": 1
+    },
+    {
+      "record_id": "rec_008",
+      "group_id": "grp_04",
+      "x1": 7,
+      "x2": 1,
+      "label": 1
+    }
+  ],
+  "split_manifest": {
+    "train": [
+      "rec_001",
+      "rec_002",
+      "rec_005",
+      "rec_006"
+    ],
+    "validation": [
+      "rec_003",
+      "rec_007"
+    ],
+    "test": [
+      "rec_004",
+      "rec_008"
+    ]
+  },
+  "configuration": {
+    "schema_version": "1.0.0",
+    "seed": 42,
+    "feature_ordering": [
+      "x1",
+      "x2"
+    ],
+    "split_ids": {
+      "train": [
+        "rec_001",
+        "rec_002",
+        "rec_005",
+        "rec_006"
+      ],
+      "validation": [
+        "rec_003",
+        "rec_007"
+      ],
+      "test": [
+        "rec_004",
+        "rec_008"
+      ]
+    },
+    "algorithm_settings": {
+      "algorithm": "logistic_regression",
+      "learning_rate": 0.1,
+      "max_iter": 50,
+      "threshold": 0.5
+    }
+  }
+}
