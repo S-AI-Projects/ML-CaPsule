@@ -1,0 +1,21 @@
+test_boolean_features_rejected (test_pipeline.TestContaminationAndValidation.test_boolean_features_rejected) ... ok
+test_deliberate_contamination_fixture_rejected (test_pipeline.TestContaminationAndValidation.test_deliberate_contamination_fixture_rejected) ... ok
+test_duplicate_record_ids_rejected (test_pipeline.TestContaminationAndValidation.test_duplicate_record_ids_rejected) ... ok
+test_non_numeric_features_rejected (test_pipeline.TestContaminationAndValidation.test_non_numeric_features_rejected) ... ok
+test_regression_fails_when_expected_is_altered (test_pipeline.TestContaminationAndValidation.test_regression_fails_when_expected_is_altered)
+Verify that altering an expected value fails the test suite. ... ok
+test_transform_before_fit_raises_runtime_error (test_pipeline.TestContaminationAndValidation.test_transform_before_fit_raises_runtime_error) ... ok
+test_feature_order_is_strictly_preserved (test_pipeline.TestExplicitPreprocessor.test_feature_order_is_strictly_preserved) ... ok
+test_fitting_on_held_out_input_impossible_through_public_transform (test_pipeline.TestExplicitPreprocessor.test_fitting_on_held_out_input_impossible_through_public_transform) ... ok
+test_missing_value_imputation_uses_training_means (test_pipeline.TestExplicitPreprocessor.test_missing_value_imputation_uses_training_means) ... ok
+test_output_values_dtype_and_shape_asserted (test_pipeline.TestExplicitPreprocessor.test_output_values_dtype_and_shape_asserted) ... ok
+test_training_parameters_fitted_correctly (test_pipeline.TestExplicitPreprocessor.test_training_parameters_fitted_correctly) ... ok
+test_deterministic_formula_and_features (test_pipeline.TestSyntheticFixture.test_deterministic_formula_and_features) ... ok
+test_fixture_disclaimer_present (test_pipeline.TestSyntheticFixture.test_fixture_disclaimer_present) ... ok
+test_fixture_exact_count_and_keys (test_pipeline.TestSyntheticFixture.test_fixture_exact_count_and_keys) ... ok
+test_split_manifest_disjoint (test_pipeline.TestSyntheticFixture.test_split_manifest_disjoint) ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 0.001s
+
+OK
