@@ -1,0 +1,9 @@
+R41-T010 Environment and Tool Versions
+======================================
+Date: 2026-11-23T17:38:41.925965+00:00
+Python Version: 3.15.2 (CPython)
+Platform: macOS-27.2.1-arm64-arm-64bit-Mach-O
+Operating System: Darwin 27.2.0
+Architecture: arm64
+Dependencies: Standard Library Only (math, random, typing, unittest, json, pathlib, sys)
+External Packages: None (0 third-party packages)
