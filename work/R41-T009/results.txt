@@ -1,0 +1,15 @@
+test_negative_regression_check_fails_when_expected_altered (test_pipeline.TestRobustnessPerturbationAndFallback.test_negative_regression_check_fails_when_expected_altered)
+Verify that altering an expected prediction causes assertion failure. ... ok
+test_record_order_perturbation_preserves_result_after_id_alignment (test_pipeline.TestRobustnessPerturbationAndFallback.test_record_order_perturbation_preserves_result_after_id_alignment) ... ok
+test_scope_disclaimer_present (test_pipeline.TestRobustnessPerturbationAndFallback.test_scope_disclaimer_present) ... ok
+test_unsupported_input_mapped_to_explicit_fallback (test_pipeline.TestRobustnessPerturbationAndFallback.test_unsupported_input_mapped_to_explicit_fallback) ... ok
+test_unsupported_input_rejected_without_fallback (test_pipeline.TestRobustnessPerturbationAndFallback.test_unsupported_input_rejected_without_fallback) ... ok
+test_deterministic_formula_and_features (test_pipeline.TestSyntheticFixture.test_deterministic_formula_and_features) ... ok
+test_fixture_disclaimer_present (test_pipeline.TestSyntheticFixture.test_fixture_disclaimer_present) ... ok
+test_fixture_exact_count_and_keys (test_pipeline.TestSyntheticFixture.test_fixture_exact_count_and_keys) ... ok
+test_split_manifest_disjoint (test_pipeline.TestSyntheticFixture.test_split_manifest_disjoint) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.000s
+
+OK
