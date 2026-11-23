@@ -1,0 +1,66 @@
+{
+  "task": "R41-T009",
+  "disclaimer": "Synthetic pipeline-verification fixture: deterministic formula target = 2*x1 + 1. Not real-world Kaggle house prices data.",
+  "scope_limitation": "This robustness verification tests tabular record-order invariance with stable ID alignment and input-shape validation. It does NOT claim broad adversarial robustness, distribution-shift resilience, or protection against adversarial noise.",
+  "synthetic_records": [
+    {
+      "record_id": "r1",
+      "x1": 0,
+      "x2": 1,
+      "target": 1
+    },
+    {
+      "record_id": "r2",
+      "x1": 1,
+      "x2": 1,
+      "target": 3
+    },
+    {
+      "record_id": "r3",
+      "x1": 2,
+      "x2": 1,
+      "target": 5
+    },
+    {
+      "record_id": "r4",
+      "x1": 3,
+      "x2": 1,
+      "target": 7
+    },
+    {
+      "record_id": "r5",
+      "x1": 4,
+      "x2": 1,
+      "target": 9
+    },
+    {
+      "record_id": "r6",
+      "x1": 5,
+      "x2": 1,
+      "target": 11
+    }
+  ],
+  "split_manifest": {
+    "train": [
+      "r1",
+      "r2",
+      "r3",
+      "r4"
+    ],
+    "validation": [
+      "r5"
+    ],
+    "test": [
+      "r6"
+    ]
+  },
+  "original_predictions": {
+    "r5": 9.0,
+    "r6": 11.0
+  },
+  "permuted_predictions": {
+    "r6": 11.0,
+    "r5": 9.0
+  },
+  "invariance_verified": true
+}
