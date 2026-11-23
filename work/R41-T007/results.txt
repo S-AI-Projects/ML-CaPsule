@@ -1,0 +1,18 @@
+test_reloaded_config_reconstructs_identical_splits_and_predictions (test_pipeline.TestConfigSerializationAndReproducibility.test_reloaded_config_reconstructs_identical_splits_and_predictions) ... ok
+test_contradictory_overlapping_splits_rejected (test_pipeline.TestConfigValidationAndRejection.test_contradictory_overlapping_splits_rejected) ... ok
+test_incompatible_input_shape_rejected (test_pipeline.TestConfigValidationAndRejection.test_incompatible_input_shape_rejected) ... ok
+test_invalid_learning_rate_or_max_iter_rejected (test_pipeline.TestConfigValidationAndRejection.test_invalid_learning_rate_or_max_iter_rejected) ... ok
+test_negative_regression_check_fails_when_expected_altered (test_pipeline.TestConfigValidationAndRejection.test_negative_regression_check_fails_when_expected_altered)
+Verify that altering an expected prediction causes assertion failure. ... ok
+test_unknown_algorithm_setting_rejected (test_pipeline.TestConfigValidationAndRejection.test_unknown_algorithm_setting_rejected) ... ok
+test_unknown_split_id_rejected_when_allowed_ids_given (test_pipeline.TestConfigValidationAndRejection.test_unknown_split_id_rejected_when_allowed_ids_given) ... ok
+test_unknown_top_level_field_rejected (test_pipeline.TestConfigValidationAndRejection.test_unknown_top_level_field_rejected) ... ok
+test_fixture_disclaimer_present (test_pipeline.TestSyntheticFixture.test_fixture_disclaimer_present) ... ok
+test_fixture_exact_count_and_keys (test_pipeline.TestSyntheticFixture.test_fixture_exact_count_and_keys) ... ok
+test_fixture_features_and_labels (test_pipeline.TestSyntheticFixture.test_fixture_features_and_labels) ... ok
+test_stratified_split_integrity (test_pipeline.TestSyntheticFixture.test_stratified_split_integrity) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.001s
+
+OK
