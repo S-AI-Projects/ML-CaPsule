@@ -87,6 +87,7 @@
 | Rock Paper Scissors Python Game | Python basics, OpenCV | [View](./Rock%20Paper%20Scissors%20Python%20Game) |
 | Github Topic Scraper | web scraping, BeautifulSoup | [View](./GitHub%20Topic%20Scraper) |
 | TweetMiner AI | NLP, Tweepy, VADER, TextBlob, scikit-learn | [View](./TweetMiner_AI) |
+| Deterministic Split Manifest (R41-T002) | Deterministic split manifest, group isolation, unittest | [View](./course-labs/r41-t002) |
 
 
 ---
